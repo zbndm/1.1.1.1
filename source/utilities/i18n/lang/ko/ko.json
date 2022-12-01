@@ -1,0 +1,504 @@
+{
+  "title": "1.1.1.1 - 개인정보보호를 최우선으로 하는 가장 빠른 인터넷 DNS 확인자",
+  "description": "✌️✌️ 인터넷 검색 속도를 개선하고 개인정보보호를 강화하십시오.",
+  "hero.introducing": "소개",
+  "hero.description": "단 한 단계로 개인정보를 보호하면서 더 빠르게 인터넷을 검색할 수 있습니다.",
+  "hero.getStarted": "설치",
+  "hero.info": "자세한 정보",
+
+  "explanation.dnsHeader": "DNS: 인터넷의 디렉터리",
+  "explanation.dnsExplanation": "인터넷의 거의 모든 작업은 DNS 요청으로 시작됩니다. DNS는 인터넷의 디렉터리입니다. 링크를 클릭하고, 앱을 열고, 이메일을 보낼 때 기기가 가장 먼저 수행하는 작업은 디렉터리에 다음을 묻는 것입니다. <strong class=\"subtle\">어디에서 찾을 수 있습니까?</strong>",
+  "explanation.dnsSlowInsecure": "아쉽게도 DNS는 기본적으로 느리며 안전하지 않습니다. ISP와 인터넷을 수신하는 모든 사람은 콘텐츠가 암호화되어 있더라도 사용자가 방문하는 모든 사이트와 사용자가 사용하는 모든 앱을 볼 수 있습니다. 소름 끼치게도 일부 DNS 공급자는 사용자의 인터넷 활동에 대한 데이터를 팔거나 광고 목적으로 사용합니다.",
+  "explanation.dnsAlternative": "이는 아주 기분 나쁜 일입니다. 이 기분 나쁜 상황을 방지할 수 있는 대안이 있습니다. <strong class=\"code\">1.1.1.1</strong>",
+
+  "explanation.privacyHeader": "개인정보보호 최우선: 보장.",
+  "explanation.privacyExplanation": "Cloudflare는 1983-era DNS 프로토콜을 재정립하고 있습니다. <strong class=\"code\">1.1.1.1</strong>은 암호화된 DNS와 DNS over HTTPS를 지원합니다.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Cloudflare는 사용자의 데이터를 판매하지도, 광고 목적으로 사용하지도 않습니다.</span> 두 번 말하지 않겠습니다.",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">Cloudflare는 사용자의 IP 주소를 기록하지 않습니다.</span> 다른 회사에서는 이 방법으로 사용자를 식별합니다. Cloudflare는 이를 행동으로 보여 드립니다. Cloudflare는 KPMG와 협력 관계를 유지하면서 매년 시스템을 감사하여 이러한 방침이 준수되는지 확인하고 있습니다.",
+  "explanation.privacyConclusion": "솔직히 말해, Cloudflare는 사용자가 인터넷에서 무엇을 하는지 알고 싶지 않습니다. 저희가 상관할 일이 아니기 때문입니다. 더불어 Cloudflare는 사용자의 인터넷 활동을 식별할 수 없도록 기술적 조치를 취하고 있습니다.",
+
+  "explanation.performanceHeader": "비교 불가능한 속도",
+  "explanation.fastestDNS": "Cloudflare가 만든 1.1.1.1은 가장 빠른 인터넷 DNS 디렉터리입니다. 이 주장은 직접 확인할 수 있습니다. 독립 DNS 모니터링 업체인 <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>의 순위에 따르면 1.1.1.1은 전 세계에서 가장 빠른 DNS 서비스입니다.",
+  "explanation.speedContinued": "인터넷에서 수행하는 거의 모든 작업은 DNS 요청에서 시작되므로 모든 기기에서 가장 빠른 DNS 디렉터리를 선택하면 온라인으로 수행하는 거의 모든 활동이 가속화됩니다.",
+
+  "instructions": {
+    "header": "{{device}}에서 설정",
+    "explanation": "<strong>1.1.1.1</strong> 설정은 2분 정도 걸리며 기술적 스킬이나 특수한 소프트웨어가 필요하지 않습니다. 컴퓨터 초보자라도 아래에서 기기를 선택하고 간단한 설정 가이드를 따르기만 하면 됩니다.",
+    "debug": "인터넷 연결에 대한 추가 정보가 필요합니까? Cloudflare의 <a target=\"_blank\" href=\"./help\">디버그 페이지</a>를 확인하십시오.",
+    "questions": "추가 질문이 있으신가요? <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">커뮤니티 포럼</a>을 방문하십시오.",
+    "mac-os": {
+      "steps": [
+        { "tag": "li", "content": "시스템 기본 설정을 엽니다." },
+        {
+          "tag": "li",
+          "content": "<strong>DNS 서버</strong>를 검색하고 드롭다운 목록에서 선택합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+</strong> 버튼을 클릭하여 DNS 서버를 추가하고 <strong class=\"code\">1.1.1.1</strong>을 입력합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+</strong> 버튼을 다시 클릭하고 <strong class=\"code\">1.0.0.1</strong>(이중화 용도)을 입력합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+</strong> 버튼을 다시 클릭하고 <strong class=\"code\">2606:4700:4700::1111</strong>(이중화 용도)을 입력합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+</strong> 버튼을 다시 클릭하고 <strong class=\"code\">2606:4700:4700::1001</strong>(이중화 용도)을 입력합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>확인</strong>을 클릭하고 <strong>적용</strong>을 클릭합니다."
+        },
+        {
+          "tag": "li",
+          "content": "모든 설정이 완료되었습니다. 이제 기기가 개인정보보호 기능이 강화된 더 빠른 DNS 서버를 사용합니다. ✌️✌"
+        }
+      ]
+    },
+    "windows": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "시작 메뉴를 클릭하고 <strong>제어판</strong>을 클릭합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>네트워크 및 인터넷</strong>을 클릭합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>어댑터 설정 변경</strong>을 클릭합니다."
+        },
+        {
+          "tag": "li",
+          "content": "연결되어 있는 Wi-Fi 네트워크를 마우스 오른쪽 버튼으로 클릭하고 <strong>속성</strong>을 클릭합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>인터넷 프로토콜 버전 4</strong>(또는 원하는 경우 버전 6)를 선택합니다."
+        },
+        { "tag": "li", "content": "<strong>속성</strong>을 클릭합니다." },
+        {
+          "tag": "li",
+          "content": "향후 참조를 위해 기존 DNS 서버 항목을 기록해 둡니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>다음 DNS 서버 주소 사용</strong>을 클릭합니다."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "이러한 주소를 1.1.1.1 DNS 주소로 바꿉니다."
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "IPv4: <strong class=\"code\">1.1.1.1</strong> 및 <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "<strong>확인</strong>을 클릭하고 <strong>닫기</strong>를 클릭합니다."
+        },
+        { "tag": "li", "content": "브라우저를 다시 시작합니다." },
+        {
+          "tag": "li",
+          "content": "모든 설정이 완료되었습니다. 이제 기기가 개인정보보호 기능이 강화된 더 빠른 DNS 서버를 사용합니다. ✌️✌"
+        }
+      ]
+    },
+    "linux": {
+      "notice": "다음 단계는 Ubuntu용이며, 대부분의 Linux 배포에서는 네트워크 관리자를 통해 DNS 설정을 구성합니다. 또는 <code class=\"inline\">/etc/resolv.conf</code>에서 DNS 설정을 지정할 수 있습니다.",
+      "steps": [
+        {
+          "content": "왼쪽 메뉴 표시줄에서 애플리케이션 <i class=\"fas fa-th\"></i> 아이콘을 클릭합니다.",
+          "tag": "li"
+        },
+        {
+          "content": "<strong>설정</strong>을 클릭하고 <strong>네트워크</strong>를 클릭합니다.",
+          "tag": "li"
+        },
+        {
+          "content": "오른쪽 창에서 인터넷 연결을 찾은 다음 기어 <i class=\"fas fa-cog\"></i> 아이콘을 클릭합니다.",
+          "tag": "li"
+        },
+        {
+          "content": "<strong>IPv4</strong> 또는 <strong>IPv6</strong> 탭을 클릭하여 DNS 설정을 확인합니다.",
+          "tag": "li"
+        },
+        {
+          "content": "DNS 항목의 “자동” 토글을 <strong>꺼짐</strong>으로 설정합니다.",
+          "tag": "li"
+        },
+        {
+          "children": [
+            {
+              "tag": "span",
+              "content": "DNS 항목 필드에 1.1.1.1 DNS 주소를 기입합니다."
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "IPv4: <strong class=\"code\">1.1.1.1</strong> 및 <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "<strong>적용</strong>을 클릭한 다음 브라우저를 다시 시작합니다.",
+          "tag": "li"
+        },
+        {
+          "content": "모든 설정이 완료되었습니다. 이제 기기가 개인정보보호 기능이 강화된 더 빠른 DNS 서버를 사용합니다. ✌️✌",
+          "tag": "li"
+        }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "iPhone의 홈 화면에서 <strong>설정</strong> 앱을 엽니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>Wi-Fi</strong>를 누르고 목록에서 기본 설정 네트워크를 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>DNS 구성</strong>을 누르고 <strong>수동</strong>을 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "기존 항목이 있는 경우 <strong>-</strong> 버튼을 누르고 각 항목 옆의 <strong>삭제</strong>를 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+ 서버 추가</strong> 버튼을 누르고 <strong class=\"code\">1.1.1.1</strong>을 입력합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+ 서버 추가</strong> 버튼을 다시 누르고 <strong class=\"code\">1.0.0.1</strong>을 입력합니다. 이는 이중화를 위한 서버입니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+ 서버 추가</strong> 버튼을 다시 누르고 <strong class=\"code\">2606:4700:4700::1111</strong>을 입력합니다. 이는 이중화를 위한 서버입니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+ 서버 추가</strong> 버튼을 다시 누르고 <strong class=\"code\">2606:4700:4700::1001</strong>을 입력합니다. 이는 이중화를 위한 서버입니다."
+        },
+        {
+          "tag": "li",
+          "content": "오른쪽 위의 <strong>저장</strong> 버튼을 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "모든 설정이 완료되었습니다. 이제 기기가 개인정보보호 기능이 강화된 더 빠른 DNS 서버를 사용합니다. ✌️✌"
+        }
+      ]
+    },
+    "android": {
+      "message": "Android에서 사용자 지정 DNS 서버를 사용하려면 정적 IP를 사용해야 합니다. 이 설정에는 라우터에 대한 추가 설정이 필요하며 네트워크에 새 기기를 추가해야 하므로 네트워크 전략에 영향을 미칩니다. 따라서 이 설정 대신 <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">라우터의 DNS</button>를 구성할 것을 권장합니다. 그렇게 하면 네트워크의 모든 기기에서 1.1.1.1 DNS가 제공하는 최고 속도와 개인정보보보호의 이점을 누릴 수 있습니다.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Android의 앱 목록에서 <strong>설정</strong> 앱을 엽니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>무선 및 네트워크</strong> 섹션에서 <strong>Wi-Fi</strong>를 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "목록에서 기본 설정 네트워크를 길게 눌러 상황에 맞는 메뉴를 표시합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>네트워크 수정</strong>을 누르고 <strong>고급 옵션</strong>을 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>고급 옵션</strong>을 누르고 <strong>IP 설정</strong>을 누릅니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>동적</strong>에서 <strong>정적</strong>으로 변경합니다."
+        },
+        {
+          "tag": "li",
+          "content": "라우터의 구성을 사용하여 기기의 IP 주소와 게이트웨이를 입력합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>DNS</strong> 필드를 누르고 필드의 숫자를 지웁니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>DNS 1</strong> 필드에 <strong class=\"code\">1.1.1.1</strong>을 입력합니다."
+        },
+        {
+          "tag": "li",
+          "content": "<strong>DNS 2</strong> 필드에 <strong class=\"code\">1.0.0.1</strong>(이중화 용도)을 입력합니다."
+        },
+        { "tag": "li", "content": "<strong>저장</strong>을 누릅니다." },
+        {
+          "tag": "li",
+          "content": "모든 설정이 완료되었습니다. 이제 기기가 개인정보보호 기능이 강화된 더 빠른 DNS 서버를 사용합니다. ✌️✌"
+        }
+      ]
+    },
+    "router": {
+      "message": "라우터 구성은 기기에 따라 다를 수 있습니다. 자세한 내용은 설명서를 참조하십시오.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "선호하는 무선 네트워크에 연결합니다."
+        },
+        {
+          "tag": "li",
+          "content": "라우터의 게이트웨이 IP 주소를 브라우저에 입력합니다."
+        },
+        {
+          "tag": "li",
+          "content": "메시지가 표시되면 사용자 이름과 암호를 입력합니다. 이 정보는 라우터 레이블에 표시되어 있을 수 있습니다."
+        },
+        {
+          "tag": "li",
+          "content": "라우터의 구성 페이지에서 <strong>DNS 서버</strong> 설정을 찾습니다."
+        },
+        {
+          "tag": "li",
+          "content": "향후 참조를 위해 기존 DNS 서버 항목을 기록해 둡니다."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "이러한 주소를 1.1.1.1 DNS 주소로 바꿉니다."
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "IPv4: <strong class=\"code\">1.1.1.1</strong> 및 <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "설정을 저장하고 브라우저를 다시 시작합니다."
+        },
+        {
+          "tag": "li",
+          "content": "모든 설정이 완료되었습니다. 이제 기기가 개인정보보호 기능이 강화된 더 빠른 DNS 서버를 사용합니다. ✌️✌"
+        }
+      ]
+    },
+    "downloadmobile": "모바일 앱 다운로드"
+  },
+
+  "share.header": "✌️✌️ 개인정보보호를 최우선으로 하는 더 빠른 인터넷을 친구와 공유하십시오.",
+  "share.emailSubject": "✌️✌️ 개인정보보호 기능이 강화된 더 빠른 인터넷 검색 - 1.1.1.1 DNS 확인자",
+  "share.emailBody": "“1.1.1.1”은 인터넷 검색 속도를 개선하고 개인정보보호를 강화합니다. https://1.1.1.1에서 자세한 내용을 확인하고 2분 안에 기기를 설정하는 방법을 알아보십시오.",
+  "share.tweetBody": "✌️✌️ 빠르고 안전하며 개인정보보호를 우선하는 인터넷이 여기 있습니다. 단 2분이면 1.1.1.1 DNS 확인자를 설정할 수 있습니다.",
+
+  "faq.whosBehindThis": "이것은 무엇을 기반으로 합니까?",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong>은 Cloudflare와 APNIC 간 파트너십을 기반으로 합니다.",
+  "faq.network": "Cloudflare는 세계 최대 규모의 가장 빠른 네트워크 중 하나를 실를합니다. APNIC는 아시아 태평양 및 오세아니아 지역의 IP 주소 할당을 관리하는 비영리 조직입니다.",
+  "faq.networkContinued": "네트워크를 가진 Cloudflare와 IP 주소(1.1.1.1)를 가진 APNIC는 더 좋은 인터넷 환경 구축을 지원하고자 하는 사명에서 동기를 부여받았습니다. 각 조직의 참여 동기에 대한 자세한 내용을 해당 게시물에서 읽어볼 수 있습니다. <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 블로그</a>/<a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 블로그</a>. 자세한 내용은 다음을 참조하십시오. <a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">1.1.1.1은 무엇입니까?</a>",
+  "faq.canIintegrate": "저의 회사도 1.1.1.1과 통합할 수 있습니까?",
+  "faq.integrationInfo": "개인정보보호를 최우선으로 하는 빠르고 현대적인 DNS 서비스에서 브라우저, 운영 체제, 앱, 라우터 또는 VPN을 구축하고자 하는 제조업체라면 답은 <strong class=\"subtle\">예</strong>입니다.",
+  "faq.integrationDocs": "DoH(DNS over HTTPS)를 사용하여 고객에게 향상된 보안을 투명하게 제공하는 동시에 기기의 속도를 개선할 수 있습니다. 심지어 라이선스 및 고객의 <a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">개인정보보호</a> 관점에서 어떠한 비용도 들지 않습니다. <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">개발자 설명서</a>에서 1.1.1.1 및 DoH(DNS over HTTPS) 지원에 대한 자세한 내용을 확인하십시오.",
+
+  "faqpage.header": "FAQ(질문과 대답)",
+  "faqpage.general": "일반",
+  "faqpage.whatIsQ": "1.1.1.1은 무엇입니까?",
+  "faqpage.whatIsA1": "사용자가 cloudflare.com 같은 애플리케이션 방문을 요청할 때 컴퓨터가 애플리케이션을 로드하려면 사용자를 어느 서버에 연결해야 하는지를 알아야 합니다. 컴퓨터는 이 이름-주소 변환을 수행하는 방법을 모르므로 특수화된 서버에 작업을 대신 요청합니다.",
+  "faqpage.whatIsA2": "이 특수화된 서버를 DNS 재귀 확인자라고 합니다. 이 확인자의 작업은 지정된 이름의 주소(예: cloudflare.com의 경우 2400:cb00:2048:1::c629:d7a2)를 찾고, 요청한 컴퓨터에 이 주소를 반환하는 것입니다.",
+  "faqpage.whatIsA3": "컴퓨터는 IP 주소로 식별되는 특정 DNS 확인자와 통신하도록 구성됩니다. 일반적으로 이 구성은 집 또는 무선 인터넷을 사용하는 경우 ISP(예: Comcast 또는 AT&amp;T)에서 관리하고, 회사 인터넷에 연결된 경우 네트워크 관리자가 관리합니다. 컴퓨터와 사용자 간의 통신에 구성된 DNS 확인자를 변경할 수도 있습니다.",
+  "faqpage.whatDoDNSQ": "DNS 확인자가 수행하는 작업은 무엇입니까?",
+  "faqpage.whatDoDNSA1": "확인자는 도메인 이름의 주소를 어떻게 찾습니까? 확인자는 하향식으로 작동합니다.",
+  "faqpage.whatDoDNSA2": "모든 확인자는 도메인 이름의 끝에서 보이지 않는 ‘.’를 찾을 수 있습니다(예: cloudflare.com.). 전 세계에는 ‘.’ 파일을 호스트하는 <a href='http://www.root-servers.org/' target='_blank'>수백 개의 서버</a>가 있습니다. Cloudflare는 <a href='https://blog.cloudflare.com/f-root/' target='_blank'>ISC와의 파트너십</a>을 통해 전 세계의 모든 Cloudflare 서버에서 <a href='https://www.internic.net/domain/root.zone' target='_blank'>이 파일</a>을 직접 호스트합니다. 확인자는 <a href='https://www.internic.net/domain/named.root' target='_blank'>이러한 서버의 IP 주소를 알 수 있도록 하드코딩</a>되어 있습니다.",
+  "faqpage.whatDoDNSA3": "확인자는 루트 서버 중 하나에 체인, TLD 또는 도메인 끝에서 다음 링크가 있는 위치를 묻습니다. TLD의 예로는 .com 또는 .org가 있습니다. 다행히 루트 서버에는 모든 TLD 서버의 위치가 저장되므로 루트 서버는 DNS 확인자가 다음으로 물어야 하는 IP 주소를 반환할 수 있습니다.",
+  "faqpage.whatDoDNSA4": "다음으로 확인자는 TLD의 서버에 조회 중인 도메인의 위치를 묻습니다. 예를 들어 확인자는 .com에 cloudflare.com의 위치를 물을 수 있습니다. TLD는 TLD를 사용하는 모든 도메인의 위치를 포함하는 파일을 호스트합니다. 확인자는 최종 IP 주소를 받은 후 요청한 컴퓨터로 응답을 반환합니다.",
+  "faqpage.whatDoDNSA5": "정보를 호스트하는 서버(권한 있는 DNS)와 정보를 구하는 서버(DNS 확인자)가 포함되는 이 전체 시스템을 DNS(Domain Name System)라고 합니다. DNS는 인터넷의 Google Maps와 같습니다. 장소의 이름을 주소로 변환하여 경로를 알려줍니다.",
+  "faqpage.ipv6Q": "1.1.1.1은 IPv6을 지원합니까?",
+  "faqpage.ipv6A": "예. 1.1.1.1은 IPv6을 완벽하게 지원합니다.",
+  "faqpage.clearCacheQ": "1.1.1.1의 DNS 캐시를 지우려면 어떻게 해야 합니까?",
+  "faqpage.clearCacheA": "<a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>캐시 제거 도구</a>를 사용하여 도메인 이름에 대한 1.1.1.1의 DNS 캐시를 새로 고칠 수 있습니다. 도메인 이름을 입력하고 DNS 레코드 유형을 선택한 후 ‘캐시 제거’ 버튼을 누르면 됩니다.",
+  "faqpage.insideChinaQ": "1.1.1.1은 중국 내에서 작동합니까?",
+  "faqpage.insideChinaA": "아닙니다. 1.1.1.1을 가리키도록 DNS를 구성할 수는 있지만 중국 내의 데이터 센터에 연결되지 않습니다. 대신 요청이 중국 본토 외부의 데이터 센터로 라우트됩니다.",
+  "faqpage.devDocsQ": "1.1.1.1의 개발자 설명서는 어디서 찾을 수 있습니까?",
+  "faqpage.devDocsA": "여기에서 참조할 수 있습니다.",
+  "faqpage.mobileApp": "모바일 앱",
+  "faqpage.mobileAppWorkQ": "모바일 앱은 어떻게 작동합니까?",
+  "faqpage.mobileAppWorkA": "모바일 앱은 휴대폰 안에서 다른 모든 앱에 DNS 요청을 이 확인자의 주소로 전송할 것을 요청하는 로컬 확인자를 실행합니다. 이러한 DNS 요청이 로컬 확인자에 전송되면 로컬 확인자가 요청을 암호화하고 1.1.1.1로 전송합니다.",
+  "faqpage.vpnQ": "1.1.1.1 앱은 VPN입니까?",
+  "faqpage.vpnA": "아니요. VPN 앱은 일반적으로 모든 네트워크 트래픽을 프록싱합니다. 1.1.1.1 앱은 휴대폰의 DNS 트래픽만 재정의하고 보호합니다.",
+  "faqpage.dnsLogsQ": "DNS 로그는 무엇입니까?",
+  "faqpage.dnsLogsA": "iOS의 DNS 로그에는 휴대폰에서 생성된 모든 DNS 쿼리가 포함됩니다. 일반적으로 이러한 DNS 쿼리는 앱 및 모바일 브라우저에서 생성됩니다.",
+  "faqpage.logsForQ": "콘솔 로그의 용도는 무엇입니까?",
+  "faqpage.logsForA": "콘솔 로그는 Cloudflare에서 사용자 연결을 디버그하는 데 사용됩니다.",
+  "faqpage.suggestQ": "개선 사항을 제안하려면 어떻게 해야 합니까?",
+  "faqpage.suggestA": "당사는 사용자의 제안을 모두 읽습니다. 앱 안에 있을 때 휴대폰을 흔들어 개선 제안을 보낼 수 있습니다. 또는 앱 메뉴로 이동하고 ‘도움말’을 눌러 피드백을 보낼 수 있습니다.",
+  "faqpage.diffDnsTlsQ": "DNS over TLS와 DNS over HTTPS를 사용할 때의 차이점은 무엇입니까?",
+  "faqpage.diffDnsTlsA1": "DNS over TLS와 DNS over HTTPS 모두 휴대폰의 일반 DNS 쿼리를 암호화합니다.",
+  "faqpage.diffDnsTlsA2": "DNS over HTTPS는 포트 443을 사용하고 DNS over TLS는 포트 853을 사용합니다. 일부 네트워크에서는 이러한 포트 중 하나가 차단될 수 있습니다. 포트 443이 차단된 경우 DNS over TLS를 사용해야 합니다. 포트 853이 차단된 경우에는 DNS over HTTPS를 사용해야 합니다. 경우에 따라 DNS over TLS가 DNS over HTTPS보다 빠르거나 그 반대일 수 있습니다.",
+  "faqpage.bugQ": "버그 보고서를 보내려면 어떻게 해야 합니까?",
+  "faqpage.bugA": "앱을 흔들어 버그 보고서를 보낼 수 있습니다. 이렇게 하면 앱이 스크린샷과 콘솔 로그를 버그 보고서와 함께 첨부합니다. 콘솔 로그는 연결을 디버그하고 전체 앱 경험을 개선하는 데 도움이 됩니다.",
+  "faqpage.internetStoppedQ": "1.1.1.1 앱을 사용하는 동안 인터넷이 작동을 멈췄습니다. 어떻게 해야 합니까?",
+  "faqpage.internetStoppedA": "이 문제가 발생하면 앱 홈 페이지의 토글을 사용하여 앱을 끈 후 다시 켜십시오. 문제가 지속되면 앱을 비활성화하고 버그 보고서를 보내 주십시오.",
+  "faqpage.appStuckQ": "1.1.1.1 앱이 ‘CONNECTING’ 또는 ‘REASSERTING’ 상태에서 중단되었습니다. 어떻게 해야 합니까?",
+  "faqpage.appStuckA1": "네트워크 연결이 일시적으로 중단되었거나 데이터 연결이 1.1.1.1 연결을 차단하는 경우 이 문제가 발생할 수 있습니다.",
+  "faqpage.appStuckList": [
+    {
+      "tag": "li",
+      "content": "앱 홈 페이지의 토글을 사용하여 앱을 비활성화합니다."
+    },
+    {
+      "tag": "li",
+      "content": "iOS 설정 앱을 열고 설정 > 일반 > 재설정으로 이동합니다."
+    },
+    {
+      "tag": "li",
+      "content": "네트워크 설정 재설정을 누릅니다."
+    },
+    {
+      "tag": "li",
+      "content": "기기를 재부팅하고 Wifi가 연결되는지 확인합니다."
+    },
+    {
+      "tag": "li",
+      "content": "앱을 다시 연결해 보십시오."
+    }
+  ],
+  "faqpage.appStuckA2": "연결이 허용되지 않으면 1.1.1.1 앱을 비활성화하고 당사로 버그 보고서를 보내 주십시오.",
+  "faqpage.cannotClickQ": "VPN 설치 대화 상자에서 확인을 클릭할 수 없습니다. 어떻게 해야 합니까?",
+  "faqpage.cannotClickA": "확인 버튼을 클릭할 수 없다면 대화 상자 위에 다른 애플리케이션이 있는 문제일 수 있습니다. Lux Brightness, Night Mode, Twilight, FileManager 같은 일부 앱이 이러한 문제를 일으키는 것으로 알려져 있습니다. 이 문제를 방지하려면 이 문제를 야기할 수 있는 모든 앱을 닫거나 제거하십시오.",
+  "faqpage.appenabledQ": "앱을 활성화한 상태로 유지했는데 잠시 후 꺼진 것을 알았습니다. 어떻게 된 일입니까?",
+  "faqpage.appenabledA1": "휴대폰이 배터리 관리를 위해 앱을 비활성화한 것입니다. 예를 들어 대부분의 Huawei 기기는 메모리 및 전원을 적극적으로 관리하는 것으로 알려져 있습니다.",
+  "faqpage.appenabledA2": "이 문제는 아래의 단계를 수행하여 해결할 수 있습니다.",
+  "faqpage.appenabledList": [
+    {
+      "tag": "li",
+      "content": "휴대폰의 ‘설정’으로 이동합니다."
+    },
+    {
+      "tag": "li",
+      "content": "‘고급’을 선택합니다."
+    },
+    {
+      "tag": "li",
+      "content": "‘배터리 관리자’로 이동합니다."
+    },
+    {
+      "tag": "li",
+      "content": "‘보호되는 앱’을 엽니다."
+    },
+    {
+      "tag": "li",
+      "content": "1.1.1.1 앱에 대해 “화면이 꺼진 후 계속해서 앱 실행”을 선택할 수 있습니다."
+    }
+  ],
+  "faqpage.persistentnotificationQ": "1.1.1.1 앱에 대한 영구 알림이 표시되는 이유는 무엇입니까?",
+  "faqpage.persistentnotificationA1": "Android 8 이상을 사용하는 경우 1.1.1.1 앱에서 “DNS 쿼리가 비공개이고 더 빨라짐”이라는 영구 알림이 표시됩니다.",
+  "faqpage.persistentnotificationA2": "이 알림은 Android OS(8.0+)에서 백그라운드 작업을 실행하는 모든 앱에 필수적으로 표시됩니다.",
+  "faqpage.persistentnotificationA3": "휴대폰의 다른 중요한 알림을 방해하지 않도록 알림의 우선 순위를 “낮음”으로 설정했습니다.",
+  "faqpage.persistentnotificationA4": "이 알림을 숨기는 방법이 한 가지 있습니다. 하지만 이렇게 하면 1.1.1.1 앱에서 다른 알림이 수신되지 않습니다. 알림을 숨기려면 다음과 같이 하십시오.",
+  "faqpage.persistentnotificationList": [
+    {
+      "tag": "li",
+      "content": "“설정”으로 이동합니다."
+    },
+    {
+      "tag": "li",
+      "content": "“앱 및 알림”으로 이동합니다."
+    },
+    {
+      "tag": "li",
+      "content": "앱 목록에서 1.1.1.1 앱 설정을 엽니다."
+    },
+    {
+      "tag": "li",
+      "content": "“알림”을 누르고 비활성화합니다."
+    }
+  ],
+  "faqpage.disablednotificationQ": "1.1.1.1 앱의 알림을 비활성화했지만 “1.1.1.1이 배터리 사용 중”이라는 다른 알림이 표시됩니다. 문제가 됩니까? 이 알림은 어떻게 없앱니까?",
+  "faqpage.disablednotificationA1": "걱정하지 않아도 됩니다. 앱의 알림을 비활성화했기 때문에 이제 Android OS가 배터리 사용량에 대해 경고하는 다른 알림을 보내는 것입니다. 단, 이 알림은 앱이 배터리를 많이 소모하기 때문이 아니라 백그라운드로 실행되고 있기 때문에 표시되는 것입니다(이 경우 모든 DNS 쿼리에 보안 적용).",
+  "faqpage.disablednotificationA2": "이 알림을 없애는 방법은 다음과 같습니다.",
+  "faqpage.disablednotificationList": [
+    {
+      "tag": "li",
+      "content": "알림이 바뀌고 토글이 표시될 때까지 알림을 길게 누릅니다."
+    },
+    {
+      "tag": "li",
+      "content": "토글을 눌러 회색으로 비활성화되게 합니다."
+    },
+    {
+      "tag": "li",
+      "content": "“완료”를 선택하여 알림을 비활성화합니다."
+    }
+  ],
+  "faqpage.vpnprofileQ": "VPN 프로필을 추가할 수 없습니다. 이 문제는 어떻게 해결합니까?",
+  "faqpage.vpnprofileA1": "“상시” 설정이 활성화된 다른 VPN을 사용 중인 것 같습니다. 해당 VPN을 비활성화하고 1.1.1.1을 활성화하십시오.",
+  "faqpage.vpnprofileA2": "다음 단계에 따라 해당 페이지로 이동할 수 있습니다.",
+  "faqpage.vpnprofileList": [
+    {
+      "tag": "li",
+      "content": "설정"
+    },
+    {
+      "tag": "li",
+      "content": "네트워크 및 인터넷"
+    },
+    {
+      "tag": "li",
+      "content": "고급"
+    },
+    {
+      "tag": "li",
+      "content": "VPN"
+    },
+    {
+      "tag": "li",
+      "content": "1.1.1.1의 기어 버튼"
+    },
+    {
+      "tag": "li",
+      "content": "1.1.1.1의 “상시” 설정 활성화"
+    }
+  ]
+}

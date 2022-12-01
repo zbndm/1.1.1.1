@@ -1,0 +1,25 @@
+.EasterEggSection {
+  display: block;
+  background: rgb(var(--black-purple-rgb));
+}
+
+.EasterEggSection--column {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25vh 2em 45vh;
+  width: 100%;
+}
+
+.EasterEggSection--content {
+  width: 40vw;
+  max-width: 20em;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .EasterEggSection--column {
+    margin-top: -25em;
+  }
+}

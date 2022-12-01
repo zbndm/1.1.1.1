@@ -1,0 +1,507 @@
+{
+  "title": "1.1.1.1 - インターネット最速､プライバシー優先DNSリゾルバ",
+  "description": "✌️✌️ より速く､よりプライベートにインターネットを閲覧できます｡",
+  "hero.introducing": "新登場",
+  "hero.description": "もう少しで、より速く､よりプライベートなインターネット閲覧が可能になります。",
+  "hero.getStarted": "インストール",
+  "hero.info": "詳細情報",
+
+  "explanation.dnsHeader": "DNS：インターネットのディレクトリ",
+  "explanation.dnsExplanation": "インターネット上のほぼすべてのことは、DNSリクエストに端を発します。DNSは、インターネットのディレクトリです。リンクをクリックしたり、アプリを開いたり、メールを送信したりしたとき、お使いの機器が最初にすることは、ディレクトリに次のことを問い合わせることです。<strong class=\"subtle\">どこで見つけることができますか？</strong>",
+  "explanation.dnsSlowInsecure": "残念ながら、デフォルトのDNSは通常は遅く、安全ではありません。ご利用のISPや、インターネット上で傍受しようとしているすべての人物が、お客様の訪問サイトや利用アプリを一つ残らず把握できます。コンテンツが暗号化されていても、このことは変わりません。恐ろしいことに、一部のDNSプロバイダーは顧客のインターネット活動に関するデータを販売したり、ターゲティング広告に利用したりします。",
+  "explanation.dnsAlternative": "何とも薄気味悪い話だと思いませんか。お客様も同じ考えであれば、幸い代替手段が存在します：<strong class=\"code\">それが、1.1.1.1です。</strong>",
+
+  "explanation.privacyHeader": "プライバシー優先：保証されています。",
+  "explanation.privacyExplanation": "当社は、1983年当時のままのDNSプロトコルを再考しています。<strong class=\"code\">1.1.1.1</strong>は、暗号化DNSばかりでなく、DNS over HTTPSにも対応しています。",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">当社がお客様のデータを販売したり、データをターゲティング広告に使用したりすることはありません。</span> これは約束です。",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">当社は、絶対にお客様の IPアドレスの記録を取りません</span> （他社は、こうしてお客様を特定しています）。口先だけではありません。当社は、毎年システムの監査をKPMGに依頼することで有言実行を証明しています。",
+  "explanation.privacyConclusion": "当社は、お客様のインターネット活動に一切関与するつもりはありません。そこで、技術的な措置を講じてお客様のインターネット活動を見ることができないよう制限しました。",
+
+  "explanation.performanceHeader": "他社よりも高速。",
+  "explanation.fastestDNS": "1.1.1.1は、私たちによりインターネットで最速のDNSディレクトリになりました。利用されたお客様の声をお聞きください。独立DNSモニター機関である<a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>は、1.1.1.1を世界最速のDNSサービスとランク付けしています。",
+  "explanation.speedContinued": "インターネット上のほぼすべてのアクティビティがDNSリクエストから始まりますから、お使いの機器のすべてで最速のDNSディレクトリを選ぶことは、オンラインアクティビティのほぼすべてが高速化されることを意味します。",
+
+  "instructions": {
+    "header": "セットアップ手順：{{device}}",
+    "explanation": "<strong>1.1.1.1</strong> の設定はわずか2分です。技術的なスキルや特別なソフトウェアも必要ありません。コンピュータ初心者でも、デバイスを選択し、セットアップガイドに従うことで簡単に設定することができます。",
+    "debug": "インターネット接続に関する詳細情報をお探しですか？当社の <a target=\"_blank\" href=\"./help\">デバッグページ</a>をご覧ください。",
+    "questions": "まだ不明点がある場合は、当社の <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">コミュニティフォーラム</a>をご覧ください",
+    "mac-os": {
+      "steps": [
+        { "tag": "li", "content": "システム環境設定を開きます。" },
+        {
+          "tag": "li",
+          "content": "「<strong>DNS Servers</strong>」を検索し、ドロップダウンリストから選択します。"
+        },
+        {
+          "tag": "li",
+          "content": "<strong>+</strong> ボタンをクリックしてDNSサーバーを追加し、 <strong class=\"code\">1.1.1.1</strong>を入力します"
+        },
+        {
+          "tag": "li",
+          "content": "再び <strong>+</strong> をクリックして、 <strong class=\"code\">1.0.0.1</strong> を入力してください（冗長性のため）。"
+        },
+        {
+          "tag": "li",
+          "content": "再び <strong>+</strong> をクリックして、 <strong class=\"code\">2606:4700:4700::1111</strong> を入力してください（冗長性のため）。"
+        },
+        {
+          "tag": "li",
+          "content": "再び <strong>+</strong> をクリックして、<strong class=\"code\">2606:4700:4700::1001</strong> を入力してください（冗長性のため）。"
+        },
+        {
+          "tag": "li",
+          "content": "<strong>Ok</strong>をクリックしてから、 <strong>適用</strong>をクリックします。"
+        },
+        {
+          "tag": "li",
+          "content": "準備完了しました！これで、より高速、よりプライベートなDNSサーバーを利用できます✌️✌️"
+        }
+      ]
+    },
+    "windows": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "「スタート」メニューをクリックして、「<strong>コントロールパネル</strong>」をクリックします。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>Network and Internet（ネットワークとインターネット）</strong>」をクリックします。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>Change Adapter Settings（アダプター設定の変更）</strong>」をクリックします。"
+        },
+        {
+          "tag": "li",
+          "content": "接続しているWi-Fiネットワークを右クリックして、「<strong>プロパティ</strong>」をクリックします。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>Internet Protocol Version 4（インターネットプロトコルバージョン4</strong>」（または「バージョン6」）を選択します。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>プロパティ</strong>」を選択します。"
+        },
+        {
+          "tag": "li",
+          "content": "後で参照できるよう、現在のDNSサーバーの設定を書き留めておきます。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>Use The Following DNS Server Addresses（次のDNSサーバーアドレスを使う）</strong>」をクリックします。"
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "次のアドレスを1.1.1.1 DNSアドレスに置き換えます。"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "IPv4の場合：<strong class=\"code\">1.1.1.1</strong> と <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6の場合：<strong class=\"code\">2606:4700:4700::1111</strong> と <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>OK</strong>」をクリックして「<strong>Close（閉じる）</strong>」をクリックします。"
+        },
+        { "tag": "li", "content": "ブラウザを再起動します。" },
+        {
+          "tag": "li",
+          "content": "準備完了しました！これで、より高速、よりプライベートなDNSサーバーを利用できます✌️✌️"
+        }
+      ]
+    },
+    "linux": {
+      "notice": "以上の手順はUbuntu向けですが、ほとんどのLinuxディストリビューションは、Network Managerを使用してDNSの設定を行います。また、DNS設定は<code class=\"inline\">/etc/resolv.conf</code>で指定することができます。",
+      "steps": [
+        {
+          "content": "左のメニューバー上のアプリケーション<i class=\"fas fa-th\"></i>アイコンをクリックします。",
+          "tag": "li"
+        },
+        {
+          "content": "「<strong>Settings（設定）</strong>」をクリックして、「<strong>Network（ネットワーク）</strong>」をクリックします。",
+          "tag": "li"
+        },
+        {
+          "content": "右側のウィンドウで現在利用しているインターネット接続を確認し、ギア <i class=\"fas fa-cog\"></i> アイコンをクリックします。",
+          "tag": "li"
+        },
+        {
+          "content": "「<strong>IPv4</strong>」または「<strong>IPv6</strong>」タブを選択して、 DNS設定を表示します。",
+          "tag": "li"
+        },
+        {
+          "content": "DNSエントリの「Automatic（自動）」トグル設定を<strong>Off</strong>に変更します。",
+          "tag": "li"
+        },
+        {
+          "children": [
+            {
+              "tag": "span",
+              "content": "1.1.1.1 DNSアドレスをDNSエントリーフィールドに入力します。"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "IPv4の場合：<strong class=\"code\">1.1.1.1</strong> と <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6の場合：<strong>2606:4700:4700::1111、2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "「<strong>適用</strong>」をクリックしてから、ブラウザを再起動します。",
+          "tag": "li"
+        },
+        {
+          "content": "準備完了しました！これで、より高速、よりプライベートなDNSサーバーを利用できます✌️✌️",
+          "tag": "li"
+        }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "iPhoneのホーム画面から「<strong>Settings（設定）</strong>」アプリを開きます。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>Wi-Fi</strong>」をタップし、リストから利用するネットワークをタップします。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>Configure DNS（DNSを設定）</strong>」をタップして、「<strong>Manual（手動）</strong>」をタップします。"
+        },
+        {
+          "tag": "li",
+          "content": "すでに設定されている項目がある場合は、「<strong>-</strong>」ボタンをタップして、その横の「<strong>Delete（削除）</strong>」をタップします。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>+ Add Server</strong>」ボタンをタップして、<strong class=\"code\">1.1.1.1</strong>と入力します。"
+        },
+        {
+          "tag": "li",
+          "content": "再度「<strong>+ Add Server</strong>」ボタンをタップして、<strong class=\"code\">1.0.0.1</strong>と入力します。これは、冗長性を確保するための入力です。"
+        },
+        {
+          "tag": "li",
+          "content": "再び「<strong>+ Add Server</strong>」ボタンをタップして、<strong class=\"code\">2606:4700:4700::1111</strong>と入力します。これは、冗長性を確保するための入力です。"
+        },
+        {
+          "tag": "li",
+          "content": "再び「<strong>+ Add Server（サーバーを追加）</strong>」ボタンをタップして、<strong class=\"code\">2606:4700:4700::1001</strong>と入力します。これは、冗長性を確保するための入力です。"
+        },
+        {
+          "tag": "li",
+          "content": "右上にある「<strong>Save（保存）</strong>」ボタンをタップします。"
+        },
+        {
+          "tag": "li",
+          "content": "準備完了しました！これで、より高速、よりプライベートなDNSサーバーを利用できます✌️✌️"
+        }
+      ]
+    },
+    "android": {
+      "message": "Androidで独自のDNSサーバーを利用するには、静的IPアドレスが必要です。このセットアップを行うにはルーターの追加設定が必要です。これにより、ルーターが新しいデバイスを追加するためのネットワークの戦略に影響を与える場合があります。代わりに、ご利用 <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">ルーターのDNS</button> の設定をお勧めします。これにより、お客様のネットワーク上のすべてのデバイスで、1.1.1.1DNSが提供する高速かつプライバシー優先のネット環境が実現します。",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Androidのアプリリストから「<strong>Settings（設定）</strong>」アプリを開きます。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>Wireless &amp; networks（無線とネットワーク）</strong>」セクションで「<strong>Wi-Fi</strong>」をタップします。"
+        },
+        {
+          "tag": "li",
+          "content": "リストから利用するネットワークを長押しして、コンテキストメニューを表示します。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>Modify network（ネットワークを修正）</strong>」をタップして,「<strong>Advanced options（詳細オプション）</strong>をタップします。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>Advanced options（詳細オプション）</strong>」をタップして、「<strong>IP Settings（IP設定）</strong>」をタップします。"
+        },
+        {
+          "tag": "li",
+          "content": "<strong>Dynamic（動的）</strong>を<strong>Static（静的）</strong>に変更します。"
+        },
+        {
+          "tag": "li",
+          "content": "ルーターの構成を使用して、ご使用の機器のIPアドレスとゲートウェイを入力します。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>DNS</strong>」フィールドをタップして、その中の数値を消去します。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>DNS 1</strong>」フィールドに<strong class=\"code\">1.1.1.1</strong>と入力します。"
+        },
+        {
+          "tag": "li",
+          "content": "「<strong>DNS 2</strong>」フィールドに<strong class=\"code\">1.0.0.1</strong>と入力します（冗長性を確保するため）。"
+        },
+        { "tag": "li", "content": "「<strong>保存</strong>」をタップします。" },
+        {
+          "tag": "li",
+          "content": "準備完了しました！これで、より高速、よりプライベートなDNSサーバーを利用できます✌️✌️"
+        }
+      ]
+    },
+    "router": {
+      "message": "構成情報は、ご使用のルーターによって異なることがあります。詳細は、マニュアルをご覧ください。",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "お好みのワイヤレスネットワークに接続します。"
+        },
+        {
+          "tag": "li",
+          "content": "ブラウザでご使用のルーターのIPアドレスを入力します。"
+        },
+        {
+          "tag": "li",
+          "content": "プロンプトが表示されたら、ユーザー名とパスワードを入力してください。この情報は、ルーターに記載されていることがあります。"
+        },
+        {
+          "tag": "li",
+          "content": "ルーターの構成ページで<strong>DNSサーバー</strong>の設定を確認します。"
+        },
+        {
+          "tag": "li",
+          "content": "後で参照できるよう、現在のDNSサーバーの設定を書き留めておきます。"
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "次のアドレスを1.1.1.1 DNSアドレスに置き換えます。"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "IPv4の場合：<strong class=\"code\">1.1.1.1</strong> と <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6の場合：<strong class=\"code\">2606:4700:4700::1111</strong> と <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "設定を保存し、ブラウザを再起動します。"
+        },
+        {
+          "tag": "li",
+          "content": "準備完了しました！これで、より高速、よりプライベートなDNSサーバーを利用できます✌️✌️"
+        }
+      ]
+    },
+    "downloadmobile": "モバイルアプリをダウンロード"
+  },
+
+  "share.header": "✌️✌️ より高速でプライバシー優先のインターネットをお友達とシェアしてください。",
+  "share.emailSubject": "✌️✌️ より高速、よりプライベートにインターネットを閲覧 -  1.1.1.1 DNSリゾルバ",
+  "share.emailBody": "“1.1.1.1”によってインターネットの閲覧はより高速、よりプライベートになります。詳しくは、https://1.1.1.1をご覧ください。2分もかからずにご使用の機器をセットアップできます。",
+  "share.tweetBody": "✌️✌️ 高速で安全、プライベートなインターネットの誕生です。1.1.1.1 DNSリゾルバのセットアップは2分もかかりません。",
+
+  "faq.whosBehindThis": "1.1.1.1誕生の背後にあるもの",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong>はCloudflareとAPNICのパートナーシップによって誕生しました。",
+  "faq.network": "Cloudflareは世界最大・最速ネットワークの1つを運営しています。APNICは、アジア太平洋・オセアニア地域におけるIPアドレスの割り当てを管理する非営利団体です。",
+  "faq.networkContinued": "Cloudflareにはネットワークがありました。APNICにはIPアドレス（1.1.1.1）がありました。どちらにも、インターネットをより良いものにするという使命感を持っていました。こうした経緯についての詳細は、各組織のブログ、<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflareブログ</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNICブログ</a>をご覧ください。詳細情報はこちら：<a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">1.1.1.1とは何ですか？</a>",
+  "faq.canIintegrate": "自社のサービスを1.1.1.1と統合できますか？",
+  "faq.integrationInfo": "お客様がプライバシー優先で高速かつ最新のDNSサービスを備えたブラウザ、オペレーティングシステム、アプリケーション、ルーター、またはVPNのメーカーである場合、統合が<strong class=\"subtle\">可能</strong>です。",
+  "faq.integrationDocs": "DNS over HTTPS（DoH）を利用することで、機器のスピードを向上しながら、トランスペアレントにお客様にセキュリティ強化機能を提供することができます。さらに、ライセンスやお客様の<a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">プライバシー</a>のどちらの面でも費用はいっさいかかりません。1.1.1.1および当社のDNS over HTTPS（DoH）サポートについては、<a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs（開発者向け資料）</a>をご覧ください。",
+
+  "faqpage.header": "よくある質問",
+  "faqpage.general": "一般",
+  "faqpage.whatIsQ": "1.1.1.1とは何ですか？",
+  "faqpage.whatIsA1": "cloudflare.com等のアプリケーションを使用する際にリクエストを送信すると、 ご使用のコンピューターはアプリケーションをロードできるよう、接続先サーバーを把握しておく必要があります。コンピュータは与えられた名前をアドレスに変換する方法を知りませんから、この変換を行うよう専用のサーバーに依頼します。",
+  "faqpage.whatIsA2": "この専用サーバーがDNS再帰リゾルバです。このリゾルバの仕事は、cloudflare.comであれば2400:cb00:2048:1::c629:d7a2というように与えられた名前に対するアドレスを探し、問い合わせのあったコンピュータにそのアドレスを返すことです。",
+  "faqpage.whatIsA3": "コンピュータは、特定のDNSリゾルバ（それぞれ一意のIPアドレスで特定）に問い合わせるように構成されています。通常、ご自宅または無線インターネットを使用している場合の設定はISP（ComcastやAT&amp;Tなど）が管理し、オフィスのインターネットで接続している場合の設定はネットワーク管理者がそれぞれ管理しています。設定済みのDNSリゾルバーを変更して、コンピューターがお客様自身に通信するようにも設定できます。",
+  "faqpage.whatDoDNSQ": "DNSリゾルバはどのような働きをするのですか？",
+  "faqpage.whatDoDNSA1": "リゾルバは、ドメイン名のアドレスをどのようにして見つけることができるのでしょうか？ドメイン名の最後にあたる、トップレベルドメインから取りかかるのです。",
+  "faqpage.whatDoDNSA2": "すべてのリゾルバは、ドメイン名の末尾にある目に見えない「.」の見つけ方を知っています（例：cloudflare.com.）。世界中に存在する <a href='http://www.root-servers.org/' target='_blank'>何百ものサーバーが</a> 「.」ファイルをホスティングしています。Cloudflare自体は、 <a href='https://blog.cloudflare.com/f-root/' target='_blank'>ISCとのパートナーシップ</a>を通じて、世界中のサーバーで<a href='https://www.internic.net/domain/root.zone' target='_blank'>このファイル</a> をホスティングしています。リゾルバは、<a href='https://www.internic.net/domain/named.root' target='_blank'>それらサーバーのIPアドレスが分かるようにハードコーディング</a>されています。",
+  "faqpage.whatDoDNSA3": "リゾルバは、チェーンの次のリンクをTLDまたはドメイン末尾のどちらで見つけるべきかをルートサーバーの1つに尋ねます。TLDには例えば.comや.orgがあります。幸いにも、ルートサーバーはすべてのTLDサーバーの場所を保管しているため、DNSリゾルバーが次に尋ねるべきIPアドレスを返すことができます。",
+  "faqpage.whatDoDNSA4": "次に、リゾルバは、TLDのサーバーに対し、探しているドメインをどこで見つけることができるか尋ねます。たとえば、リゾルバは、.com に対し、cloudflare.com がどこにあるかを尋ねます。TLDは、TLDを使用したあらゆるドメインの場所を保管したファイルをホスティングしています。最終的なIPアドレスが得られると、リゾルバは、問い合わせをしてきたコンピュータにその答えを返します。",
+  "faqpage.whatDoDNSA5": "情報をホスティングするサーバー（権威DNS）、そして情報を探すサーバー（DNSリゾルバー）からなるこのシステムを総合して、ドメインネームシステム（DNS）と呼びます。DNSは、インターネットのGoogle Mapsのような働きをします。場所の名前を住所に変換することで、目的地に辿り着けるようにします。",
+  "faqpage.ipv6Q": "1.1.1.1はIPv6に対応していますか？",
+  "faqpage.ipv6A": "はい。IPv6に完全対応しています。",
+  "faqpage.clearCacheQ": "1.1.1.1のDNSキャッシュはどのようにしてクリアするのでしょうか？",
+  "faqpage.clearCacheA": "1.1.1.1のDNSキャッシュは、<a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>purge cache tool（キャッシュ消去ツール）</a>を使いドメイン名でリフレッシュすることができます。ドメイン名をドメイン名を入力して、DNSレコードタイプを選択し、「Purge Cache（キャッシュを消去）」ボタンを押します。",
+  "faqpage.insideChinaQ": "1.1.1.1は中国でも使用できますか？",
+  "faqpage.insideChinaA": "うまくいきません。ご利用のDNを1.1.1.1に向けて設定することはできますが、これが中国国内の当社データセンターの1つに到達することはありません。代わりに、そのリクエストは中国本土以外にある、当社データセンターの1つにルーティングされます。",
+  "faqpage.devDocsQ": "1.1.1.1の開発者向けの資料はどこにあるのでしょうか？",
+  "faqpage.devDocsA": "こちらです。",
+  "faqpage.mobileApp": "モバイルアプリ",
+  "faqpage.mobileAppWorkQ": "モバイルアプリはどのような働きをするのですか？",
+  "faqpage.mobileAppWorkA": "アプリは、ご利用の携帯電話内でローカルDNSリゾルバーを実行して、このリゾルバーのアドレスにDNSリクエストを送信するよう、ほかのすべてのアプリに依頼します。こうしたDNSリクエストは、ローカルDNSリゾルバーに届いた後で暗号化され、1.1.1.1に送信されます。",
+  "faqpage.vpnQ": "1.1.1.1アプリはVPNですか？",
+  "faqpage.vpnA": "いいえ。通常、VPNはネットワークトラフィックのすべてをプロキシ経由にします。1.1.1.1アプリはご利用の携帯電話のDNSトラフィックだけを無効にして保護します。",
+  "faqpage.dnsLogsQ": "DNSログとは何ですか？",
+  "faqpage.dnsLogsA": "iOSのDNSログには、ご利用の携帯電話が行うすべてのDNSクエリが含まれています。通常、それらDNS検索クエリは、アプリやモバイルブラウザによって作成されます。",
+  "faqpage.logsForQ": "コンソールログはどのような目的のためにあるのでしょうか？",
+  "faqpage.logsForA": "コンソールログの目的は、Cloudflareがお客様の接続をデバッグできるようにすることにあります。",
+  "faqpage.suggestQ": "改善の提案はできますか？",
+  "faqpage.suggestA": "当社はお客様からの提案のすべてに目を通しています。アプリの使用中に機器を振ると、改善提案を送信できます。アプリメニューに移動して「Help（ヘルプ）」をタップすることで、フィードバックを送信することもできます。",
+  "faqpage.diffDnsTlsQ": "DNS over TLSとDNS over HTTPSの違いは何でしょうか？",
+  "faqpage.diffDnsTlsA1": "DNS over TLSとDNS over HTTPSのどちらも、機器のDNS検索クエリ（プレーンテキスト）を暗号化します。",
+  "faqpage.diffDnsTlsA2": "DNS over HTTPSはポート443、DNS over TLSはポート853を使用します。ネットワークによっては、これらのポートの一方がブロックされていることがあります。ポート4443がブロックされている場合は、DNS over TLSを使用します。ポート853がブロックされている場合は、DNS over HTTPSを使用します。場合によって、DNS over TLSの方がDNS over HTTPSより早いことがありますし、逆の場合もあります。",
+  "faqpage.bugQ": "バグの報告はできますか？",
+  "faqpage.bugA": "アプリを使用しているときに機器を振ると、バグ報告を送信できます。バグの報告には、アプリによってスクリーンショットとコンソールログが添付されます。コンソールログは、当社がお客様の接続をデバッグして、アプリの利用環境全体を改善するのに役立ちます。",
+  "faqpage.internetStoppedQ": "1.1.1.1アプリを使っていたら、インターネットが動かなくなくなりました。どうすればよいでしょうか？",
+  "faqpage.internetStoppedA": "その場合は、アプリのホームページのトグルボタンを使って、いったんアプリをオフにしてから、オンにし直してみてください。問題がか解決しない場合は、アプリを無効にしてバグ報告をお送りください。",
+  "faqpage.appStuckQ": "1.1.1.1アプリが「CONNECTING（接続しています）」または「REASSERTING（再確立しています）」で動かなくなります。どうすればよいでしょうか？",
+  "faqpage.appStuckA1": "この問題はお使いのネットワーク接続が一時的に停止されるか、データ接続によって1.1.1.1の接続がブロックされている場合に発生することがあります。",
+  "faqpage.appStuckList": [
+    {
+      "tag": "li",
+      "content": "アプリのホームページのトグルを使って、アプリを無効にします。"
+    },
+    {
+      "tag": "li",
+      "content": "iOSの「設定」アプリを開いて、Settings（設定） > General（一般） > Reset（リセット）を選択します。"
+    },
+    {
+      "tag": "li",
+      "content": "Reset Network Settings（ネットワーク設定をリセット）をタップします。"
+    },
+    {
+      "tag": "li",
+      "content": "機器を再起動して、Wifiに接続することを確認します。"
+    },
+    {
+      "tag": "li",
+      "content": "アプリの接続を再試行してください。"
+    }
+  ],
+  "faqpage.appStuckA2": "接続できない場合は、1.1.1.1アプリを無効にして、バグ報告をお送りください。",
+  "faqpage.cannotClickQ": "VPNのインストールダイアログで「OK」をクリックできません。どうすればよいでしょうか？",
+  "faqpage.cannotClickA": "「OK」ボタンをクリックできない場合は、ダイアログの上に別のアプリがある可能性があります。Lux Brightness、Night Mode、Twilight、FileManagerなど、一部のアプリはこの問題を引き起こすことが分かっています。この問題を回避するには、問題の原因となる可能性があるすべてのアプリを閉じるか、アンインストールします。",
+  "faqpage.appenabledQ": "アプリを有効にしたままにしていたのですが、しばらくするとオフになります。何が起きたのでしょうか？",
+  "faqpage.appenabledA1": "機器が自動的にアプリを無効にすることによってバッテリーを管理しようとしています。たとえばHuaweiの機器はメモリおよび電源管理は強力であることが分かっています。",
+  "faqpage.appenabledA2": "この問題は以下の手順で解決できます。",
+  "faqpage.appenabledList": [
+    {
+      "tag": "li",
+      "content": "「Settings（設定）」アプリを開きます。"
+    },
+    {
+      "tag": "li",
+      "content": "「Advanced（詳細）」を選択します。"
+    },
+    {
+      "tag": "li",
+      "content": "「Battery Manager（バッテリーの管理）」を開きます。"
+    },
+    {
+      "tag": "li",
+      "content": "「Protected Apps（アプリの保護）」を開きます。"
+    },
+    {
+      "tag": "li",
+      "content": "1.1.1.1アプリに対して「Allow apps to keep running after the screen is turned off（画面オフ後もアプリの実行を許可する）」を選択することができます。"
+    }
+  ],
+  "faqpage.persistentnotificationQ": "1.1.1.1アプリからの通知が常に表示されます。どうしてでしょうか？",
+  "faqpage.persistentnotificationA1": "Android 8またはそれ以降の場合、1.1.1.1アプリからは「高速、プライバシー優先のDNS検索モード」という通知がつねに表示されます。",
+  "faqpage.persistentnotificationA2": "これは、バックグラウンドで動作するすべてのアプリに対してAndroid OS（8.0+）が求めている動作です。",
+  "faqpage.persistentnotificationA3": "機器の他の重要な通知の邪魔にならないよう当社では通知の優先順位を「低」に設定しています。",
+  "faqpage.persistentnotificationA4": "この通知を非表示にできる方法が1つあります。ただし、この設定を行うと、1.1.1.1アプリからの他の通知も受信できなくなります。手順は次の通りです。",
+  "faqpage.persistentnotificationList": [
+    {
+      "tag": "li",
+      "content": "「設定」アプリを開きます。"
+    },
+    {
+      "tag": "li",
+      "content": "「Apps &amp; Notifications（アプリと通知）」を開きます。"
+    },
+    {
+      "tag": "li",
+      "content": "アプリのリストから1.1.1.1アプリの設定を開きます。"
+    },
+    {
+      "tag": "li",
+      "content": "「Notifications（通知）」をタップして、無効にします。"
+    }
+  ],
+  "faqpage.disablednotificationQ": "1.1.1.1アプリの通知を無効にしましたが、「1.1.1.1 is using battery」という別の通知が表示されます。何か問題があるのでしょうか？どうすれば削除できるでしょうか？",
+  "faqpage.disablednotificationA1": "問題ありませんアプリの通知を無効にしたために、Android OSがバッテリーの使用状況に関する別の警告を送信するようになっただけです。アプリは大量のバッテリーを消費していますが、バックグラウンドで動作しており、このおかげでDNS検索クエリのすべてが保護されています。",
+  "faqpage.disablednotificationA2": "この通知は、以下の手順で削除できます。",
+  "faqpage.disablednotificationList": [
+    {
+      "tag": "li",
+      "content": "通知を長押しして、トグルを表示します。"
+    },
+    {
+      "tag": "li",
+      "content": "トグルをタップして、グレー表示にします。"
+    },
+    {
+      "tag": "li",
+      "content": "「Done（完了）」を選択して通知を無効にします。"
+    }
+  ],
+  "faqpage.vpnprofileQ": "VPNプロファイルを追加できません。どうしたら追加できるでしょうか？",
+  "faqpage.vpnprofileA1": "おそらくは、別のVPNを使用していて「Always On（常時オン）」設定を有効にしていることが原因です。そのVPNを無効にして、1.1.1.1を有効にしてください。",
+  "faqpage.vpnprofileA2": "そのためのページは、以下の手順で開くことができます。",
+  "faqpage.vpnprofileList": [
+    {
+      "tag": "li",
+      "content": "Settings（設定）"
+    },
+    {
+      "tag": "li",
+      "content": "Network and Internet（ネットワークとインターネット）"
+    },
+    {
+      "tag": "li",
+      "content": "Advanced（詳細）"
+    },
+    {
+      "tag": "li",
+      "content": "VPN"
+    },
+    {
+      "tag": "li",
+      "content": "1.1.1.1のギアボタン"
+    },
+    {
+      "tag": "li",
+      "content": "1.1.1.1の「Always On（常時オン）」"
+    }
+  ]
+}

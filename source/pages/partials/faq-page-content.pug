@@ -1,0 +1,174 @@
+mixin render(input)
+  if input.children
+    #{input.tag}
+      each child in input.children
+        +render(child)
+  else if input.content
+    #{input.tag}!=input.content
+
+.hero
+  .language-selector(
+  tabindex="3"
+  role="button"
+  data-ref="languageSelector")
+    .selector-label
+      include ../../media/globe.svg
+      span.chosen-language!=htmlWebpackPlugin.options.locale.label
+      include ../../media/caret.svg
+
+    .dropdown
+      each locale in htmlWebpackPlugin.options.locales.filter(locale => locale.code !== htmlWebpackPlugin.options.locale.code)
+        a.language(
+          href="/" + locale.path + "faq/"
+          class={selected: htmlWebpackPlugin.options.locale.code === locale.code})
+          | #{locale.label}
+
+  a(href='/')
+    include ../../media/logo.svg
+  h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.header')
+
+section
+  .content
+    h1#general.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.general')
+
+    a(href='#what-is-1111' class='h3-link')
+      h3#what-is-1111!=htmlWebpackPlugin.options.t('faqpage.whatIsQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.whatIsA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatIsA2')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatIsA3')
+
+    a(href='#what-do-dns-resolvers-do' class='h3-link')
+      h3#what-do-dns-resolvers-do!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA2')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA3')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA4')
+    p!=htmlWebpackPlugin.options.t('faqpage.whatDoDNSA5')
+
+    a(href='#have-ipv6-support' class='h3-link')
+      h3#have-ipv6-support!=htmlWebpackPlugin.options.t('faqpage.ipv6Q')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.ipv6A')
+
+    a(href='#how-can-i-clear-dns-cache' class='h3-link')
+      h3#how-can-i-clear-dns-cache!=htmlWebpackPlugin.options.t('faqpage.clearCacheQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.clearCacheA')
+
+    a(href='#work-inside-china' class='h3-link')
+      h3#work-inside-china!=htmlWebpackPlugin.options.t('faqpage.insideChinaQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.insideChinaA')
+
+    a(href='#developer-docs' class='h3-link')
+      h3#developer-docs!=htmlWebpackPlugin.options.t('faqpage.devDocsQ')
+
+    p
+      a(href='https://developers.cloudflare.com/1.1.1.1/')
+        span!=htmlWebpackPlugin.options.t('faqpage.devDocsA')
+      span
+      | .
+
+    h1#mobile-app.collapsed-top-margin!=htmlWebpackPlugin.options.t('faqpage.mobileApp')
+
+    a(href='#how-does-the-mobile-app-work' class='h3-link')
+      h3#how-does-the-mobile-app-work!=htmlWebpackPlugin.options.t('faqpage.mobileAppWorkQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.mobileAppWorkA')
+
+    a(href='#is-1111-a-vpn' class='h3-link')
+      h3#is-1111-a-vpn!=htmlWebpackPlugin.options.t('faqpage.vpnQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.vpnA')
+
+    a(href='#what-are-dns-logs' class='h3-link')
+      h3#what-are-dns-logs!=htmlWebpackPlugin.options.t('faqpage.dnsLogsQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.dnsLogsA')
+
+    a(href='#what-are-console-logs-for' class='h3-link')
+      h3#what-are-console-logs-for!=htmlWebpackPlugin.options.t('faqpage.logsForQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.logsForA')
+
+    a(href='#how-can-i-suggest-improvement' class='h3-link')
+      h3#how-can-i-suggest-improvement!=htmlWebpackPlugin.options.t('faqpage.suggestQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.suggestA')
+
+    a(href='#difference-between-tls-and-dns' class='h3-link')
+      h3#difference-between-tls-and-dns!=htmlWebpackPlugin.options.t('faqpage.diffDnsTlsQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.diffDnsTlsA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.diffDnsTlsA2')
+
+    a(href='#send-bug-report' class='h3-link')
+      h3#send-bug-report!=htmlWebpackPlugin.options.t('faqpage.bugQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.bugA')
+
+    a(href='#internet-stopped-working' class='h3-link')
+      h3#internet-stopped-working!=htmlWebpackPlugin.options.t('faqpage.internetStoppedQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.internetStoppedA')
+
+    a(href='#stuck-connecting-reasserting' class='h3-link')
+      h3#stuck-connecting-reasserting!=htmlWebpackPlugin.options.t('faqpage.appStuckQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.appStuckA1')
+
+    ul
+      each item in htmlWebpackPlugin.options.t('faqpage.appStuckList')
+        +render(item)
+
+    p!=htmlWebpackPlugin.options.t('faqpage.appStuckA2')
+
+    a(href='#cannot-click-ok' class='h3-link')
+      h3#cannot-click-ok!=htmlWebpackPlugin.options.t('faqpage.cannotClickQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.cannotClickA')
+
+    a(href='#kept-app-enabled' class='h3-link')
+      h3#kept-app-enabled!=htmlWebpackPlugin.options.t('faqpage.appenabledQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.appenabledA1')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.appenabledA2')
+
+    ul
+      each item in htmlWebpackPlugin.options.t('faqpage.appenabledList')
+        +render(item)
+
+    a(href='#persistent-notification' class='h3-link')
+      h3#kept-app-enabled!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationA2')
+    p!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationA3')
+    p!=htmlWebpackPlugin.options.t('faqpage.persistentnotificationA4')
+
+    ol
+      each item in htmlWebpackPlugin.options.t('faqpage.persistentnotificationList')
+        +render(item)
+
+    a(href='#disabled-notification' class='h3-link')
+      h3#kept-app-enabled!=htmlWebpackPlugin.options.t('faqpage.disablednotificationQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.disablednotificationA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.disablednotificationA2')
+
+    ol
+      each item in htmlWebpackPlugin.options.t('faqpage.disablednotificationList')
+        +render(item)
+
+    a(href='#add-vpn-profile' class='h3-link')
+      h3#kept-app-enabled!=htmlWebpackPlugin.options.t('faqpage.vpnprofileQ')
+
+    p!=htmlWebpackPlugin.options.t('faqpage.vpnprofileA1')
+    p!=htmlWebpackPlugin.options.t('faqpage.vpnprofileA2')
+
+    ol
+      each item in htmlWebpackPlugin.options.t('faqpage.vpnprofileList')
+        +render(item)

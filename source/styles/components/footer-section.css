@@ -1,0 +1,148 @@
+.FooterSection--column {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 2em 36em;
+  width: 100%;
+}
+
+.FooterSection--content {
+  position: relative;
+  z-index: 2;
+  width: 40em;
+  max-width: 100%;
+  margin-bottom: 2em;
+}
+
+.FooterSection--icon {
+  margin-top: -8em;
+  height: 8em;
+  width: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+.FooterSection--content-section-copy-wrapper {
+  margin-bottom: 1em;
+}
+
+.FooterSection--actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.FooterSection--actions > a:not(:last-child) {
+  margin-right: 1em;
+}
+
+.FooterSection--backdrop-blob4 {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  top: -24em;
+  width: 144em;
+  left: -500em;
+  right: -504em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.FooterSection .share-buttons {
+  max-width: 10em;
+  margin: 2em auto;
+}
+
+section[data-section="footer"] {
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 2rem 0;
+}
+section[data-section="footer"] .content {
+  font-size: 0.95em;
+  text-align: center;
+}
+section[data-section="footer"] .content .footer-logo {
+  font-family: Helvetica;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+section[data-section="footer"] .content a {
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .FooterSection {
+    margin-top: -6em;
+  }
+
+  .FooterSection--icon {
+    margin-top: 0;
+  }
+
+  .FooterSection--p {
+    font-size: 12px;
+    letter-spacing: -0.15px;
+    text-decoration-line: underline;
+    line-height: 140%;
+
+  }
+
+  .FooterSection--column {
+    overflow: hidden;
+    padding-bottom: 90em;
+  }
+
+  .FooterSection--backdrop-blob4 {
+    top: 33em;
+    width: 75em;
+    left: -504em;
+    right: -500em;
+  }
+  .FooterSection--actions > a:not(:last-child) {
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 375px) {
+  .FooterSection--column {
+    overflow: hidden;
+    padding-bottom: 60em;
+  }
+
+  .FooterSection--actions > a:not(:last-child) {
+    margin-right: 0em;
+    margin-bottom: 1em;
+  } 
+
+  .FooterSection--backdrop-blob4 {
+    top: 33em;
+    width: 50em;
+    left: -501em;
+    right: -502em;
+  }
+}
+
+.FooterSection--content-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .FooterSection--content-desktop {
+    display: none;
+  }
+
+  .FooterSection--content-mobile {
+    display: block;
+  }
+  .FooterSection--actions{
+    display: block;
+  }
+}

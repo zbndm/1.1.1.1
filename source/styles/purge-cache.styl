@@ -1,0 +1,129 @@
+@import "mixins/media-query-variables"
+
+:root
+  --bg-background-color hsl(32, 100%, 100%)
+  --bg-content-color #FCFCFC
+  --header-color hsl(0, 0%, 20%)
+  --border-color darkgrey
+  --button-color #2c7cb0
+  --button-hover-color #276d9b
+
+body.purge-cache-page
+  background-color var(--bg-background-color)
+
+  section[data-section="purge-cache"]
+    display flex
+    justify-content center
+    align-items center
+    flex-flow column
+    font-family var(--sans-serif-fonts)
+    min-height calc(90vh)
+    padding var(--section-vertical-padding) 1em 1em
+
+    header
+      margin 0 auto
+      padding-bottom 0
+      text-align center
+
+      .logo > svg
+        height 10rem
+        fill var(--header-color)
+        margin-bottom 10px
+
+      .title
+        margin-top 10px
+        border-top 10px solid var(--header-color)
+        display inline-block
+        color var(--header-color)
+
+        @media desktopMinWidthQuery
+          padding 16px 3.5em 0
+
+        @media mobileMaxWidthQuery
+          padding 11px 3.5em 0
+
+    .description
+      font-size .9em
+      max-width 600px
+
+    .title-container
+      width 100%
+      max-width 600px
+      margin-top 10px
+
+    h3.title
+      font-weight 600
+      margin 0px 0 10px
+
+    .form-container
+      display flex
+      flex-flow column
+      align-items center
+      max-width 600px
+      width 100%
+      margin-top 10px
+      border 1px solid var(--border-color)
+      padding 15px
+      background-color var(--bg-content-color)
+      border-radius var(--border-radius)
+
+      form
+        width 100%
+        max-width 550px
+
+        .label
+          font-size 14px
+          font-weight 600
+          margin-bottom .4em
+
+          &.required::after
+            content: "*"
+            color darkred
+            font-size .7em
+            position relative
+            left 3px
+            bottom 3px
+
+        .input-field
+          width 100%
+          margin-bottom 12px
+          font-size 14px
+
+          &[type="text"]
+            padding 0 .4em
+            height 3.5rem
+
+          &[name="type"]
+            font-size 13px
+            height 2.5rem
+
+        #submit-button
+          cursor pointer
+          font-size 15px
+          margin-top .4em
+          padding 8px 16px
+          border-radius var(--border-radius)
+          color white
+          background var(--button-color)
+
+          &:hover
+            background var(--button-hover-color)
+
+      #info-message
+        border-radius var(--border-radius)
+        font-size 0.8em
+        margin-top 20px
+        padding 10px 10px
+        width 100%
+        max-width 550px
+
+        &.success
+          background-color var(--brand-accent-light-green)
+          color var(--brand-accent-dark-green)
+          border 1px solid var(--brand-accent-mid-green)
+          color 1px solid var(--brand-accent-dark-green)
+
+        &.error
+          background-color var(--brand-accent-light-red)
+          color var(--brand-accent-dark-red)
+          border 1px solid var(--brand-accent-mid-red)

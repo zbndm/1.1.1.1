@@ -1,0 +1,507 @@
+{
+  "title": "1.1.1.1 — Resolver DNS Internet Tercepat yang Mengutamakan Privasi",
+  "description": "✌️✌️ Jelajahi Internet lebih cepat, lebih privat.",
+  "hero.introducing": "Memperkenalkan",
+  "hero.description": "Satu langkah lagi, Anda dapat menjelajahi Internet yang lebih cepat, lebih privat.",
+  "hero.getStarted": "Instal",
+  "hero.info": "Info lebih lanjut",
+
+  "explanation.dnsHeader": "DNS: Direktori Internet",
+  "explanation.dnsExplanation": "Hampir segala hal di Internet dimulai dengan permintaan DNS. DNS adalah direktori Internet. Klik pada tautan, buka aplikasi, kirim email, dan hal pertama yang diminta perangkat Anda adalah direktori: <strong class=\"subtle\">Di mana saya bisa menemukannya?</strong>",
+  "explanation.dnsSlowInsecure": "Sayangnya, secara default, DNS biasanya lambat dan tidak aman. ISP Anda, dan orang lain yang sedang mengawasi di Internet, dapat melihat setiap situs yang Anda kunjungi dan setiap aplikasi yang Anda gunakan — meskipun kontennya dienkripsi. Mengerikannya, beberapa penyedia DNS menjual data tentang aktivitas Internet Anda atau menggunakannya untuk menjadikan Anda target iklan.",
+  "explanation.dnsAlternative": "Kami pikir hal itu sangat buruk. Jika Anda juga berpikir demikian, kini ada alternatif lain: <strong class=\"code\">1.1.1.1</strong>",
+
+  "explanation.privacyHeader": "Mengutamakan Privasi: Dijamin.",
+  "explanation.privacyExplanation": "Kami memikirkan kembali protokol DNS era 1983. <strong class=\"code\">1.1.1.1</strong> mendukung DNS terenkripsi serta DNS melalui HTTPS.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Kami tidak akan pernah menjual data Anda atau menggunakannya untuk menargetkan iklan.</span> Titik.",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">Kami tidak akan pernah mencatat alamat IP Anda</span> (seperti cara perusahaan lain mengidentifikasi Anda). Dan kami tak hanya bicara. Kami mempertahankan KPMG untuk mengaudit sistem kami setiap tahun guna memastikan bahwa kami melakukan apa yang kami katakan.",
+  "explanation.privacyConclusion": "Terus terang, kami tidak ingin tahu apa yang Anda lakukan di Internet—itu bukan urusan kami—dan kami telah mengambil langkah-langkah teknis untuk memastikan kami tidak bisa melakukannya.",
+
+  "explanation.performanceHeader": "Lebih cepat dari apa pun juga.",
+  "explanation.fastestDNS": "Kami telah membuat 1.1.1.1 menjadi direktori DNS Internet tercepat. Jangan telan bulat-bulat perkataan kami. Monitor DNS independen <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> memberi peringkat 1.1.1.1 sebagai layanan DNS tercepat di dunia.",
+  "explanation.speedContinued": "Karena hampir semua yang Anda lakukan di Internet dimulai dengan permintaan DNS, memilih direktori DNS tercepat di semua perangkat Anda akan mempercepat hampir semua yang Anda lakukan secara online.",
+
+  "instructions": {
+    "header": "Penyetelan pada {{perangkat}}",
+    "explanation": "Penyetelan pada <strong>1.1.1.1</strong> membutuhkan dua menit dan tidak memerlukan keahlian teknis atau perangkat lunak khusus. Meskipun Anda pemula di bidang komputer, pilih perangkat Anda di bawah ini untuk panduan penyetelan yang mudah diikuti.",
+    "debug": "Mencari info lebih lanjut tentang sambungan Internet Anda? Lihat <a target=\"_blank\" href=\"./help\">halaman debug</a> kami.",
+    "questions": "Masih ada pertanyaan? Kunjungi <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Forum Komunitas</a> kami",
+    "mac-os": {
+      "steps": [
+        { "tag": "li", "content": "Buka Preferensi Sistem." },
+        {
+          "tag": "li",
+          "content": "Cari <strong>Server DNS</strong> dan pilih dari menu tarik-turun."
+        },
+        {
+          "tag": "li",
+          "content": "Klik tombol <strong>+</strong> untuk menambahkan Server DNS dan masukkan <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "Klik <strong>+</strong> lagi dan masukkan <strong class=\"code\">1.0.0.1</strong> (Ini untuk redundansi.)"
+        },
+        {
+          "tag": "li",
+          "content": "Klik <strong>+</strong> lagi dan masukkan <strong class=\"code\">2606:4700:4700::1111</strong> (Ini untuk redundansi.)"
+        },
+        {
+          "tag": "li",
+          "content": "Klik <strong>+</strong> lagi dan masukkan <strong class=\"code\">2606:4700:4700::1001</strong> (Ini untuk redundansi.)"
+        },
+        {
+          "tag": "li",
+          "content": "Klik <strong>Oke</strong>, lalu klik <strong>Apply</strong> (Terapkan)."
+        },
+        {
+          "tag": "li",
+          "content": "Anda pun siap! Perangkat Anda kini memiliki server DNS yang lebih cepat, lebih privat ✌️✌️"
+        }
+      ]
+    },
+    "windows": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Klik di menu Start (Mulai), lalu klik <strong>Control Panel</strong> (Panel Kontrol)."
+        },
+        {
+          "tag": "li",
+          "content": "Klik <strong>Network and Internet</strong> (Jaringan dan Internet)."
+        },
+        {
+          "tag": "li",
+          "content": "Klik <strong>Change Adapter Settings</strong> (Ubah Pengaturan Adapter)."
+        },
+        {
+          "tag": "li",
+          "content": "Klik kanan pada jaringan Wi-Fi yang Anda sambungkan, lalu klik <strong>Properties</strong> (Properti)."
+        },
+        {
+          "tag": "li",
+          "content": "Pilih <strong>Internet Protocol Versi 4</strong> (atau Versi 6 jika diinginkan)."
+        },
+        {
+          "tag": "li",
+          "content": "Klik <strong>Properties</strong> (Properti)."
+        },
+        {
+          "tag": "li",
+          "content": "Tuliskan setiap entri server DNS yang ada sebagai referensi mendatang."
+        },
+        {
+          "tag": "li",
+          "content": "Klik <strong>Use The Following DNS Server Addresses</strong> (Gunakan Alamat Server DNS Berikut)."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "Ganti alamat tersebut dengan alamat DNS 1.1.1.1:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "Untuk IPv4: <strong class=\"code\">1.1.1.1</strong> dan <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "Untuk IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> dan <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "Klik <strong>Oke</strong>, lalu <strong>Close</strong> (Tutup)."
+        },
+        { "tag": "li", "content": "Mulai ulang browser Anda." },
+        {
+          "tag": "li",
+          "content": "Anda pun siap! Perangkat Anda kini memiliki server DNS yang lebih cepat, lebih privat ✌️✌️"
+        }
+      ]
+    },
+    "linux": {
+      "notice": "Meskipun langkah-langkah ini untuk Ubuntu, sebagian besar distribusi Linux mengonfigurasi pengaturan DNS melalui Network Manager (Pengelola Jaringan). Atau, pengaturan DNS Anda dapat disebutkan di <code class=\"inline\">/etc/resolv.conf</code>",
+      "steps": [
+        {
+          "content": "Klik ikon Aplikasi <i class=\"fas fa-th\"></i> di bilah menu kiri.",
+          "tag": "li"
+        },
+        {
+          "content": "Klik <strong>Settings</strong> (Pengaturan), lalu <strong>Network</strong> (Jaringan).",
+          "tag": "li"
+        },
+        {
+          "content": "Temukan sambungan Internet Anda di panel kanan, lalu klik ikon gerigi <i class=\"fas fa-cog\"></i>.",
+          "tag": "li"
+        },
+        {
+          "content": "Klik tab <strong>IPv4</strong> atau <strong>IPv6</strong> untuk melihat pengaturan DNS Anda.",
+          "tag": "li"
+        },
+        {
+          "content": "Atur toggle “Otomatis” pada entri DNS ke <strong>Off</strong> (Mati).",
+          "tag": "li"
+        },
+        {
+          "children": [
+            {
+              "tag": "span",
+              "content": "Berikan alamat DNS 1.1.1.1 di kolom entri DNS:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "Untuk IPv4: <strong class=\"code\">1.1.1.1</strong> dan <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "Untuk IPv6: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "Klik <strong>Apply</strong> (Terapkan) lalu mulai ulang browser Anda.",
+          "tag": "li"
+        },
+        {
+          "content": "Anda pun siap! Perangkat Anda kini memiliki server DNS yang lebih cepat, lebih privat ✌️✌️",
+          "tag": "li"
+        }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Dari layar beranda iPhone, buka aplikasi <strong>Settings</strong> (Pengaturan)."
+        },
+        {
+          "tag": "li",
+          "content": "Ketuk <strong>Wi-Fi</strong>, lalu ketuk jaringan yang Anda sukai di daftar tersebut."
+        },
+        {
+          "tag": "li",
+          "content": "Ketuk <strong>Configure DNS</strong> (Konfigurasikan DNS) lalu ketuk <strong>Manual</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Jika ada entri yang sudah ada, ketuk tombol <strong>-</strong>, dan <strong>Delete</strong> (Hapus) di sebelah masing-masing entri."
+        },
+        {
+          "tag": "li",
+          "content": "Ketuk tombol <strong>+ Add Server</strong> (Tambah Server), lalu ketik <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "Ketuk tombol <strong>+ Add Server</strong> (Tambah Server), lalu ketik <strong class=\"code\">1.0.0.1</strong>. Ini untuk redundansi."
+        },
+        {
+          "tag": "li",
+          "content": "Ketuk tombol <strong>+ Add Server</strong> (Tambah Server) lagi, lalu ketik<strong class=\"code\">2606:4700:4700::1111</strong>. Ini untuk redundansi."
+        },
+        {
+          "tag": "li",
+          "content": "Ketuk tombol <strong>+ Add Server</strong> (Tambah Server) lagi, lalu ketik <strong class=\"code\">2606:4700:4700::1001</strong>. Ini untuk redundansi."
+        },
+        {
+          "tag": "li",
+          "content": "Ketuk tombol <strong>Save</strong> (Simpan) di kanan atas."
+        },
+        {
+          "tag": "li",
+          "content": "Anda pun siap! Perangkat Anda kini memiliki server DNS yang lebih cepat, lebih privat ✌️✌️"
+        }
+      ]
+    },
+    "android": {
+      "message": "Perhatikan bahwa Android mensyaratkan IP statis untuk menggunakan server DNS kustom. Setelan ini memerlukan pengaturan tambahan di router Anda, yang memengaruhi strategi jaringan Anda untuk menambahkan perangkat baru ke jaringan. Kami menyarankan Anda untuk mengonfigurasi <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">DNS router</button> Anda. Dengan begitu, semua perangkat di jaringan Anda akan berada dalam kecepatan penuh dan mendapatkan manfaat privasi DNS 1.1.1.1.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Dari daftar aplikasi Android, buka aplikasi <strong>Settings</strong> (Pengaturan)."
+        },
+        {
+          "tag": "li",
+          "content": "Di bawah bagian <strong>Wireless &amp; networks</strong> (Nirkabel &amp; Jaringan), ketuk <strong>Wi-Fi</strong>,"
+        },
+        {
+          "tag": "li",
+          "content": "Tekan lama jaringan pilihan Anda dalam daftar sampai menu konteks muncul."
+        },
+        {
+          "tag": "li",
+          "content": "Ketuk <strong>Modify network</strong> (Modifikasi jaringan), lalu ketuk <strong>Advanced options</strong> (Opsi lanjutan)."
+        },
+        {
+          "tag": "li",
+          "content": "Ketuk <strong>Advanced options</strong> (Opsi lanjutan), lalu ketuk <strong>IP Settings</strong> (Pengaturan IP)."
+        },
+        {
+          "tag": "li",
+          "content": "Ubah <strong>Dinamic</strong> (Dinamis)ke <strong>Static</strong> (Statis)."
+        },
+        {
+          "tag": "li",
+          "content": "Menggunakan konfigurasi router Anda, masukkan alamat IP dan gateaway perangkat Anda."
+        },
+        {
+          "tag": "li",
+          "content": "Ketuk kolom <strong>DNS</strong>, lalu hapus nomor di kolom."
+        },
+        {
+          "tag": "li",
+          "content": "Di kolom <strong>DNS 1</strong>, masukkan <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "Di kolom <strong>DNS 2</strong>, masukkan <strong class=\"code\">1.0.0.1</strong> (Ini untuk redundansi.)"
+        },
+        { "tag": "li", "content": "Ketuk <strong>Save</strong> (Simpan)." },
+        {
+          "tag": "li",
+          "content": "Anda pun siap! Perangkat Anda kini memiliki server DNS yang lebih cepat, lebih privat ✌️✌️"
+        }
+      ]
+    },
+    "router": {
+      "message": "Konfigurasi router Anda mungkin bervariasi. Baca buku panduan Anda untuk informasi lebih lanjut.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Sambungkan ke jaringan nirkabel pilihan Anda."
+        },
+        {
+          "tag": "li",
+          "content": "Masukkan alamat IP gateaway router Anda di browser."
+        },
+        {
+          "tag": "li",
+          "content": "Jika diminta, isi nama pengguna dan kata sandi Anda. Informasi ini dapat diberi label di router."
+        },
+        {
+          "tag": "li",
+          "content": "Di halaman konfigurasi router, cari pengaturan <strong>server DNS</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Tuliskan setiap entri server DNS yang ada sebagai referensi mendatang."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "Ganti alamat tersebut dengan alamat DNS 1.1.1.1:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "Untuk IPv4: <strong class=\"code\">1.1.1.1</strong> dan <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "Untuk IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> dan <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "Simpan pengaturan Anda, lalu mulai ulang browser."
+        },
+        {
+          "tag": "li",
+          "content": "Anda pun siap! Perangkat Anda kini memiliki server DNS yang lebih cepat, lebih privat ✌️✌️"
+        }
+      ]
+    },
+    "downloadmobile": "Unduh aplikasi seluler"
+  },
+
+  "share.header": "✌️✌️ Bagikan Internet yang lebih cepat dan mengutamakan privasi kepada teman-teman Anda.",
+  "share.emailSubject": "✌️✌️ Jelajahi Internet lebih cepat, lebih privat — Resolver DNS 1.1.1.1",
+  "share.emailBody": "“1.1.1.1” menjadikan penjelajahan Internet lebih cepat dan lebih privat. Lihat https://1.1.1.1 untuk info lebih lanjut dan cara menyetel perangkat Anda dalam waktu kurang dari dua menit!",
+  "share.tweetBody": "✌️✌️ Internet cepat, aman, dan privat hadir di sini. Setel Resolver DNS 1.1.1.1 dalam waktu kurang dari dua menit.",
+
+  "faq.whosBehindThis": "Siapa di balik ini?",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> adalah hasil kemitraan antara Cloudflare dan APNIC.",
+  "faq.network": "Cloudflare menjalankan salah satu jaringan terbesar dan tercepat di dunia. APNIC adalah organisasi nirlaba yang mengelola alokasi alamat IP untuk wilayah Asia Pasifik dan Oseania.",
+  "faq.networkContinued": "Cloudflare memiliki jaringannya. APNIC memiliki alamat IP-nya (1.1.1.1). Kami berdua termotivasi oleh misi untuk membantu membangun Internet yang lebih baik. Anda dapat membaca lebih lanjut tentang setiap motivasi organisasi pada postingan kami masing-masing: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Blog Cloudflare</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">Blog APNIC</a>. Untuk informasi selengkapnya, lihat: <a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">Apa itu 1.1.1.1?</a>",
+  "faq.canIintegrate": "Dapatkah saya terintegrasi dengan 1.1.1.1?",
+  "faq.integrationInfo": "Jika Anda adalah produsen browser, sistem operasi, aplikasi, router, atau VPN yang ingin membangun layanan DNS modern, cepat, dan modern, jawabannya <strong class=\"subtle\">ya!</strong>",
+  "faq.integrationDocs": "Dengan menggunakan DNS pada HTTPS (DoH), Anda dapat secara transparan menawarkan keamanan yang ditingkatkan kepada pelanggan Anda sekaligus meningkatkan kecepatan perangkat Anda. Yang lebih baik lagi, Anda dapat melakukannya tanpa biaya, baik dalam hal perizinan dan <a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">privasi</a> pelanggan. Pelajari lebih lanjut tentang 1.1.1.1 dan dukungan DNS kami pada HTTPS (DOH) di <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Dok Pengembang</a> kami.",
+
+  "faqpage.header": "Pertanyaan yang Sering Diajukan",
+  "faqpage.general": "Umum",
+  "faqpage.whatIsQ": "Apa itu 1.1.1.1?",
+  "faqpage.whatIsA1": "Saat Anda meminta untuk mengunjungi aplikasi seperti cloudflare.com, komputer Anda perlu mengetahui server mana yang menyambungkan Anda agar dapat memuat aplikasi. Komputer tidak tahu cara menerjemahkan nama untuk mendapatkan alamat, jadi komputer meminta server khusus untuk melakukannya.",
+  "faqpage.whatIsA2": "Server khusus ini disebut resolver rekursif DNS. Tugas resolver adalah menemukan alamat untuk nama tertentu, seperti 2400:cb00:2048:1::c629:d7a2 untuk cloudflare.com, dan mengembalikannya ke komputer yang memintanya.",
+  "faqpage.whatIsA3": "Komputer dikonfigurasikan untuk berbicara dengan resolver DNS khusus, yang diidentifikasi oleh alamat IP. Biasanya, konfigurasi dikelola oleh ISP Anda (seperti Comcast atau AT&amp;T) jika Anda berada di Internet rumah atau nirkabel, dan oleh administrator jaringan Anda jika tersambung ke Internet kantor. Anda juga dapat mengubah resolver DNS yang dikonfigurasi komputer untuk berbicara kepada Anda sendiri.",
+  "faqpage.whatDoDNSQ": "Apa yang dilakukan resolver DNS?",
+  "faqpage.whatDoDNSA1": "Bagaimana resolver mengetahui cara menemukan alamat nama domain? Resolver bekerja mundur dari atas.",
+  "faqpage.whatDoDNSA2": "Setiap resolver mengetahui cara menemukan ‘.’ yang tidak tampak pada akhir nama domain (mis. cloudfire.com). Ada <a href='http://www.root-servers.org/' target='_blank'>ratusan server</a> di seluruh dunia yang menghosting file ‘.’. Cloudflare sendiri menghosting <a href='https://www.internic.net/domain/root.zone' target='_blank'>file tersebut</a> pada semua servernya sendiri di seluruh dunia melalui <a href='https://blog.cloudflare.com/f-root/' target='_blank'>kemitraan dengan ISC</a>. Resolver <a href='https://www.internic.net/domain/named.root' target='_blank'>di-kode keras untuk mengetahui alamat IP server tersebut</a>.",
+  "faqpage.whatDoDNSA3": "Resolver meminta salah satu server root tempat menemukan tautan berikutnya di rantai, TLD atau akhiran domain. Contoh TLD adalah .com atau .org. Untungnya server root menyimpan lokasi dari semua server TLD, sehingga server dapat mengembalikan alamat IP mana yang selanjutnya harus ditanya oleh resolver DNS.",
+  "faqpage.whatDoDNSA4": "Resolver kemudian menanyakan server TLD tempat ia dapat menemukan domain yang dicari, misalnya, resolver mungkin bertanya ke .com di mana menemukan cloudflare.com. TLD menghosting file yang berisi lokasi setiap domain yang menggunakan TLD. Setelah resolver memiliki alamat IP final, resolver mengembalikan jawaban ke komputer yang menanyakannya.",
+  "faqpage.whatDoDNSA5": "Seluruh sistem ini - dengan server yang menghosting informasi (disebut DNS otoritatif) dan server yang mencari informasi (resolver DNS) disebut Sistem Nama Domain (Domain Name System/DNS). DNS itu seperti Google Maps untuk Internet. DNS menerjemahkan nama tempat menjadi alamat sehingga Anda dapat mengetahui jalan menuju ke sana.",
+  "faqpage.ipv6Q": "Apakah 1.1.1.1 memiliki dukungan IPv6?",
+  "faqpage.ipv6A": "Ya, 1.1.1.1 memiliki dukungan IPv6 penuh.",
+  "faqpage.clearCacheQ": "Bagaimana cara saya menghapus cache DNS 1.1.1.1?",
+  "faqpage.clearCacheA": "Anda dapat menyegarkan cache DNS 1.1.1.1 untuk nama domain dengan menggunakan <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>alat pembersih cache</a>. Anda harus memasukkan nama domain, pilih tipe (atau tipe-tipe) rekaman DNS dan tekan tombol ‘Bersihkan Cache’.",
+  "faqpage.insideChinaQ": "Apakah 1.1.1.1 dapat digunakan di dalam Tiongkok?",
+  "faqpage.insideChinaA": "Tidak juga. Anda dapat mengonfigurasi DNS Anda untuk mengarah ke 1.1.1.1 tetapi tidak akan mencapai salah satu pusat data kami di dalam Tiongkok. Sebaliknya, permintaan akan mengarahkan ke salah satu pusat data kami di luar Daratan Tiongkok.",
+  "faqpage.devDocsQ": "Di mana saya dapat menemukan dok pengembang 1.1.1.1?",
+  "faqpage.devDocsA": "Di sini",
+  "faqpage.mobileApp": "Aplikasi Seluler",
+  "faqpage.mobileAppWorkQ": "Bagaimana cara kerja aplikasi seluler?",
+  "faqpage.mobileAppWorkA": "Aplikasi ini menjalankan resolver lokal di dalam ponsel Anda yang meminta semua aplikasi lain untuk mengirim permintaan DNS-nya ke alamat resolver ini. Setelah permintaan DNS ini mencapai resolver lokal, DNS mengenkripsi dan mengirimnya ke 1.1.1.1.",
+  "faqpage.vpnQ": "Apakah aplikasi 1.1.1.1 adalah VPN?",
+  "faqpage.vpnA": "Bukan. Aplikasi VPN biasanya memberi proksi semua lalu-lintas jaringan Anda. Aplikasi 1.1.1.1 hanya menimpa dan mengamankan lalu-lintas DNS ponsel Anda.",
+  "faqpage.dnsLogsQ": "Apa itu log DNS?",
+  "faqpage.dnsLogsA": "Log DNS pada iOS berisi semua kueri DNS yang dibuat ponsel Anda. Aplikasi dan browser ponsel Anda biasanya menghasilkan kueri DNS ini.",
+  "faqpage.logsForQ": "Apa fungsi log konsol?",
+  "faqpage.logsForA": "Log konsol ada untuk membantu Cloudfire melakukan debug pada sambungan Anda.",
+  "faqpage.suggestQ": "Bagaimana cara saya menyarankan peningkatan?",
+  "faqpage.suggestA": "Kami membaca semua saran Anda. Anda dapat menggoyangkan ponsel saat dalam aplikasi dan mengirim saran peningkatan Anda. Atau, Anda dapat masuk ke menu aplikasi dan ketuk ‘Bantuan’ untuk mengirimkan masukan.",
+  "faqpage.diffDnsTlsQ": "Apa perbedaan antara menggunakan DNS melalui TLS dan DNS melalui HTTPS?",
+  "faqpage.diffDnsTlsA1": "Baik DNS melalui TLS dan DNS melalui HTTPS mengenkripsi kueri DNS biasa dari ponsel.",
+  "faqpage.diffDnsTlsA2": "DNS melalui HTTPS menggunakan port 443 dan DNS melalui TLS menggunakan port 853. Di beberapa jaringan, salah satu port ini mungkin diblokir. Jika port 443 diblokir, Anda harus menggunakan DNS melalui TLS. Jika port 853 diblokir, Anda harus menggunakan DNS melalui HTTPS. Dalam beberapa kasus, DNS melalui TLS mungkin lebih cepat dibandingkan DNS melalui HTTPS atau sebaliknya.",
+  "faqpage.bugQ": "Bagaimana saya dapat mengirimkan laporan bug?",
+  "faqpage.bugA": "Anda dapat menggoyangkan aplikasi dan mengirimkan laporan bug. Saat Anda melakukannya, aplikasi melampirkan tangkapan layar dan log konsol bersama dengan laporan bug. Log konsol membantu kami melakukan debug pada sambungan Anda dan meningkatkan keseluruhan pengalaman aplikasi Anda.",
+  "faqpage.internetStoppedQ": "Internet saya berhenti bekerja saat saya sedang menggunakan aplikasi 1.1.1.1. Apa yang harus saya lakukan?",
+  "faqpage.internetStoppedA": "Jika ini terjadi, coba matikan aplikasi dan nyalakan kembali dengan menggunakan toggle dari halaman beranda aplikasi. Jika masalah tetap ada, nonaktifkan aplikasi dan kirimkan laporan bug kepada kami.",
+  "faqpage.appStuckQ": "Aplikasi 1.1.1.1 tersangkut di ‘CONNECTING (MENYAMBUNGKAN) atau ‘REASSERTING’ (MENEKANKAN KEMBALI). Apa yang harus saya lakukan?",
+  "faqpage.appStuckA1": "Ini dapat terjadi jika sambungan jaringan Anda terganggu sementara atau jika koneksi data Anda memblokir sambungan 1.1.1.1:",
+  "faqpage.appStuckList": [
+    {
+      "tag": "li",
+      "content": "Nonaktifkan aplikasi menggunakan toggle pada halaman beranda aplikasi."
+    },
+    {
+      "tag": "li",
+      "content": "Buka aplikasi Pengaturan iOS dan navigasikan ke Pengaturan > Umum > Pengaturan Ulang."
+    },
+    {
+      "tag": "li",
+      "content": "Ketuk Atur Ulang Pengaturan Jaringan."
+    },
+    {
+      "tag": "li",
+      "content": "Reboot perangkat Anda; pastikan Wifi Anda tersambung."
+    },
+    {
+      "tag": "li",
+      "content": "Coba sambungkan aplikasi lagi."
+    }
+  ],
+  "faqpage.appStuckA2": "Jika upaya ini tidak membuat sambungan berhasil, nonaktifkan aplikasi 1.1.1.1 dan kirim laporan bug kepada kami.",
+  "faqpage.cannotClickQ": "Saya tidak dapat mengeklik Oke pada dialog instalasi VPN. Apa yang harus saya lakukan?",
+  "faqpage.cannotClickA": "Jika Anda tidak dapat mengeklik tombol Oke, mungkin ada aplikasi lain di atas dialog. Beberapa aplikasi yang biasanya menyebabkan hal ini adalah Lux Brightness, Night Mode, Twilight, FileManager, dll. Untuk menghindari masalah ini, tutup atau hapus instalasi semua aplikasi yang mungkin menyebabkan hal ini.",
+  "faqpage.appenabledQ": "Aplikasi tetap saya aktifkan tetapi saya melihatnya mati setelah beberapa saat. Apa yang terjadi?",
+  "faqpage.appenabledA1": "Ponsel Anda sedang berusaha mengelola baterai dengan menonaktifkan aplikasi. Misalnya, sebagian besar perangkat Huawei dikenal memiliki pengelolaan daya dan memori yang agresif.",
+  "faqpage.appenabledA2": "Anda dapat memperbaikinya dengan langkah-langkah di bawah ini:",
+  "faqpage.appenabledList": [
+    {
+      "tag": "li",
+      "content": "Masuk ke ‘Pengaturan’ di ponsel Anda."
+    },
+    {
+      "tag": "li",
+      "content": "Pilih ‘Lanjutan’."
+    },
+    {
+      "tag": "li",
+      "content": "Kunjungi ‘Pengelola Baterai’."
+    },
+    {
+      "tag": "li",
+      "content": "Buka ‘Aplikasi Dilindungi’."
+    },
+    {
+      "tag": "li",
+      "content": "Anda dapat memilih “Izinkan aplikasi tetap berjalan setelah layar dimatikan” untuk aplikasi 1.1.1.1."
+    }
+  ],
+  "faqpage.persistentnotificationQ": "Mengapa ada notifikasi membandel untuk aplikasi 1.1.1.1?",
+  "faqpage.persistentnotificationA1": "Jika menggunakan Android 8 atau versi di atasnya, Anda akan melihat notifikasi membandel dari aplikasi 1.1.1.1 yang berbunyi “Kueri DNS Anda privat dan lebih cepat”.",
+  "faqpage.persistentnotificationA2": "Ini disyaratkan oleh Android OS (8.0+) untuk semua aplikasi dengan aktivitas latar belakang.",
+  "faqpage.persistentnotificationA3": "Kami mengatur prioritas notifikasi menjadi “Rendah” agar tidak mengganggu notifikasi penting lainnya di ponsel Anda.",
+  "faqpage.persistentnotificationA4": "Berikut ini satu hal yang dapat Anda lakukan untuk menyembunyikan notifikasi. Harap perhatikan bahwa ini akan membuat Anda tidak lagi menerima notifikasi lainnya dari aplikasi 1.1.1.1. Meskipun begitu, ini dia:",
+  "faqpage.persistentnotificationList": [
+    {
+      "tag": "li",
+      "content": "Buka Pengaturan."
+    },
+    {
+      "tag": "li",
+      "content": "Aplikasi &amp; Notifikasi."
+    },
+    {
+      "tag": "li",
+      "content": "Buka pengaturan aplikasi 1.1.1.1 dari daftar aplikasi."
+    },
+    {
+      "tag": "li",
+      "content": "Ketuk “Notifikasi” dan nonaktifkan."
+    }
+  ],
+  "faqpage.disablednotificationQ": "Saya menonaktifkan notifikasi untuk aplikasi 1.1.1.1 tetapi saya sekarang melihat notifikasi lain yang berbunyi “1.1.1.1 sedang menggunakan baterai”. Ada masalah dengan ini? Bagaimana cara menghapusnya?",
+  "faqpage.disablednotificationA1": "Anda tidak perlu khawatir. Karena Anda menonaktifkan notifikasi untuk aplikasi tersebut, OS Android sekarang mengirim notifikasi lain yang memperingatkan Anda tentang penggunaan baterai bukan karena aplikasi mengonsumsi banyak baterai tetapi karena aplikasi berjalan di latar belakang (dalam kasus ini, mengamankan semua kueri DNS Anda!).",
+  "faqpage.disablednotificationA2": "Berikut ini cara Anda dapat menghapusnya:",
+  "faqpage.disablednotificationList": [
+    {
+      "tag": "li",
+      "content": "Tekan lama notifikasi hingga berubah dan menampilkan toggle."
+    },
+    {
+      "tag": "li",
+      "content": "Ketuk toggle, pastikan warnanya abu-abu."
+    },
+    {
+      "tag": "li",
+      "content": "Pilih “Selesai” untuk menonaktifkan notifikasi."
+    }
+  ],
+  "faqpage.vpnprofileQ": "Saya tidak dapat menambahkan profil VPN. Bagaimana cara memperbaikinya?",
+  "faqpage.vpnprofileA1": "Anda mungkin menggunakan VPN lain yang mengaktifkan pengaturan “Selalu Aktif”. Harap nonaktifkan pengaturan tersebut dan aktifkan 1.1.1.1.",
+  "faqpage.vpnprofileA2": "Anda dapat mengunjungi halaman tersebut dengan menggunakan langkah berikut:",
+  "faqpage.vpnprofileList": [
+    {
+      "tag": "li",
+      "content": "Pengaturan"
+    },
+    {
+      "tag": "li",
+      "content": "Jaringan dan Internet"
+    },
+    {
+      "tag": "li",
+      "content": "Lanjutan"
+    },
+    {
+      "tag": "li",
+      "content": "VPN"
+    },
+    {
+      "tag": "li",
+      "content": "Tombol gerigi untuk 1.1.1.1.1"
+    },
+    {
+      "tag": "li",
+      "content": "Aktifkan “Selalu Aktif” untuk 1.1.1.1"
+    }
+  ]
+}

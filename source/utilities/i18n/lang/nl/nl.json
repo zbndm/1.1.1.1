@@ -1,0 +1,504 @@
+{
+  "title": "1.1.1.1 — de snelste DNS-resolver van het internet die privacy vooropstelt",
+  "description": "✌️✌️ Browse op een sneller en meer privé internet.",
+  "hero.introducing": "Introductie",
+  "hero.description": "Over enkele minuten browset u een sneller en meer privé internet.",
+  "hero.getStarted": "Installeren",
+  "hero.info": "Meer informatie",
+
+  "explanation.dnsHeader": "DNS: Het telefoonboek van het internet",
+  "explanation.dnsExplanation": "Bijna alles op het internet begint met een DNS-aanvraag. DNS is het telefoonboek van het internet. Klik op een link, open een app, stuur een e-mail en het eerste dat uw toestel aan dit telefoonboek vraagt, is: <strong class=\"subtle\">Waar kan ik dit vinden?</strong>",
+  "explanation.dnsSlowInsecure": "Helaas is DNS vaak langzaam en onveilig. Uw ISP, en iedereen die meeluistert op het internet, kan iedere site die u bezoekt en iedere app die uj gebruikt, zien - zelfs wanneer de inhoud ervan versleuteld is. Sommige DNS-aanbieders verkopen gegevens over uw internetactiviteit, of gebruiken die voor advertentiedoeleinden.",
+  "explanation.dnsAlternative": "Wij vinden dat maar onguur. Als u er ook zo over denkt, is er nu een alternatief: <strong class=\"code\">1.1.1.1</strong>",
+
+  "explanation.privacyHeader": "Privacy vóór alles: Gegarandeerd.",
+  "explanation.privacyExplanation": "We herzien het DNS-protocol uit 1983. <strong class=\"code\">1.1.1.1</strong> ondersteunt zowel versleutelde DNS en DNS via HTTPS.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">We zullen uw gegevens nooit verkopen of ze voor advertenties gebruiken.</span> Punt.",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">We zullen uw IP-adres nooit loggen</span> (zo identificeren andere bedrijven u). En dat zeggen we niet zomaar. We hebben KPMG de opdracht gegeven om onze systemen jaarlijks te controleren om te bewijzen dat we ook doen wat we zeggen.",
+  "explanation.privacyConclusion": "We willen helemaal niet weten wat u op het internet doet  — dat gaat ons niets aan — en we hebben de technische stappen genomen om dat te garanderen.",
+
+  "explanation.performanceHeader": "Sneller dan wat dan ook",
+  "explanation.fastestDNS": "We hebben 1.1.1.1 gebouwd om de snelste DNS-directory van het internet te zijn. Geloof ons niet zomaar. De onafhankelijke DNS-monitor <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> zegt dat 1.1.1.1 de snelste DNS-service ter wereld is.",
+  "explanation.speedContinued": "Omdat bijna alles wat u op het internet doet met een DNS-aanvraag begint, zal het kiezen van de snelste DNS-directory op al uw apparaten, bijna alles wat u online doet versnellen.",
+
+  "instructions": {
+    "header": "Instellen op {{device}}",
+    "explanation": "<strong>1.1.1.1</strong> instellen duurt twee minuten en vereist geen technische vaardigheden of speciale software. Zelfs als u een beginnende computergebruiker bent, kunt u hieronder uw apparaat kiezen voor stap-voor-stap aanwijzingen.",
+    "debug": "Op zoek naar meer info over uw internetverbinding? Kijk eens op onze <a target=\"_blank\" href=\"./help\">debug-pagina</a>.",
+    "questions": "Nog vragen? Bezoek ons <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
+    "mac-os": {
+      "steps": [
+        { "tag": "li", "content": "Open Systeemvoorkeuren." },
+        {
+          "tag": "li",
+          "content": "Zoek naar <strong>DNS Servers</strong> en selecteer ze uit de dropdownlijst."
+        },
+        {
+          "tag": "li",
+          "content": "Klik op de <strong>+</strong> knop om een DNS-server toe te voegen en voer <strong class=\"code\">1.1.1.1</strong> in."
+        },
+        {
+          "tag": "li",
+          "content": "Klik nog eens op <strong>+</strong> en voer <strong class=\"code\">1.0.0.1</strong> in (Dit is voor redundantie.)"
+        },
+        {
+          "tag": "li",
+          "content": "Klik weer op <strong>+</strong> en voer <strong class=\"code\">2606:4700:4700::1111</strong> in (Dit is voor redundantie.)"
+        },
+        {
+          "tag": "li",
+          "content": "Klik weer op <strong>+</strong> en voer <strong class=\"code\">2606:4700:4700::1001</strong> in (Dit is voor redundantie.)"
+        },
+        {
+          "tag": "li",
+          "content": "Klik op <strong>Ok</strong>, en klik dan op <strong>Toepassen</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Dat is alles! Uw apparaat gebruikt nu snellere, meer privé DNS-servers ✌️✌️"
+        }
+      ]
+    },
+    "windows": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Klik op het startmenu, en klik dan op <strong>Controlepaneel</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Klik op <strong>Netwerk en internet</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Klik op <strong>Adapterinstellingen wijzigen</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Rechtsklik op het wifi-netwerk waarmee u bent verbonden en klik op <strong>Eigenschappen</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Selecteer <strong>Internet Protocol Versie 4</strong> (of Version 6 indien gewenst)."
+        },
+        { "tag": "li", "content": "Klik op <strong>Eigenschappen</strong>." },
+        {
+          "tag": "li",
+          "content": "Schrijf bestaande DNS-servergegevens op voor toekomstig gebruik."
+        },
+        {
+          "tag": "li",
+          "content": "Klik op <strong>Gebruik de volgende DNS-serveradressen</strong>."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "Vervang deze adressen met de 1.1.1.1 DNS-adressen:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "Voor IPv4: <strong class=\"code\">1.1.1.1</strong> en <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "Voor IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> en <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "Klik op <strong>Ok</strong>, en dan op <strong>Sluiten</strong>."
+        },
+        { "tag": "li", "content": "Herstart uw browser." },
+        {
+          "tag": "li",
+          "content": "Dat is alles! Uw apparaat gebruikt nu snellere, meer privé DNS-servers ✌️✌️"
+        }
+      ]
+    },
+    "linux": {
+      "notice": "Deze stappen zijn voor Ubuntu. De meeste Linux-distributies configureren de DNS-instellingen via de Netwerk Manager. De DNS-instellingen kunnen ook worden veranderd in <code class=\"inline\">/etc/resolv.conf</code>",
+      "steps": [
+        {
+          "content": "Klik op het pictogram Toepassingen<i class=\"fas fa-th\"></i> op de linker menubalk.",
+          "tag": "li"
+        },
+        {
+          "content": "Klik op <strong>Instellingen</strong>, dan op <strong>Netwerk</strong>.",
+          "tag": "li"
+        },
+        {
+          "content": "Zoek uw internetverbinding in het rechter paneel, en klik op het tandwiel <i class=\"fas fa-cog\"></i> pictogram.",
+          "tag": "li"
+        },
+        {
+          "content": "Klik op het tabblad <strong>IPv4</strong> of <strong>IPv6</strong> om uw DNS-instellingen weer te geven.",
+          "tag": "li"
+        },
+        {
+          "content": "Zet de “Automatisch”-knop bij de DNS-gegevens op <strong>Off</strong>.",
+          "tag": "li"
+        },
+        {
+          "children": [
+            {
+              "tag": "span",
+              "content": "Voer de 1.1.1.1 DNS-adressen in het DNS-veld in:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "Voor IPv4: <strong class=\"code\">1.1.1.1</strong> en <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "Voor IPv6: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "Klik op <strong>Toepassen</strong>, en herstart uw browser.",
+          "tag": "li"
+        },
+        {
+          "content": "Dat is alles! Uw apparaat gebruikt nu snellere, meer privé DNS-servers ✌️✌️",
+          "tag": "li"
+        }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Open, op het beginscherm van uw iPhone, de app <strong>Instellingen</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Tik op <strong>Wi-Fi</strong>, en vervolgens op uw voorkeursnetwerk in de lijst."
+        },
+        {
+          "tag": "li",
+          "content": "Tik op <strong>DNS configureren</strong>, en tik dan op <strong>Handmatig</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Wanneer er bestaande invoer is, tik dan ernaast op de <strong>-</strong> knop, en dan op <strong>Verwijderen</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Tik op de knop <strong>+ Server toevoegen</strong> en typ <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "Tik opnieuw op de knop <strong>+ Server toevoegen</strong> en typ dan <strong class=\"code\">1.0.0.1</strong>. Dit is voor redundantie."
+        },
+        {
+          "tag": "li",
+          "content": "Tik opnieuw op de knop <strong>+ Server toevoegen</strong> en typ dan <strong class=\"code\">2606:4700:4700::1111</strong>. Dit is voor redundantie."
+        },
+        {
+          "tag": "li",
+          "content": "Tik opnieuw op de knop <strong>+ Server toevoegen</strong> en typ dan <strong class=\"code\">2606:4700:4700::1001</strong>. Dit is voor redundantie."
+        },
+        {
+          "tag": "li",
+          "content": "Tik op de knop <strong>Opslaan</strong> rechtsboven."
+        },
+        {
+          "tag": "li",
+          "content": "Dat is alles! Uw apparaat gebruikt nu snellere, meer privé DNS-servers ✌️✌️"
+        }
+      ]
+    },
+    "android": {
+      "message": "Houd er rekening mee dat Android een statisch IP-adres vereist om aangepaste DNS-servers te gebruiken. Dit instellen vereist aanvullende instellingen van uw router, die uw netwerkstrategie beïnvloedt voor het toevoegen van nieuwe apparaten. We raden u aan om in plaats daarvan de <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">DNS van uw router</button> te configureren. Dit geeft alle apparaten op uw netwerk de volledige snelheid en privacyvoordelen van 1.1.1.1 DNS.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Open de app <strong>Instellingen</strong> van uw Android app-lijst."
+        },
+        {
+          "tag": "li",
+          "content": "Tik onder de sectie <strong>Wireless &amp; netwerken</strong> op <strong>Wi-Fi</strong>,"
+        },
+        {
+          "tag": "li",
+          "content": "Druk lang op uw voorkeursnetwerk in de lijst tot een contextmenu verschijnt."
+        },
+        {
+          "tag": "li",
+          "content": "Tik op <strong>Netwerk wijzigen</strong>, vervolgens op <strong>Geavanceerde opties</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Tik op <strong>Geavanceerde opties</strong>, vervolgens op <strong>IP-instellingen</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Wijzig <strong>Dynamisch</strong> in <strong>Statisch</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Voer onder routerconfiguratie het IP-adres en gateway in van uw apparaat."
+        },
+        {
+          "tag": "li",
+          "content": "Tik op het veld <strong>DNS</strong> en wis het getal in het veld."
+        },
+        {
+          "tag": "li",
+          "content": "In het veld <strong>DNS 1</strong> voert u <strong class=\"code\">1.1.1.1</strong> in"
+        },
+        {
+          "tag": "li",
+          "content": "In het veld <strong>DNS 2</strong> voert u <strong class=\"code\">1.0.0.1</strong> in (Dit is voor redundantie.)"
+        },
+        { "tag": "li", "content": "Tik <strong>Opslaan</strong>." },
+        {
+          "tag": "li",
+          "content": "Dat is alles! Uw apparaat gebruikt nu snellere, meer privé DNS-servers ✌️✌️"
+        }
+      ]
+    },
+    "router": {
+      "message": "De configuratie van uw router kan afwijken. Lees de handleiding voor meer informatie.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Maak een verbinding met uw voorkeursnetwerk."
+        },
+        {
+          "tag": "li",
+          "content": "Voer het gateway IP-adres van uw router in uw browser in."
+        },
+        {
+          "tag": "li",
+          "content": "Vul uw gebruikersnaam en wachtwoord in wanneer erom wordt gevraagd. Deze informatie kan op de router staan."
+        },
+        {
+          "tag": "li",
+          "content": "Zoek de <strong>DNS server</strong>-instellingen op uw routerconfiguratiepagina."
+        },
+        {
+          "tag": "li",
+          "content": "Schrijf bestaande DNS-servergegevens op voor toekomstig gebruik."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "Vervang deze adressen met de 1.1.1.1 DNS-adressen:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "Voor IPv4: <strong class=\"code\">1.1.1.1</strong> en <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "Voor IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> en <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "Sla uw instellingen op en herstart uw browser."
+        },
+        {
+          "tag": "li",
+          "content": "Dat is alles! Uw apparaat gebruikt nu snellere, meer privé DNS-servers ✌️✌️"
+        }
+      ]
+    },
+    "downloadmobile": "Download de mobiele app"
+  },
+
+  "share.header": "✌️✌️ Deel een sneller, veiliger internet met uw vrienden.",
+  "share.emailSubject": "✌️✌️ Browse op een sneller en meer privé internet — 1.1.1.1 DNS Resolver",
+  "share.emailBody": "“1.1.1.1” maakt surfen op het internet sneller en meer privé. Bekijk https://1.1.1.1 voor meer informatie en hoe u uw apparaat in minder dan twee minuten kunt instellen.",
+  "share.tweetBody": "✌️✌️ Snel, veilig en privé internet bestaat. Stel de 1.1.1.1 DNS-resolver in minder dan twee minuten in.",
+
+  "faq.whosBehindThis": "Wie zit hierachter?",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> is een samenwerking tussen Cloudflare en APNIC.",
+  "faq.network": "Cloudflare beheert een van ’s werelds grootste, snelste netwerken. APNIC is een non-profitorganisatie die IP-adrestoewijzing beheert voor de regio‘s Azië-Pacific en Oceanië.",
+  "faq.networkContinued": "Cloudflare heeft het netwerk. APNIC heeft het IP-adres (1.1.1.1). We zijn allebei gemotiveerd door een missie om een beter internet te bouwen. In onze posts leest u meer over wat onze beide organisaties motiveert: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare Blog</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC Blog</a>. Raadpleeg voor meer informatie: <a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">Wat is 1.1.1.1?</a>",
+  "faq.canIintegrate": "Kan ik integreren met 1.1.1.1?",
+  "faq.integrationInfo": "Als u een fabrikant van browsers, besturingssystemen, apps, routers, of VPN bent die een privacy-gecentreerde, snelle, moderne DNS-service wil, dan is het antwoord <strong class=\"subtle\">ja!</strong>",
+  "faq.integrationDocs": "Door DNS over HTTPS (DoH) te gebruiken, kunt u op transparante wijze geavanceerde veiligheid aan uw klanten bieden terwijl ook de snelheid van uw apparaten verbetert. Nog beter: u kunt het gratis doen, zowel qua licentie als klanten-<a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">privacy</a>. Kom meer te weten over 1.1.1.1 en onze DNS over HTTPS (DoH) ondersteuning in onze <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>.",
+
+  "faqpage.header": "Veelgestelde vragen",
+  "faqpage.general": "Algemeen",
+  "faqpage.whatIsQ": "Wat is 1.1.1.1?",
+  "faqpage.whatIsA1": "Wanneer u een adres zoals cloudflare.com wilt bezoeken, moet uw computer weten met welke server hij moet verbinden om de pagina te kunnen laden. Computers kunnen de naam niet zelf naar een adres vertalen, dus hebben ze een gespecialiseerde server nodig die dat voor hen doet.",
+  "faqpage.whatIsA2": "Deze gespecialiseerde server heet een DNS recursive resolver. De taak van de resolver is om het adres voor een bepaalde naam te vinden, zoals 2400:cb00:2048:1::c629:d7a2 voor cloudflare.com, en dit terug te sturen naar de computer die erom heeft gevraagd.",
+  "faqpage.whatIsA3": "Computers zijn geconfigureerd om met specifieke DNS-resolvers te praten, geïdentificeerd door het IP-adres. De configuratie wordt normaal gesproken beheerd door uw ISP (zoals KPN of Orange) wanneer u thuis of draadloos surft, en door uw netwerkbeheerder wanneer u op kantoor bent. Maar u kunt ook de geconfigureerde DNS-resolver waarmee uw computer praat zelf instellen.",
+  "faqpage.whatDoDNSQ": "Wat doen DNS-resolvers?",
+  "faqpage.whatDoDNSA1": "Hoe weten resolvers hoe ze het adres van een domeinnaam moeten vinden? Ze werken terug van bovenaf.",
+  "faqpage.whatDoDNSA2": "Iedere resolver weet de onzichtbare ‘.’ aan het einde van een domeinnaam te vinden (bijv. cloudflare.com.). Er zijn <a href='http://www.root-servers.org/' target='_blank'>honderden servers</a> overal ter wereld die het ‘.’-bestand hosten. Cloudflare host <a href='https://www.internic.net/domain/root.zone' target='_blank'>dat bestand</a> zelf op al z’n servers overal ter wereld via een <a href='https://blog.cloudflare.com/f-root/' target='_blank'>samenwerking met ISC</a>. Resolvers zijn <a href='https://www.internic.net/domain/named.root' target='_blank'>zo ingesteld dat ze de IP-adressen van deze servers kennen</a>.",
+  "faqpage.whatDoDNSA3": "De resolver vraagt één van de root servers waar de volgende link in de keten te vinden is, de TLD of het domeineinde. Een voorbeeld van een TLD is .com of .org. Gelukkig slaan de root servers de locaties van alle TLD-servers op, dus ze kunnen aangeven welk IP-adres de DNS-resolver als volgende moet opvragen.",
+  "faqpage.whatDoDNSA4": "De resolver vraagt dan de servers van de TLD waar hij het gezochte domein kan vinden. Een resolver kan bijvoorbeeld aan .com vragen waar cloudflare.com zich bevindt. TLD’s hosten een bestand met de locatie van ieder domein dat de TLD gebruikt. Wanneer de resolver het definitieve IP-adres heeft, stuurt deze het antwoord terug aan de computer die de vraag stelde.",
+  "faqpage.whatDoDNSA5": "Dit hele systeem - met de servers die de informatie hosten (die worden authoritative DNS genoemd) en de servers die de informatie zoeken (de DNS resolvers) - heet Domain Name System (DNS). DNS is zoals Google Maps voor het internet. Het vertaalt de namen van plaatsen naar adressen zodat u weet hoe u er moet komen.",
+  "faqpage.ipv6Q": "Heeft 1.1.1.1 IPv6 ondersteuning?",
+  "faqpage.ipv6A": "Ja, 1.1.1.1 heeft volledige IPv6 ondersteuning.",
+  "faqpage.clearCacheQ": "Hoe kan ik de DNS cache van 1.1.1.1 legen?",
+  "faqpage.clearCacheA": "U kunt 1.1.1.1’s DNS cache voor domeinnamen verversen door het <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>purge cache tool</a> te gebruiken. U moet de domeinnaam invoeren, het DNS recordtype (of types) kiezen en op de ‘Purge Cache’-knop drukken.",
+  "faqpage.insideChinaQ": "Werkt 1.1.1.1 in China?",
+  "faqpage.insideChinaA": "Niet echt. U kunt uw DNS configureren om te verwijzen naar 1.1.1.1, maar het zal onze datacenters in China niet bereiken. Het verzoek zal naar een van onze datacenters buiten China worden gestuurd.",
+  "faqpage.devDocsQ": "Waar kan ik de ontwikkelaarsdocumentatie van 1.1.1.1 vinden?",
+  "faqpage.devDocsA": "Hier",
+  "faqpage.mobileApp": "Mobiele app",
+  "faqpage.mobileAppWorkQ": "Hoe werkt de mobiele app?",
+  "faqpage.mobileAppWorkA": "De app draait een locale resolver in uw mobiele telefoon die alle andere apps vraagt om hun DNS-aanvragen aan het adres van deze resolver te sturen. Wanneer deze DNS-aanvragen de locale resolver bereiken, worden ze versleuteld en doorgestuurd naar 1.1.1.1.",
+  "faqpage.vpnQ": "Is de 1.1.1.1 app een VPN?",
+  "faqpage.vpnA": "Nee. Een VPN app is een proxy voor al uw netwerkverkeer. De 1.1.1.1 app verzorgt enkel het DNS-verkeer van uw mobiele telefoon en beveiligt het.",
+  "faqpage.dnsLogsQ": "Wat zijn DNS logs?",
+  "faqpage.dnsLogsA": "De DNS logs op iOS bevatten alle DNS-aanvragen die uw telefoon doet. Uw apps en mobiele browser genereren normaal gesproken deze DNS-aanvragen.",
+  "faqpage.logsForQ": "Waarvoor zijn de console logs?",
+  "faqpage.logsForA": "De console logs zijn er om Cloudflare te helpen bij het debuggen van uw verbinding.",
+  "faqpage.suggestQ": "Hoe stel ik een verbetering voor?",
+  "faqpage.suggestA": "We lezen al uw suggesties. U kunt de telefoon schudden in de app en uw suggesties voor verbeteringen insturen. Of u gaat naar het app menu en tikt op ‘Help’ om uw feedback op te sturen.",
+  "faqpage.diffDnsTlsQ": "Wat is het verschil tussen DNS over TLS en DNS over HTTPS?",
+  "faqpage.diffDnsTlsA1": "Zowel DNS over TLS en DNS over HTTPS versleutelen DNS-aanvragen vanaf de telefoon.",
+  "faqpage.diffDnsTlsA2": "DNS over HTTPS gebruikt poort 443 en DNS over TLS gebruikt poort 853. In sommige netwerken kan één van deze poorten geblokkeerd zijn. Wanneer poort 443 is geblokkeerd moet u DNS over TLS gebruiken. Wanneer poort 853 is geblokkeerd moet u DNS over HTTPS gebruiken. In sommige gevallen kan DNS over TLS sneller zijn dan DNS over HTTPS of andersom.",
+  "faqpage.bugQ": "Hoe kan ik een bug rapporteren?",
+  "faqpage.bugA": "U kunt de app schudden en een bug-rapport sturen. Wanneer u dat doet, voegt de app een screenshot en de console logs aan het bug-rapport toe. De console log helpt ons uw verbinding te debuggen en uw app-ervaring te verbeteren.",
+  "faqpage.internetStoppedQ": "Mijn internet stopte met werken toen ik de 1.1.1.1 app gebruikte. Wat moet ik doen?",
+  "faqpage.internetStoppedA": "Wanneer dit gebeurt schakelt u de app uit en weer in door de knop op de beginpagina van de app uit- en weer in te schakelen. Als het probleem daarmee niet is opgelost, schakel dan a.u.b. de app uit en stuur ons een bug-rapport.",
+  "faqpage.appStuckQ": "De 1.1.1.1 app is vastgelopen bij ‘CONNECTING’ of ‘REASSERTING’. Wat moet ik doen?",
+  "faqpage.appStuckA1": "Dit kan gebeuren wanneer uw netwerkconnectie tijdelijk is onderbroken of wanneer uw verbinding 1.1.1.1 blokkeert.",
+  "faqpage.appStuckList": [
+    {
+      "tag": "li",
+      "content": "Schakel de app uit via de knop op het beginscherm van de app."
+    },
+    {
+      "tag": "li",
+      "content": "Open de iOS Instellingen-app en navigeer naar Instellingen > Algemeen > Herstellen."
+    },
+    {
+      "tag": "li",
+      "content": "Tik op Netwerkinstellingen herstellen."
+    },
+    {
+      "tag": "li",
+      "content": "Herstart uw apparaat; zorg ervoor dat uw wifi is aangesloten."
+    },
+    {
+      "tag": "li",
+      "content": "Probeer de app opnieuw te verbinden."
+    }
+  ],
+  "faqpage.appStuckA2": "Als het niet lukt te verbinden, schakel dan de 1.1.1.1-app uit en stuur ons een bug-rapport.",
+  "faqpage.cannotClickQ": "Ik kan niet op OK klikken op het VPN installatie-venster. Wat moet ik doen?",
+  "faqpage.cannotClickA": "Wanneer u niet op de OK-knop kunt klikken, is er eventueel een andere toepassing actief. Sommige apps waarvan bekend is dat ze dit probleem kunnen veroorzaken zijn Lux Brightness, Night Mode, Twilight, Filemanager enz. Om dit probleem te vermijden: sluit of verwijder alle apps die het kunnen veroorzaken.",
+  "faqpage.appenabledQ": "Ik hield de app ingeschakeld maar merk dat het na een tijdje werd uitgeschakeld. Wat is er gebeurd?",
+  "faqpage.appenabledA1": "Uw telefoon probeert de batterij te beheren door de app uit te schakelen. De meeste Huawei-apparaten staan bijvoorbeeld bekend om hun agressieve geheugen- en energiebeheer.",
+  "faqpage.appenabledA2": "U kunt dit oplossen door onderstaande stappen op te volgen",
+  "faqpage.appenabledList": [
+    {
+      "tag": "li",
+      "content": "Ga naar de ‘Instellingen’ op uw telefoon."
+    },
+    {
+      "tag": "li",
+      "content": "Selecteer ‘Geavanceerd’"
+    },
+    {
+      "tag": "li",
+      "content": "Ga naar ‘Batterijbeheer’"
+    },
+    {
+      "tag": "li",
+      "content": "Open ‘Beschermde apps’"
+    },
+    {
+      "tag": "li",
+      "content": "Selecteer ‘Sta apps toe om te blijven werken wanneer het scherm uit staat‘ voor de 1.1.1.1 app."
+    }
+  ],
+  "faqpage.persistentnotificationQ": "Waarom is er een blijvende notificatie voor de 1.1.1.1 app?",
+  "faqpage.persistentnotificationA1": "Wanneer u Android 8 of hoger gebruikt ziet u een blijvende notificatie van de 1.1.1.1 app ‘Uw DNS aanvragen zijn privé en sneller‘.",
+  "faqpage.persistentnotificationA2": "Dit is vereist door het Android OS (8.0+) voor alle apps met achtergrondactiviteit.",
+  "faqpage.persistentnotificationA3": "We stellen de prioriteit van de notificatie in op „Laag“ zodat het andere belangrijke notificaties op uw telefoon niet in de weg zit.",
+  "faqpage.persistentnotificationA4": "Hier is iets dat u kunt doen om de notificatie te verbergen. Houd er rekening mee dat u hierdoor geen andere notificaties van de 1.1.1.1 app ontvangt. Maar zo gaat het:",
+  "faqpage.persistentnotificationList": [
+    {
+      "tag": "li",
+      "content": "Ga naar uw Instellingen."
+    },
+    {
+      "tag": "li",
+      "content": "Apps en notificaties."
+    },
+    {
+      "tag": "li",
+      "content": "Open de 1.1.1.1 app instelling uit de lijst van apps."
+    },
+    {
+      "tag": "li",
+      "content": "Tik op ‘Notificaties‘ en schakel die uit."
+    }
+  ],
+  "faqpage.disablednotificationQ": "Ik heb notificatie voor de 1.1.1.1 app uitgeschakeld maar nu zie ik de notificatie ‘1.1.1.1 gebruikt batterij‘. Moet ik me zorgen maken? Hoe kan ik het verwijderen?",
+  "faqpage.disablednotificationA1": "U hoeft zich geen zorgen te maken. Omdat u notificaties voor de app heeft uitgeschakeld, stuurt het Android OS nu een andere notificatie over uw batterijgebruik; niet omdat het teveel batterij gebruikt, maar omdat het op de achtergrond draait (in dit geval beveiligt al uw DNS-aanvragen).",
+  "faqpage.disablednotificationA2": "Zo kunt u het verwijderen:",
+  "faqpage.disablednotificationList": [
+    {
+      "tag": "li",
+      "content": "Druk lang op de notificatie tot het verandert en een schakelaar laat zien."
+    },
+    {
+      "tag": "li",
+      "content": "Tik op de schakelaar, zorg dat deze grijs is."
+    },
+    {
+      "tag": "li",
+      "content": "Selecteer ‘Gereed‘ om het bericht uit te schakelen."
+    }
+  ],
+  "faqpage.vpnprofileQ": "Ik kan het VPN-profiel niet toevoegen. Hoe kan ik dit oplossen?",
+  "faqpage.vpnprofileA1": "U gebruikt waarschijnlijk een andere VPN waarvoor ‘Altijd aan‘ is ingeschakeld. Schakel die uit en schakel 1.1.1.1 in.",
+  "faqpage.vpnprofileA2": "U kunt naar deze pagina gaan door de volgende stappen te volgen:",
+  "faqpage.vpnprofileList": [
+    {
+      "tag": "li",
+      "content": "Instellingen"
+    },
+    {
+      "tag": "li",
+      "content": "Netwerk en internet"
+    },
+    {
+      "tag": "li",
+      "content": "Geavanceerd"
+    },
+    {
+      "tag": "li",
+      "content": "VPN"
+    },
+    {
+      "tag": "li",
+      "content": "Gereedschapsknop voor 1.1.1.1"
+    },
+    {
+      "tag": "li",
+      "content": "‘Altijd aan‘ inschakelen voor 1.1.1.1"
+    }
+  ]
+}

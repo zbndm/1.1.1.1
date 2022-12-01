@@ -1,0 +1,93 @@
+mixin render(input)
+  if input.children
+    #{input.tag}
+      each child in input.children
+        +render(child)
+  else if input.content
+    #{input.tag}!=input.content
+
+section#setup-instructions.help-initial-hidden(data-section="setup" data-ref="setup")
+  h1.collapsed-top-margin(
+    data-ref="deviceLabel"
+    data-label=htmlWebpackPlugin.options.t('instructions').header)
+
+  p.desktop-only!=htmlWebpackPlugin.options.t('instructions').explanation
+
+  .instruction-picker.desktop-only(data-ref="instructionPicker")
+    button.button.choice(type="button" data-platform="iphone")
+      include ../../media/iphone.svg
+      span.label iPhone
+    button.button.choice(type="button" data-platform="android")
+      include ../../media/android.svg
+      span.label Android
+    button.button.choice(type="button" data-platform="mac-os")
+      include ../../media/mac-os.svg
+      span.label MacOS
+    button.button.choice(type="button" data-platform="windows")
+      include ../../media/windows.svg
+      span.label Windows
+    button.button.choice(type="button" data-platform="linux")
+      include ../../media/linux.svg
+      span.label Linux
+    button.button.choice(type="button" data-platform="router")
+      include ../../media/sitemap.svg
+      span.label Router
+
+  .instructions(data-platform="mac-os")
+    ol
+      each instruction in htmlWebpackPlugin.options.t('instructions')['mac-os'].steps
+        +render(instruction)
+
+    stream(
+      style="width: 616px; max-width: 100%;"
+      src="b95943849d53350130ba22d039fa6faf"
+      controls
+    )
+
+  .instructions(data-platform="iphone")
+    strong!=htmlWebpackPlugin.options.t('instructions').downloadmobile
+    .app-download-options
+      a(href="https://itunes.apple.com/us/app/1-1-1-1-faster-internet/id1423538627?mt=8")
+        include ../../media/ios-store-badge.svg
+
+  .instructions(data-platform="linux")
+    p!=htmlWebpackPlugin.options.t('instructions').linux.notice
+
+    ol
+      each instruction in htmlWebpackPlugin.options.t('instructions').linux.steps
+        +render(instruction)
+
+  .instructions(data-platform="windows")
+    ol
+      each instruction in htmlWebpackPlugin.options.t('instructions').windows.steps
+        +render(instruction)
+
+    stream(
+      style="width: 616px; max-width: 100%;"
+      src="92b27227d737a866adc8b0572cf0db89"
+      controls
+    )
+
+  .instructions(data-platform="android")
+    strong!=htmlWebpackPlugin.options.t('instructions').downloadmobile
+    .app-download-options
+      a(href="https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone")
+        include ../../media/google-play-badge.svg
+
+  .instructions(data-platform="router")
+    .message.center
+      p.collapsed-margins.message-content!=htmlWebpackPlugin.options.t('instructions').router.message
+
+    ol
+      each instruction in htmlWebpackPlugin.options.t('instructions').router.steps
+        +render(instruction)
+
+  //- p.additional-content.debug-link!=htmlWebpackPlugin.options.t('instructions').debug
+  p.additional-content.questions-link!=htmlWebpackPlugin.options.t('instructions').questions
+
+  script(
+    data-cfasync="false"
+    defer
+    type="text/javascript"
+    src="https://embed.cloudflarestream.com/embed/r4xu.fla9.latest.js"
+  )

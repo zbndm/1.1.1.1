@@ -1,0 +1,31 @@
+.share-buttons {
+  display: flex;
+  align-items: center;
+  font-size: 2.2rem;
+  justify-content: space-between;
+}
+
+.share-button {
+  border-radius: 50%;
+  background-color: var(--input-border-color-focused);
+  color: black;
+  height: 2.5em;
+  width: 2.5em;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.share-button:hover {
+  background-color: var(--selection-background-color);
+}
+
+.share-button:not(:last-child) {
+  margin-right: 1em;
+}
+
+.share-button path {
+  fill: white;
+}

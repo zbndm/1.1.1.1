@@ -1,0 +1,345 @@
+@import "mixins/media-query-variables"
+
+:root
+  --serif-fonts Georgia, serif
+  --hero-fonts "Helvetica Neue", "Helvetica", sans-serif
+  // --sans-serif-fonts "Avenir", "Open Sans", Helvetica, Arial, sans-serif
+  --sans-serif-fonts "Open Sans", Helvetica, Arial, sans-serif
+  --monospace-fonts Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace
+  --accent-fonts "Roboto Slab", sans-serif
+  --text-color #000000
+  --accent-color #348af0
+  --accent-text-color #0069e4
+  --section-vertical-padding 3em
+  --border-radius .1875em
+
+  --brand-accent-red #f16975
+  --brand-accent-orange #f69259
+  --brand-accent-yellow #ffdb6f
+  --brand-accent-green #65cc9a
+  --brand-accent-light-blue #76c4e2
+  --brand-accent-purple1 #8176b5
+  --brand-accent-purple2 #ba77b1
+  --brand-accent-blue #408bc9
+
+  --brand-accent-dark-red rgb(113, 20, 35)
+  --brand-accent-mid-red rgb(243, 186, 195)
+  --brand-accent-light-red #fcf0f2
+
+  --brand-accent-dark-green rgb(28, 66, 43)
+  --brand-accent-mid-green rgb(176, 221, 194)
+  --brand-accent-light-green #eff8f3
+
+
+*
+  box-sizing inherit
+
+html
+  text-rendering optimizeLegibility
+  font-family var(--sans-serif-fonts)
+  font-size 10px
+  line-height 1.4
+  word-wrap break-word
+  box-sizing border-box
+  color var(--text-color)
+
+body
+  font-size 2em
+  margin 0
+
+strong
+  &.subtle
+    font-weight 600
+
+.desktop-only
+  @media mobileMaxWidthQuery
+    display none !important
+
+.mobile-only
+  @media desktopMinWidthQuery
+    display none !important
+
+.cf-dash-desktop-only
+  @media cfDashDesktopMaxWidthQuery
+    display none !important
+
+@media (max-width 56em)
+  :root
+    --section-vertical-padding 3em
+
+  body
+    font-size 1.7em
+
+@media (max-width 48em)
+  body
+    font-size 1.5em
+
+@media (max-width 36em)
+  :root
+    --section-vertical-padding 2em
+
+@media (min-height 48em) and (min-width 42em)
+  :root
+    --section-vertical-padding 5em
+
+code, strong.code
+  font-family var(--monospace-fonts)
+
+  &.inline
+    background rgba(0, 0 , 0, .05)
+    display inline-block
+    padding 0 .25em
+
+h1
+  font-weight 500
+
+h2, h3, h4, h5, h6
+  font-weight 400
+
+header
+  position relative
+  width 100%
+
+  @media desktopMinWidthQuery
+    padding-bottom .8em
+    margin-bottom 2em
+
+  @media mobileMaxWidthQuery
+    padding-bottom .8em
+
+  &::after
+    content ''
+    position absolute
+    background-color rgba(255, 255, 255, 0.10)
+    height .5rem
+    bottom 0
+    left 0
+    right 0
+
+  h1
+    font-size 1.8em
+    line-height 1
+    margin 0 0 .4em
+
+  h2
+    font-size 1.3em
+    line-height 1.2
+    margin 0
+
+.light-on-dark
+  color white
+  text-shadow 0 0 6px hsla(0, 0%, 0%, 0.66)
+
+.svg-inline--fa
+  display inline-block
+  font-size inherit
+  height 1em
+  overflow visible
+  vertical-align -.125em
+  fill white
+
+  &.fa-w-10
+    width .625em
+
+svg:not(:root).svg-inline--fa
+  overflow visible
+
+.svg-inline--fa.fa-w-16
+  width 1em
+
+section[data-section]
+  position relative
+
+  .collapsed-top-margin
+    margin-top 0
+
+  .collapsed-bottom-margin
+    margin-bottom 0
+
+[role="button"], .button
+  cursor pointer
+
+.inline-button
+  display inline-block
+  appearance none
+  background none
+  border none
+  padding 0
+  cursor pointer
+  font-family inherit
+  font-size inherit
+
+.button
+  display inline-block
+  appearance none
+  background none
+  border none
+  padding .6em 1.5em
+  font-weight 600
+  font-family var(--sans-serif-fonts)
+  letter-spacing .2em
+  text-transform uppercase
+  cursor pointer
+  position relative
+  text-decoration none
+  border 3px solid transparent
+  user-select none
+  color black
+  transition transform .1s ease-in-out
+  -webkit-tap-highlight-color transparent
+
+  .button-content
+    display inline-block
+    border-bottom 1px solid transparent
+    transition border-bottom-color .1s ease-in-out
+
+  &:hover
+    transform translate3d(0, -1px, 0)
+    outline none
+
+    .button-content
+      border-bottom-color currentColor
+
+  &:focus
+    outline none
+
+  &:not(:hover):focus .button-content
+    border-bottom-style dashed
+
+  &:active
+    transform translate3d(0, 1px, 0)
+
+  &.primary, &.selected
+    background black
+    color white
+
+    &:hover .button-content
+      border-bottom-color white
+
+  &.secondary
+    border-color black
+
+    &:hover .button-content
+      border-bottom-color black
+
+  &.secondary.inverted
+    color white
+    border-color white
+
+    &:hover .button-content
+      border-bottom-color white
+
+.language-selector
+  position absolute
+  top 1em
+  right 1em
+  padding .5em
+  border-radius 14em
+  font-size .8em
+  user-select none
+
+  &:focus
+    outline none
+
+  &.dropdown-open
+    .dropdown
+      display flex
+
+    .selector-label
+      opacity 1
+
+  @media mobileMaxWidthQuery
+    font-size 1em
+    top 12px
+    right 12px
+
+  .selector-label
+    display flex
+    align-items center
+    justify-content flex-end
+    opacity .8
+    transition opacity .2s
+
+    &:hover
+      opacity 1
+
+    @media mobileMaxWidthQuery
+      font-size 2rem
+
+    .fa-globe
+      margin-right .5em
+
+    .fa-caret-down
+      margin-right .5em
+
+    .chosen-language
+      margin-right .5em
+
+  .dropdown
+    margin-top .5em
+    flex-flow column
+    text-align left
+    padding .2em 0.8em .2em .8em
+    display none
+
+    background rgba(0,0,0,.5)
+    border-radius 3px
+
+    // .language.selected
+    //   display none
+
+    .language
+      color inherit
+      text-decoration none
+      line-height 1.7
+
+      &:hover
+        text-decoration underline
+
+    @media mobileMaxWidthQuery
+      background rgba(0,0,0,.9)
+      font-size 2rem
+      padding .2em 0.8em .2em .8em
+
+      .language
+        line-height 2
+
+.message
+  &.center
+    text-align center
+    .message-content
+      display inline-block
+
+.message-content
+  border-radius 3px
+  background rgba(0,0,0,0.6)
+  color white
+  padding 1rem 1.5rem
+  font-size .8em
+  line-height 1.6
+
+p.collapsed-margins
+  margin 0
+
+ul, ol
+  @media mobileMaxWidthQuery
+    margin-left 0
+    padding-left 1em
+
+  > li + li
+    margin-top .5em
+
+  li > ul, li > ol
+    margin-top .5em
+
+.tc
+  text-align: center
+
+@import hero
+@import explanation
+@import setup
+@import share
+@import faq
+@import footer
+@import help
+@import purge-cache

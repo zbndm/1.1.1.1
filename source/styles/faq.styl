@@ -1,0 +1,157 @@
+@import "mixins/media-query-variables"
+
+section[data-section="faq"]
+  color #000
+  display flex
+  justify-content center
+  flex-flow column
+  padding var(--section-vertical-padding) 12px
+
+  .content
+    width 64rem
+    max-width 100%
+    margin 0 auto
+
+    a
+      color inherit
+
+  .logos
+    text-align center
+    & > svg
+      max-width 100%
+      margin 2rem 0
+      height 4rem
+
+.faq-page
+  color #000
+  display flex
+  justify-content center
+  flex-flow column
+
+  .content
+    width 64rem
+    max-width 100%
+    padding-left 10px
+    padding-right 10px
+    margin 3em auto 0 auto
+
+    a
+      color inherit
+
+    h1
+      font-size 1.75em
+
+    h3
+      font-size 1.25em
+      margin-top 1.5em
+      margin-bottom .25em
+      font-weight 700
+
+    .h3-link
+      text-decoration none
+
+    p
+      margin-top 0px
+
+    ol
+      li
+        margin-top 0px
+    ul
+      li
+        margin-top 0px
+
+  .hero
+    background linear-gradient(to bottom left,#ba77b1,#8176b5)
+    background-size cover
+    background-position center
+    padding-top: 44px
+    padding-bottom: 24px;
+
+    h1
+      color white
+      text-align center
+
+    .main-logo
+      max-width 275px
+      display block
+      margin 20px auto 0 auto
+      fill white
+
+    .language-selector
+      position absolute
+      top 1em
+      right 1em
+      padding .5em
+      border-radius 14em
+      font-size .8em
+      user-select none
+
+      &:focus
+        outline none
+
+      &.dropdown-open
+        .dropdown
+          display flex
+
+        .selector-label
+          opacity 1
+
+      @media mobileMaxWidthQuery
+        font-size 1em
+        top 12px
+        right 12px
+
+      .selector-label
+        display flex
+        align-items center
+        justify-content flex-end
+        opacity .8
+        transition opacity .2s
+
+        svg
+          color white
+
+        &:hover
+          opacity 1
+
+        @media mobileMaxWidthQuery
+          font-size 2rem
+
+        .fa-globe
+          margin-right .5em
+
+        .fa-caret-down
+          margin-right .5em
+
+        .chosen-language
+          margin-right .5em
+          color #FFFFFF
+
+      .dropdown
+        margin-top .5em
+        flex-flow column
+        text-align left
+        padding .2em 0.8em .2em .8em
+        display none
+
+        background rgba(0,0,0,.5)
+        border-radius 3px
+
+        // .language.selected
+        //   display none
+
+        .language
+          color #FFFFFF
+          text-decoration none
+          line-height 1.7
+
+          &:hover
+            text-decoration underline
+
+        @media mobileMaxWidthQuery
+          background rgba(0,0,0,.9)
+          font-size 2rem
+          padding .2em 0.8em .2em .8em
+
+          .language
+            line-height 2

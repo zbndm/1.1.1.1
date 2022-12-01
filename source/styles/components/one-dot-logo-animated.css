@@ -1,0 +1,43 @@
+.OneDotLogoAnimated {
+  width: 9em;
+  max-width: 100%;
+}
+
+.OneDotLogoAnimated.OneDotLogoAnimated-is-centered {
+  margin-left: -2.5em;
+}
+
+.OneDotLogoAnimated.OneDotLogoAnimated-is-large {
+  width: 18em;
+}
+
+.OneDotLogoAnimated.OneDotLogoAnimated-is-large.OneDotLogoAnimated-is-centered {
+  margin-left: -1.25em;
+}
+
+@media (max-width: 768px) {
+  .OneDotLogoAnimated.OneDotLogoAnimated-is-large.OneDotLogoAnimated-is-centered {
+    margin-left: -1em;
+  }
+}
+
+.OneDotLogoAnimated--aspect-ratio-container {
+  position: relative;
+  padding-bottom: calc(var(--aspect-ratio) * 100%);
+}
+
+.OneDotLogoAnimated--canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.OneDotLogoAnimated--subtext {
+  font-size: 1.2em;
+  margin-top: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}

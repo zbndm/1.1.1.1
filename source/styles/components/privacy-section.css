@@ -1,0 +1,51 @@
+.PrivacySection {
+  margin-top: -3em;
+}
+
+.PrivacySection--column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 2em 26em;
+  width: 100%;
+}
+
+.PrivacySection--column-less-pad {
+  padding: 2em 2em 12em;
+}
+
+.PrivacySection--device-mockup {
+  position: relative;
+  z-index: 1;
+  margin-right: var(--section-gutter-size);
+}
+
+.PrivacySection--content {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .PrivacySection {
+    margin-top: 0;
+  }
+
+  .PrivacySection--column {
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 10em;
+  }
+
+  .PrivacySection--content {
+    order: 1;
+  }
+
+  .PrivacySection--device-mockup {
+    order: 2;
+  }
+
+  .PrivacySection--device-mockup {
+    margin-right: 0;
+  }
+}

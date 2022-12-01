@@ -1,0 +1,46 @@
+section(data-section="hero")
+  .language-selector(
+    tabindex="3"
+    role="button"
+    data-ref="languageSelector")
+    .selector-label
+      include ../../media/globe.svg
+      span.chosen-language!=htmlWebpackPlugin.options.locale.label
+      include ../../media/caret.svg
+
+    .dropdown
+      each locale in htmlWebpackPlugin.options.locales.filter(locale => locale.code !== htmlWebpackPlugin.options.locale.code)
+        a.language(
+          href="/" + locale.path + "dns/"
+          class={selected: htmlWebpackPlugin.options.locale.code === locale.code})
+          | #{locale.label}
+
+  .hero-background
+    .slideshow.desktop-only(data-ref="slideshow" data-active-slide="1")
+      .background-slide(data-slide="1")
+      .background-slide(data-slide="2")
+      .background-slide(data-slide="3")
+      .background-slide(data-slide="4")
+
+    .slideshow.mobile-only.static-slide
+      .background-slide(data-slide="4")
+
+  h1.hero-copy(alt="1.1.1.1 DNS resolver")
+    include ../../media/logo.svg
+
+  h2!=htmlWebpackPlugin.options.t('hero.description')
+
+  .app-store-badges
+    a(href="https://itunes.apple.com/us/app/1-1-1-1-faster-internet/id1423538627?mt=8")
+      include ../../media/ios-store-badge.svg
+    a(href="https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone")
+      include ../../media/google-play-badge.svg
+
+  .actions
+    a(
+      tabindex=""
+      role="button"
+      data-scroll
+      href="#explanation"
+      class="hero-link")
+      .button-content!=htmlWebpackPlugin.options.t('hero.info')

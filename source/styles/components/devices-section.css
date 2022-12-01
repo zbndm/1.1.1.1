@@ -1,0 +1,37 @@
+.DevicesSection--column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 2em 25em;
+  width: 100%;
+}
+
+.DevicesSection--content {
+  position: relative;
+  max-width: 100%;
+  z-index: 2;
+}
+
+.DevicesSection--device-mockup {
+  position: relative;
+  z-index: 1;
+  margin-left: calc(var(--section-gutter-size) / 2);
+}
+
+@media (max-width: 768px) {
+  .DevicesSection {
+    margin-top: -9em;
+  }
+
+  .DevicesSection--column {
+    flex-direction: column;
+    padding-top: 6em;
+    padding-bottom: 20em;
+    overflow: hidden;
+  }
+
+  .DevicesSection--device-mockup {
+    margin-left: 0;
+  }
+}
+

@@ -1,0 +1,113 @@
+@import "mixins/media-query-variables"
+
+:root
+  --bg-background-color hsl(32, 100%, 100%)
+  --bg-content-color #FCFCFC
+  --border-color darkgrey
+
+body.help-page
+  background-color var(--bg-background-color)
+
+  .help-initial-hidden
+    display none
+
+  section[data-section="setup"]
+    border-top 3px solid hsla(0, 0%, 20%, .05)
+    background-color transparent
+    padding-top 1.4em
+
+    .additional-content.debug-link
+      display none
+
+section[data-section="help"]
+  display flex
+  justify-content center
+  align-items center
+  flex-flow column
+  font-family var(--sans-serif-fonts)
+  font-weight 300
+  -webkit-font-smoothing antialiased
+  min-height calc(90vh)
+  padding var(--section-vertical-padding) 0 1em
+  text-align left
+  z-index 1
+  translate transform3d(0, 0, 0)
+
+  header
+    margin 0 auto
+    text-align center
+
+    .title
+        margin-top 10px
+        border-top 10px solid var(--header-color)
+        display inline-block
+        color var(--header-color)
+
+        @media desktopMinWidthQuery
+          padding 16px 2em 0
+
+        @media mobileMaxWidthQuery
+          padding 11px .7em 0
+
+  .hero-copy > svg
+    height 10rem
+    fill hsla(0, 0%, 20%, 1)
+
+  h2
+    font-weight 700
+
+  h3
+    margin-bottom 0
+    font-weight 600
+    & > a
+      text-decoration none
+      color currentColor
+      box-shadow inset 0px -3px var(--bg-background-color), inset 0px -5px rgba(0,0,0,0.1)
+
+      &:hover
+        box-shadow inset 0px -3px var(--bg-background-color), inset 0px -5px rgba(0,0,0,0.25)
+
+  table.debug-table
+    width 100%
+    margin-top .6em
+    border 1px solid var(--border-color)
+    padding .5em
+    background-color var(--bg-content-color)
+    border-radius var(--border-radius)
+
+    tr
+      height 1.8em
+
+      td:first-child
+        font-weight 600
+
+      td:last-child
+        text-align center
+
+  .ip-address
+    font-size .8em
+    font-family var(--monospace-fonts)
+
+  .debug-url-section
+    &.hidden
+      display: none
+    .header
+      margin 0
+    .footer
+      font-size .6em
+      color #888
+    .copy-url-area
+      cursor: pointer
+      outline none
+      resize  none
+      overflow hidden
+      width 100%
+      height 94px
+      margin-top .6em
+      padding .5em
+      background-color var(--bg-content-color)
+      border 1px solid var(--border-color)
+      border-radius var(--border-radius)
+      font-size .6em
+      color #444
+      font-family var(--monospace-fonts)

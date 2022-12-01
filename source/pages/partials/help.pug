@@ -1,0 +1,53 @@
+section(data-section="help")
+  header
+    h1.hero-copy(alt="1.1.1.1 DNS resolver")
+      include ../../media/logo.svg
+
+    h1.title Connection Information
+
+  .connection-info
+    div.debug-url-section.hidden
+      h5.header Please include this URL when you create a post in the community forum.
+      textarea.copy-url-area(readonly,data-ref="shareUrl")
+      div.footer(data-ref="shareUrlMessage") Click to copy
+
+    h3 Debug Information
+
+    table.debug-table
+      tr
+        td Connected to 1.1.1.1
+        td(data-ref="isCf") Checking...
+      tr
+        td Using DNS over HTTPS (DoH)
+        td(data-ref="isDoh") Checking...
+      tr
+        td Using DNS over TLS (DoT)
+        td(data-ref="isDot") Checking...
+      tr
+        td Using DNS over WARP
+        td(data-ref="isWarp") Checking...
+      tr
+        td AS Name
+        td(data-ref="ispName") Checking...
+      tr
+        td AS Number
+        td(data-ref="ispAsn") Checking...
+      tr
+        td <a href="https://support.cloudflare.com/hc/en-us/articles/200169986-Which-Cloudflare-data-center-do-I-reach-" target="_blank">Cloudflare Data Center</a>
+        td(data-ref="datacenterLocation") Checking...
+
+    h3 Connectivity to Resolver IP Addresses
+
+    table.debug-table
+      tr
+        td.ip-address 1.1.1.1
+        td(data-ref="resolverIp-1.1.1.1") Checking...
+      tr
+        td.ip-address 1.0.0.1
+        td(data-ref="resolverIp-1.0.0.1") Checking...
+      tr
+        td.ip-address 2606:4700:4700::1111
+        td(data-ref="resolverIp-2606:4700:4700::1111") Checking...
+      tr
+        td.ip-address 2606:4700:4700::1001
+        td(data-ref="resolverIp-2606:4700:4700::1001") Checking...

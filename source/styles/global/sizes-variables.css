@@ -1,0 +1,18 @@
+html {
+  --header-height: 3.5em;
+  --focus-shadow-size: .1875em;
+  --input-top-padding: .7em;
+  --input-bottom-padding: .7em;
+  --input-horizontal-padding: .8em;
+  --button-vertical-padding: calc((var(--input-top-padding) + var(--input-bottom-padding)) / 2);
+  --button-horizontal-padding: .8em;
+  --form-field-border-radius: .375em;
+  --form-field-line-height: 1.3;
+  --section-gutter-size: 10em;
+}
+
+@media (max-width: 1080px) {
+  html {
+    --section-gutter-size: 6em;
+  }
+}

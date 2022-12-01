@@ -1,0 +1,507 @@
+{
+  "title": "1.1.1.1: el solucionador DNS más rápido centrado en la privacidad de Internet",
+  "description": "✌️✌️ Navegue por Internet de forma más rápida y privada.",
+  "hero.introducing": "Presentación",
+  "hero.description": "Se encuentra a tan solo un paso de poder navegar por Internet de una forma más rápida y privada",
+  "hero.getStarted": "Instalar",
+  "hero.info": "Más información",
+
+  "explanation.dnsHeader": "DNS: Directorio de Internet",
+  "explanation.dnsExplanation": "Casi todo en Internet comienza con una solicitud de DNS. DNS es el directorio de Internet. Al hacer clic en un enlace, abrir una aplicación o enviar un mensaje de correo electrónico, lo primero que hace el dispositivo es preguntar al directorio: <strong class=\"subtle\">¿Dónde puedo encontrar esto?</strong>",
+  "explanation.dnsSlowInsecure": "Lamentablemente, de forma predeterminada, DNS suele ser lento y poco seguro. El ISP, y cualquier persona experta en Internet, puede ver todos los sitios que visita, así como las aplicaciones que utiliza, incluso si el contenido se ha cifrado. Aunque no lo crea, los proveedores de DNS venden datos relativos a su actividad en Internet, o los utilizan para mostrarle anuncios.",
+  "explanation.dnsAlternative": "Creemos que esto es intolerable. En el caso de que también opine del mismo modo, dispone ahora de una alternativa: <strong class=\"code\">1.1.1.1</strong>",
+
+  "explanation.privacyHeader": "La privacidad es lo primero: nosotros la garantizamos.",
+  "explanation.privacyExplanation": "Estamos reconsiderando el protocolo de DNS de la era de 1983. <strong class=\"code\">1.1.1.1</strong> admite DNS cifrado, además de DNS a través de HTTPS.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Nunca venderemos sus datos ni los utilizaremos para mostrar anuncios.</span> Punto y final.",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">Nunca registraremos su dirección IP</span> (la forma en que las empresas le identifican). Pero esto no se trata solo de palabras. Hemos contratado a KPMG para que audite nuestros sistemas anualmente y, de este modo, asegurarnos de que estamos haciendo lo que decimos.",
+  "explanation.privacyConclusion": "Francamente, y dado que no queremos conocer su actividad en Internet (no es asunto nuestro), hemos adoptado las medidas técnicas necesarias para asegurarnos de que no podamos hacerlo.",
+
+  "explanation.performanceHeader": "El más rápido del mercado.",
+  "explanation.fastestDNS": "Hemos desarrollado 1.1.1.1 para que sea el directorio de DNS más rápido de Internet. No es necesario que confíe en nuestra palabra. El monitor de DNS independiente <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> califica 1.1.1.1 como el servicio de DNS más rápido del mundo.",
+  "explanation.speedContinued": "Dado que casi toda su actividad en Internet empieza por una solicitud de DNS, optar por el directorio de DNS más rápido para todos tus dispositivos, le permitirá acelerar prácticamente toda su actividad en línea.",
+
+  "instructions": {
+    "header": "Configuración en {{dispositivo}}",
+    "explanation": "La configuración de <strong>1.1.1.1</strong> conlleva dos minutos y no requiere ninguna habilidad técnica ni software especial. Incluso si es principiante, puede elegir su dispositivo a continuación para obtener una sencilla guía de configuración.",
+    "debug": "¿Busca más información sobre su conexión a Internet? Consulte nuestra <a target=\"_blank\" href=\"./help\">página de depuración</a>.",
+    "questions": "¿Aún tiene dudas? Visite el <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Foro de la comunidad</a>.",
+    "mac-os": {
+      "steps": [
+        { "tag": "li", "content": "Abra Preferencias del sistema." },
+        {
+          "tag": "li",
+          "content": "Busque la opción <strong>Servidores DNS</strong> y selecciónala en el menú desplegable."
+        },
+        {
+          "tag": "li",
+          "content": "Haga clic en el botón <strong>+</strong> para añadir un servidor DNS e introduzca <strong class=\"code\">1.1.1.1</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Haga clic en <strong>+</strong> de nuevo e introduzca <strong class=\"code\">1.0.0.1</strong> (esto es para la redundancia)."
+        },
+        {
+          "tag": "li",
+          "content": "Haga clic en <strong>+</strong> de nuevo e introduzca <strong class=\"code\">2606:4700:4700::1111</strong> (esto es para la redundancia)."
+        },
+        {
+          "tag": "li",
+          "content": "Haga clic en <strong>+</strong> de nuevo e introduzca <strong class=\"code\">2606:4700:4700::1001</strong> (esto es para la redundancia)."
+        },
+        {
+          "tag": "li",
+          "content": "Haga clic en <strong>Aceptar</strong> y, a continuación, seleccione <strong>Aplicar</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Ha finalizado. El dispositivo dispone ahora de los servidores DNS más rápidos y privados. ✌️✌️"
+        }
+      ]
+    },
+    "windows": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Haga clic en el menú Inicio y, a continuación, en <strong>Panel de control</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Haga clic en <strong>Redes e Internet</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Haga clic en <strong>Cambiar configuración del adaptador</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Haga clic con el botón derecho en la red Wi-Fi a la que está conectado y, a continuación, haga clic en <strong>Propiedades</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Seleccione <strong>Protocolo de Internet, versión 4</strong> (o versión 6, si así lo desea)."
+        },
+        {
+          "tag": "li",
+          "content": "Haga clic en <strong>Propiedades</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Anote cualquier entrada que haya de servidores DNS existentes como referencia futura."
+        },
+        {
+          "tag": "li",
+          "content": "Haga clic en <strong>Usar las siguientes direcciones de servidor DNS</strong>."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "intervalo",
+              "content": "Sustituya esas direcciones por las direcciones DNS 1.1.1.1:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "Para IPv4: <strong class=\"code\">1.1.1.1</strong> y <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "Para IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> y <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "Haga clic en <strong>Aceptar</strong> y, a continuación, seleccione <strong>Cerrar</strong>."
+        },
+        { "tag": "li", "content": "Reinicie el navegador." },
+        {
+          "tag": "li",
+          "content": "Ha finalizado. El dispositivo dispone ahora de los servidores DNS más rápidos y privados. ✌️✌️"
+        }
+      ]
+    },
+    "linux": {
+      "notice": "Si bien estos pasos son para Ubuntu, la mayoría de las distribuciones de Linux establecen la configuración de DNS a través del administrador de red. Por otra parte, la configuración de DNS se puede especificar en <code class=\"inline\">/etc/resolv.conf</code>.",
+      "steps": [
+        {
+          "content": "Haga clic en el icono Aplicaciones <i class=\"fas fa-th\"></i> de la barra de menú de la izquierda.",
+          "tag": "li"
+        },
+        {
+          "content": "Haga clic en <strong>Configuración</strong> y, a continuación, en <strong>Redes</strong>.",
+          "tag": "li"
+        },
+        {
+          "content": "Encuentre la conexión a Internet en el panel derecho y, a continuación, haga clic en el icono de engranaje <i class=\"fas fa-cog\"></i>.",
+          "tag": "li"
+        },
+        {
+          "content": "Haga clic en la pestaña <strong>IPv4</strong> o <strong>IPv6</strong> para ver la configuración de DNS.",
+          "tag": "li"
+        },
+        {
+          "content": "Configure el botón de alternancia «Automático» en la entrada de DNS y configúrelo en <strong>Apagado</strong>.",
+          "tag": "li"
+        },
+        {
+          "children": [
+            {
+              "tag": "intervalo",
+              "content": "Facilite las direcciones DNS 1.1.1.1 en el campo de entradas de DNS:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "Para IPv4: <strong class=\"code\">1.1.1.1</strong> y <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "Para IPv6: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "Haga clic en <strong>Aplicar</strong> y, a continuación, reinicie el navegador.",
+          "tag": "li"
+        },
+        {
+          "content": "Ha finalizado. El dispositivo dispone ahora de los servidores DNS más rápidos y privados. ✌️✌️",
+          "tag": "li"
+        }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "En la pantalla del iPhone, abra la aplicación <strong>Configuración</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Toque <strong>Wi-Fi</strong> y, a continuación, seleccione su red favorita de la lista."
+        },
+        {
+          "tag": "li",
+          "content": "Toque <strong>Configurar DNS</strong> y, a continuación, haga clic en <strong>Manual</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Si ya existen entradas, toque el botón <strong>-</strong> y seleccione <strong>Borrar</strong> junto a cada una."
+        },
+        {
+          "tag": "li",
+          "content": "Toque el botón <strong>+ Añadir servidor</strong> y, a continuación, escriba <strong class=\"code\">1.1.1.1</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Toque el botón <strong>+ Añadir servidor</strong> de nuevo y, a continuación, escriba <strong class=\"code\">1.0.0.1</strong>. Esto es para la redundancia."
+        },
+        {
+          "tag": "li",
+          "content": "Toque el botón <strong>+ Añadir servidor</strong> de nuevo y, a continuación, escriba <strong class=\"code\">2606:4700:4700::1111</strong>. Esto es para la redundancia."
+        },
+        {
+          "tag": "li",
+          "content": "Toque el botón <strong>+ Añadir servidor</strong> de nuevo y, a continuación, escriba <strong class=\"code\">2606:4700:4700::1001</strong>. Esto es para la redundancia."
+        },
+        {
+          "tag": "li",
+          "content": "Toque el botón <strong>Guardar</strong> en la parte superior derecha."
+        },
+        {
+          "tag": "li",
+          "content": "Ha finalizado. El dispositivo dispone ahora de los servidores DNS más rápidos y privados. ✌️✌️"
+        }
+      ]
+    },
+    "android": {
+      "message": "Tenga en cuenta que Android requiere una dirección IP estática para utilizar servidores DNS personalizados. Esta configuración requiere ajustes adicionales en el enrutador, lo que afecta a la estrategia de la red para añadir nuevos dispositivos a la red. En su lugar, le recomendamos que configure el <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">DNS de su enrutador</button>. Esto proporcionará a todos los dispositivos de la red toda la velocidad y beneficios de privacidad de DNS 1.1.1.1.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "En la lista de aplicaciones de Android, abra la aplicación <strong>Configuración</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "En la sección <strong>Conexión inalámbrica y redes</strong>, toque <strong>Wi-Fi</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Mantenga pulsada su red favorita de la lista hasta que aparezca un menú contextual."
+        },
+        {
+          "tag": "li",
+          "content": "Toque <strong>Modificar red</strong> y, a continuación, haga clic en <strong>Opciones avanzadas</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Toque <strong>Opciones avanzadas</strong> y, a continuación, haga clic en <strong>Configuración de IP</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Cambie <strong>Dinámico</strong> por <strong>Estático</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Utilice la configuración del enrutador para introducir la dirección IP del dispositivo y la puerta de enlace."
+        },
+        {
+          "tag": "li",
+          "content": "Toque el campo <strong>DNS</strong> y, a continuación, borre el número del campo."
+        },
+        {
+          "tag": "li",
+          "content": "En el campo <strong>DNS 1</strong>, introduzca <strong class=\"code\">1.1.1.1</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "En el campo <strong>DNS 2</strong>, introduzca <strong class=\"code\">1.0.0.1</strong> (esto es para la redundancia)."
+        },
+        { "tag": "li", "content": "Toque <strong>Guardar</strong>." },
+        {
+          "tag": "li",
+          "content": "Ha finalizado. El dispositivo dispone ahora de los servidores DNS más rápidos y privados. ✌️✌️"
+        }
+      ]
+    },
+    "router": {
+      "message": "La configuración del enrutador puede variar. Consulte el manual para obtener más información.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Conéctese a su red inalámbrica favorita."
+        },
+        {
+          "tag": "li",
+          "content": "Escriba la dirección IP de la puerta de enlace del enrutador en el navegador."
+        },
+        {
+          "tag": "li",
+          "content": "Si así se solicita, escriba su nombre de usuario y contraseña. Esta información puede etiquetarse en el enrutador."
+        },
+        {
+          "tag": "li",
+          "content": "En la página de configuración del enrutador, localice la configuración del <strong>servidor DNS</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Anote cualquier entrada que haya de servidores DNS existentes como referencia futura."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "intervalo",
+              "content": "Sustituya esas direcciones por las direcciones DNS 1.1.1.1:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "Para IPv4: <strong class=\"code\">1.1.1.1</strong> y <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "Para IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> y <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "Guarde la configuración y, a continuación, reinicie el navegador."
+        },
+        {
+          "tag": "li",
+          "content": "Ha finalizado. El dispositivo dispone ahora de los servidores DNS más rápidos y privados. ✌️✌️"
+        }
+      ]
+    },
+    "downloadmobile": "Descargue la aplicación móvil"
+  },
+
+  "share.header": "✌️✌ ️Comparta una conexión a Internet más rápida y centrada en la privacidad con sus amigos.",
+  "share.emailSubject": "✌️✌️ Navegue por Internet de una forma más rápida y privada: solucionador DNS 1.1.1.1",
+  "share.emailBody": "«1.1.1.1» permite que la navegación por Internet sea más rápida y privada. Consulte https://1.1.1.1 para obtener más información y conocer cómo configurar el dispositivo en menos de dos minutos.",
+  "share.tweetBody": "✌️✌️ Ya puede disfrutar de un acceso a Internet rápido, seguro y privado. Configure el solucionador DNS 1.1.1.1 en menos de dos minutos.",
+
+  "faq.whosBehindThis": "¿Quién está detrás de esto?",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> es una colaboración entre Cloudflare y APNIC.",
+  "faq.network": "Cloudflare gestiona una de las redes más amplias y rápidas del mundo. CAPNIC es una organización sin ánimo de lucro encargada de gestionar la asignación de direcciones IP en las regiones de Asia Pacífico y Oceanía.",
+  "faq.networkContinued": "Cloudflare tenía la red. APNIC tenía la dirección IP (1.1.1.1). Ambas compartían la misión de mejorar la red de Internet. Puede obtener más información sobre las motivaciones de cada organización en nuestras respectivas publicaciones: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Blog de Cloudflare</a>/<a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">Blog de APNIC</a>. Para obtener más información, consulte: <a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">¿Qué es 1.1.1.1?</a>",
+  "faq.canIintegrate": "¿Me puedo integrar con 1.1.1.1?",
+  "faq.integrationInfo": "Si es fabricante de un navegador, sistema operativo, aplicación, enrutador o VPN, y desea crear un servicio de DNS centrado en la privacidad, rápido y moderno, <strong class=\"subtle\">la respuesta es sí.</strong>",
+  "faq.integrationDocs": "Si utiliza DNS sobre HTTPS (DoH), puede ofrecer de forma transparente una mayor seguridad a sus clientes y mejorar la velocidad de sus dispositivos. Además, puede hacerlo sin coste alguno, tanto en términos de licencias como de <a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">privacidad</a> del cliente. Obtenga más información sobre 1.1.1.1 y la asistencia de DNS sobre HTTPS (DoH) en la <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">documentación del desarrollador</a>.",
+
+  "faqpage.header": "Preguntas frecuentes",
+  "faqpage.general": "General",
+  "faqpage.whatIsQ": "¿Qué es 1.1.1.1?",
+  "faqpage.whatIsA1": "Cuando se solicita visitar una aplicación como cloudflare.com, el equipo necesita saber a qué servidor debe conectarse para cargar la aplicación. Los equipos no saben cómo conseguir que este nombre realice la traducción, por lo que requieren que un servidor especializado lo realice en su lugar.",
+  "faqpage.whatIsA2": "Este servidor especializado se denomina solucionador DNS recursivo. La tarea del solucionador consiste en encontrar la dirección de un nombre determinado, como 2400:cb00:2048:1::c629:d7a2 para cloudflare.com, y devolverlo al equipo que lo ha solicitado.",
+  "faqpage.whatIsA3": "Los equipos se han configurado para que se comuniquen con solucionadores DNS específicos, que se identifican mediante la dirección IP. Generalmente, el ISP gestiona la configuración (como Comcast o AT&amp;T) si se encuentra en casa o utiliza una red de Internet inalámbrica, o bien lo realiza el administrador de red, en el caso de que se conecte a la red de Internet de su oficina. Además, puede cambiar el solucionador DNS configurado que utiliza el equipo para sí mismo.",
+  "faqpage.whatDoDNSQ": "¿Qué hacen los solucionadores DNS?",
+  "faqpage.whatDoDNSA1": "¿Cómo saben los solucionadores cómo encontrar la dirección de un nombre de dominio? Trabajan hacia atrás y desde arriba.",
+  "faqpage.whatDoDNSA2": "Cada solucionador sabe cómo encontrar el «.» invisible al final de los nombres de dominio (p. ej., cloudflare.com.). Existen <a href='http://www.root-servers.org/' target='_blank'>cientos de servidores</a> en todo el mundo que alojan el archivo «.». Cloudflare aloja <a href='https://www.internic.net/domain/root.zone' target='_blank'>este archivo</a> en todos los servidores del mundo a través de una <a href='https://blog.cloudflare.com/f-root/' target='_blank'>asociación con ISC</a>. Los solucionadores se <a href='https://www.internic.net/domain/named.root' target='_blank'>codifican de forma rígida para conocer las direcciones IP de estos servidores</a>.",
+  "faqpage.whatDoDNSA3": "El solucionador solicita a uno de los servidores raíz dónde encontrar el siguiente enlace de la cadena, el TLD, o la finalización de dominio. Un ejemplo de TLD sería .org o .com. Por suerte, los servidores raíz almacenan las localizaciones de todos los servidores TLD con el fin de devolver la dirección IP que debe solicitar el solucionador DNS posteriormente.",
+  "faqpage.whatDoDNSA4": "A continuación, el solucionador solicita a los servidores TLD dónde puede encontrar el dominio que busca, por ejemplo, un solucionador puede solicitar a .com dónde puede encontrar cloudflare.com. Los servidores TLD alojan un archivo que contiene la localización de cada dominio con el TLD. Una vez que el solucionador tiene la dirección IP final, devuelve la respuesta al equipo que la ha solicitado.",
+  "faqpage.whatDoDNSA5": "Todo el sistema, con los servidores que alojan la información (se denominan DNS autoritativos) y los servidores que buscan la información (los solucionadores DNS), se denominan sistemas de nombres de dominio (DNS). DNS es como Google Maps para Internet. Traduce el nombre de lugares en direcciones para que pueda averiguar cómo llegar.",
+  "faqpage.ipv6Q": "¿1.1.1.1 es compatible con IPv6?",
+  "faqpage.ipv6A": "Sí, 1.1.1.1 es totalmente compatible con IPv6.",
+  "faqpage.clearCacheQ": "¿Cómo puedo borrar la memoria caché de DNS 1.1.1.1?",
+  "faqpage.clearCacheA": "Puede actualizar la memoria caché de DNS 1.1.1.1 de los nombres de dominio mediante la <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>herramienta de depuración de la memoria caché</a>. Puede introducir el nombre de dominio, elegir el tipo (o los tipos) de registro DNS y seleccionar el botón «Depurar memoria caché».",
+  "faqpage.insideChinaQ": "¿1.1.1.1 funciona en China?",
+  "faqpage.insideChinaA": "En realidad, no. Puede configurar su DNS para que apunte hacia 1.1.1.1, pero no podrá alcanzar uno de nuestros centros de datos en China. En su lugar, la solicitud se enrutará a uno de nuestros centros de datos situados fuera de la China Continental.",
+  "faqpage.devDocsQ": "¿Dónde puedo encontrar la documentación del desarrollador de 1.1.1.1?",
+  "faqpage.devDocsA": "Aquí",
+  "faqpage.mobileApp": "Aplicación móvil",
+  "faqpage.mobileAppWorkQ": "¿Cómo funciona la aplicación móvil?",
+  "faqpage.mobileAppWorkA": "La aplicación ejecuta un solucionador local dentro del teléfono móvil que solicita al resto de aplicaciones el envío de sus solicitudes de DNS a la dirección de este solucionador. Una vez que estas solicitudes de DNS llegan al solucionador local, este las cifra y las envía a 1.1.1.1.",
+  "faqpage.vpnQ": "¿Es la aplicación 1.1.1.1 una VPN?",
+  "faqpage.vpnA": "No. Una aplicación de VPN redirige generalmente mediante proxy todo el tráfico de la red. La aplicación 1.1.1.1 solo reemplaza y protege el tráfico DNS de su teléfono móvil.",
+  "faqpage.dnsLogsQ": "¿Qué son los registros de DNS?",
+  "faqpage.dnsLogsA": "Los registros de DNS en iOS contienen todas las consultas de DNS que realiza el teléfono. Por lo general, las aplicaciones y el navegador móvil generan estas consultas de DNS.",
+  "faqpage.logsForQ": "¿Cuál es la función de estos registros de consola?",
+  "faqpage.logsForA": "Los registros de consola se utilizan para que Cloudflare pueda depurar la conexión.",
+  "faqpage.suggestQ": "¿Cómo puedo sugerir una mejora?",
+  "faqpage.suggestA": "Leemos todas las sugerencias. Mientras se encuentra en la aplicación, puede enviar sus sugerencias de mejora con el teléfono. Asimismo, puede dirigirse al menú de la aplicación y tocar «Ayuda» para enviar sus comentarios.",
+  "faqpage.diffDnsTlsQ": "¿Cuál es la diferencia entre utilizar DNS sobre TLS y DNS sobre HTTPS?",
+  "faqpage.diffDnsTlsA1": "Tanto DNS sobre TLS como DNS sobre HTTPS cifran consultas de DNS sin formato desde el teléfono.",
+  "faqpage.diffDnsTlsA2": "DNS sobre HTTPS utiliza el puerto 443 y DNS sobre TLS utiliza el puerto 853. En algunas redes, uno de estos puertos puede bloquearse. Si el puerto 443 está bloqueado, debe utilizar DNS sobre TLS. Si el puerto 853 está bloqueado, debe utilizar DNS sobre HTTPS. En algunos casos, DNS sobre TLS puede ser más rápido que DNS sobre HTTPS, o viceversa.",
+  "faqpage.bugQ": "¿Cómo puedo enviar un informe de errores?",
+  "faqpage.bugA": "Puede utilizar la aplicación y enviar un informe de errores. Al hacerlo, la aplicación adjunta una captura de pantalla y los registros de consola junto con el informe de error. El registro de consola nos permite depurar la conexión y mejorar la experiencia general de la aplicación.",
+  "faqpage.internetStoppedQ": "Mi conexión a Internet ha dejado de funcionar cuando estaba utilizando la aplicación 1.1.1.1. ¿Qué debo hacer?",
+  "faqpage.internetStoppedA": "Si esto ocurre, intente desactivar e iniciar nuevamente la aplicación con el botón de alternancia de la página principal de la aplicación. Si el problema continúa, desactive la aplicación y envíenos un informe de error.",
+  "faqpage.appStuckQ": "La aplicación 1.1.1.1 se ha detenido en «CONECTANDO» o «REITERANDO». ¿Qué debo hacer?",
+  "faqpage.appStuckA1": "Esto puede ocurrir si se ha interrumpido la conexión de red temporalmente o si la conexión de datos bloquea conexiones de 1.1.1.1:",
+  "faqpage.appStuckList": [
+    {
+      "tag": "li",
+      "content": "Desactive la aplicación con el botón de alternancia que aparece en la página principal de la aplicación."
+    },
+    {
+      "tag": "li",
+      "content": "Abra la aplicación de configuración de iOS y diríjase a Configuración > General > Restablecer."
+    },
+    {
+      "tag": "li",
+      "content": "Haga clic en Restablecer configuración de red."
+    },
+    {
+      "tag": "li",
+      "content": "Reinicie el dispositivo y asegúrese de que se haya conectado la red Wi-Fi."
+    },
+    {
+      "tag": "li",
+      "content": "Intente conectar la aplicación de nuevo."
+    }
+  ],
+  "faqpage.appStuckA2": "Si esto no permite la conexión, deshabilite la aplicación 1.1.1.1 y envíenos un informe de error.",
+  "faqpage.cannotClickQ": "No puedo hacer clic en Aceptar en el cuadro de diálogo de instalación de VPN. ¿Qué debo hacer?",
+  "faqpage.cannotClickA": "Si no puede hacer clic en el botón Aceptar, es posible que haya otra aplicación en la parte superior del cuadro de diálogo. Algunas aplicaciones conocidas que pueden ocasionar este problema son Lux Brightness, Night Mode, Twilight, FileManager, etc. Para evitar este problema, cierre o desinstale todas las aplicaciones que puedan estar ocasionándolo.",
+  "faqpage.appenabledQ": "He mantenido la aplicación habilitada, pero he observado que se desactiva transcurrido un tiempo. ¿Qué ocurre?",
+  "faqpage.appenabledA1": "Para gestionar la batería, el teléfono puede desactivar la aplicación. Por ejemplo, una gran parte de los dispositivos Huawei gestionan de manera agresiva la memoria y la energía.",
+  "faqpage.appenabledA2": "Para solucionar este problema, siga estos pasos:",
+  "faqpage.appenabledList": [
+    {
+      "tag": "li",
+      "content": "Diríjase a «Configuración» en el teléfono."
+    },
+    {
+      "tag": "li",
+      "content": "Seleccione «Configuración avanzada»."
+    },
+    {
+      "tag": "li",
+      "content": "Haga clic en «Administrador de batería»."
+    },
+    {
+      "tag": "li",
+      "content": "Abra «Aplicaciones protegidas»."
+    },
+    {
+      "tag": "li",
+      "content": "Puede seleccionar «Permitir que las aplicaciones sigan ejecutándose después de desactivar la pantalla» en la aplicación 1.1.1.1."
+    }
+  ],
+  "faqpage.persistentnotificationQ": "¿Por qué existe una notificación persistente en la aplicación 1.1.1.1?",
+  "faqpage.persistentnotificationA1": "Si utiliza Android 8 o una versión superior, aparecerá una notificación persistente en la aplicación 1.1.1.1 indicando «Sus solicitudes de DNS son privadas y más rápidas».",
+  "faqpage.persistentnotificationA2": "El SO Android (8.0+) requiere esto en todas las aplicaciones que tengan una actividad en segundo plano.",
+  "faqpage.persistentnotificationA3": "Configuramos la notificación con prioridad «Baja» para que no interfiera con otras notificaciones importantes del teléfono.",
+  "faqpage.persistentnotificationA4": "A continuación se muestra lo que puede hacer para ocultar la notificación. Tenga en cuenta que esta acción cancelará la recepción de otras notificaciones de la aplicación 1.1.1.1. Para ello, siga estas instrucciones:",
+  "faqpage.persistentnotificationList": [
+    {
+      "tag": "li",
+      "content": "Diríjase a Configuración."
+    },
+    {
+      "tag": "li",
+      "content": "Seleccione Aplicaciones y notificaciones."
+    },
+    {
+      "tag": "li",
+      "content": "Abra la configuración de la aplicación 1.1.1.1 en la lista de aplicaciones."
+    },
+    {
+      "tag": "li",
+      "content": "Toque la opción «Notificaciones» y deshabilítela."
+    }
+  ],
+  "faqpage.disablednotificationQ": "He deshabilitado la notificación de la aplicación 1.1.1.1, pero ahora aparece otra notificación que indica «1.1.1.1 está consumiendo batería». ¿Me debo preocupar? ¿Cómo la puedo eliminar?",
+  "faqpage.disablednotificationA1": "No debe preocuparse. Dado que ha deshabilitado la notificación de la aplicación, el SO Android envía ahora otra notificación para advertirle sobre el consumo de la batería, no porque consuma mucha batería, sino porque se ejecuta en un segundo plano (en este caso, protege todas las consultas de DNS).",
+  "faqpage.disablednotificationA2": "Para eliminarla, siga estas instrucciones:",
+  "faqpage.disablednotificationList": [
+    {
+      "tag": "li",
+      "content": "Mantenga pulsada la notificación hasta que cambie y muestre un botón de alternancia."
+    },
+    {
+      "tag": "li",
+      "content": "Toque el botón de alternancia asegurándose de que se ponga gris."
+    },
+    {
+      "tag": "li",
+      "content": "Seleccione «Finalizado» para deshabilitar la notificación."
+    }
+  ],
+  "faqpage.vpnprofileQ": "No puedo añadir el perfil VPN. ¿Cómo puedo solucionarlo?",
+  "faqpage.vpnprofileA1": "Es muy probable que esté utilizando otra VPN en la que se haya habilitado la configuración «Siempre conectado». Deshabilítela y habilite 1.1.1.1.",
+  "faqpage.vpnprofileA2": "Puede ir a esa página siguiendo estos pasos:",
+  "faqpage.vpnprofileList": [
+    {
+      "tag": "li",
+      "content": "Diríjase a Configuración."
+    },
+    {
+      "tag": "li",
+      "content": "Seleccione Redes e Internet."
+    },
+    {
+      "tag": "li",
+      "content": "Haga clic en Configuración avanzada."
+    },
+    {
+      "tag": "li",
+      "content": "Seleccione VPN."
+    },
+    {
+      "tag": "li",
+      "content": "Toque el botón de engranaje de 1.1.1.1."
+    },
+    {
+      "tag": "li",
+      "content": "Habilite «Siempre conectado» de 1.1.1.1."
+    }
+  ]
+}

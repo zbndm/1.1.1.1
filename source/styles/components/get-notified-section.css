@@ -1,0 +1,56 @@
+.GetNotifiedSection--form-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.GetNotifiedSection--form {
+  display: flex;
+  margin-top: 2em;
+  justify-content: center;
+}
+
+@media (max-width: 375px) {
+  .GetNotifiedSection--form {
+    flex-direction: column;
+  }
+
+  .GetNotifiedSection--form .Button {
+    margin-top: 0.5em;
+  }
+}
+
+.GetNotifiedSection--form-header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.GetNotifiedSection--form-title {
+  font-size: 3.25em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.GetNotifiedSection--form-subtitle {
+  font-size: 1.333em;
+}
+
+.GetNotifiedSection--form-details {
+  margin-bottom: 2em;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+.GetNotifiedSection--form-cta {
+  font-size: 1.333em;
+  text-align: center;
+}
+
+.privacy-subtext {
+  margin-top: 2rem;
+  font-size: 14px;
+}

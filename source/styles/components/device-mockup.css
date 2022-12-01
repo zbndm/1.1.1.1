@@ -1,0 +1,198 @@
+.DeviceMockup {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 14em;
+  height: 28em;
+}
+
+.DeviceMockup.desktop {
+  height: 24em;
+  width: 22em;
+}
+
+@media (max-width: 1080px) {
+  .DeviceMockup {
+    font-size: .9em;
+  }
+}
+
+.DeviceMockup--backdrop {
+  position: absolute;
+  pointer-events: none;
+}
+
+.DeviceMockup--backdrop-blob1 {
+  top: -136%;
+  left: -70%;
+  height: 421%;
+  width: 616%
+}
+
+.DeviceMockup--backdrop-blob2 {
+  top: -242%;
+  right: -70%;
+  height: 580%;
+  width: 730%;
+}
+
+.DeviceMockup--backdrop-blob3 {
+  top: -300%;
+  left: -30%;
+  height: 550%;
+  width: 500%;
+}
+
+@media (max-width: 1080px) {
+  .DeviceMockup--backdrop-blob1 {
+    left: -50%;
+  }
+
+  .DeviceMockup--backdrop-blob2 {
+    right: -50%
+  }
+}
+
+@media (max-width: 768px) {
+  .DeviceMockup--monitor {
+    width: 100%;
+  }
+  
+  .DeviceMockup--backdrop-blob1 {
+    top: -101%;
+    left: -42%;
+    height: 331%;
+    width: 446%;
+  }
+
+  .DeviceMockup--backdrop-blob2 {
+    top: -142%;
+    right: -36%;
+    height: 420%;
+    width: 540%;
+  }
+
+  .DeviceMockup--backdrop-blob3 {
+    top: -109%;
+    left: -22%;
+    height: 367%;
+    width: 360%;
+  }
+
+  .DeviceMockup--backdrop-blob3-desktop-only-blog {
+    fill: transparent;
+  }
+}
+
+.DeviceMockup--device {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 2.5em .375em;
+  background: #fff;
+  border-radius: 1.75em;
+
+  /* Workaround for Safari bug - https://bugs.webkit.org/show_bug.cgi?id=185940 */
+  --box-shadow: inset 0 .25em .5em .0625em #fff, inset 0 -.3em 1em rgba(var(--black-purple-rgb), .15), 0 .125em .375em rgba(var(--black-purple-rgb), .05), 0 .5em 1em rgba(var(--black-purple-rgb), .1);
+  box-shadow: var(--box-shadow);
+}
+
+.DeviceMockup.desktop .DeviceMockup--device {
+  background: transparent;
+  box-shadow: none;
+}
+
+.DeviceMockup--device-monitor {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  height: auto!important;
+}
+
+@media (max-width: 768px) {
+  .DeviceMockup--device {
+    height: 120%;
+    width: 110%;
+    margin-top: -10%;
+    margin-left: -5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .DeviceMockup--device {
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.DeviceMockup--device-display {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  --box-shadow: inset 0 0 0 .0625em rgba(var(--black-purple-rgb), .1); /* Workaround for Safari bug - https://bugs.webkit.org/show_bug.cgi?id=185940 */
+  box-shadow: var(--box-shadow);
+  border-radius: .25em;
+  background: rgba(var(--black-purple-rgb), .2);
+}
+
+.DeviceMockup.desktop .DeviceMockup--device-display {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+@media (max-width: 1080px) {
+  .DeviceMockup--device-display {
+    --box-shadow: inset 0 0 0 1px rgba(var(--black-purple-rgb), .1); /* Workaround for Safari bug - https://bugs.webkit.org/show_bug.cgi?id=185940 */
+    box-shadow: var(--box-shadow);
+  }
+}
+
+.DeviceMockup--device-display-mockup-1 {
+  background-image: url("/media/mockup-1.png");
+  background-size: 100% 100%;
+}
+
+.DeviceMockup--device-display-mockup-2 {
+  background-image: url("/media/mockup-2.png");
+  background-size: 100% 100%;
+}
+
+.DeviceMockup--device-display-mockup-3 {
+  background-image: url("/media/mockup-3.png");
+  background-size: 100% 100%;
+}
+
+.DeviceMockup--device-display-mockup-3-share-button {
+  position: absolute;
+  display: block;
+  left: 22.6%;
+  right: 22.2%;
+  height: 7.4%;
+  bottom: 13.4%;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 999em;
+  text-decoration: none;
+  color: transparent;
+  font-size: .66em;
+  text-align: center;
+  line-height: 2.6;
+  letter-spacing: -.03em;
+  font-family: Gotham, sans-serif;
+  font-weight: 500;
+  text-indent: -.04em;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .2s ease;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.DeviceMockup--device-display-mockup-3-share-button:hover {
+  opacity: 1;
+}
+
+.DeviceMockup--device-display-mockup-3-share-button:hover:active {
+  background: rgba(0, 0, 0, .2);
+}

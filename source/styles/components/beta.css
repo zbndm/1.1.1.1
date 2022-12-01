@@ -1,0 +1,207 @@
+@media (min-width: 768px) {
+    .BetaSect {
+      display: flex;
+      width: 18em;
+      max-width: 100%;
+      text-align: left;
+    }
+    
+    .BetaSect.BetaSect-is-right {
+      justify-content: flex-end;
+    }
+    
+    @media (max-width: 768px) {
+      .BetaSect.BetaSect-is-right {
+        justify-content: flex-start;
+      }
+    }
+    
+    .BetaSect--title {
+      font-size: 1.75em;
+      line-height: 1.2;
+      font-weight: bold;
+      margin-bottom: .5em;
+    }
+    .BetaSect--req {
+      margin-right: 2em;
+      display: flex;
+      width: 100%;
+    }
+ 
+    .BetaSect--left {
+      margin-left: 4em;
+      display: flex;
+    }
+    .BetaSect--os-title {
+      font-size: 1.10em;
+      line-height: 1.2;
+      font-weight: bold;
+      margin-left: 2em;
+      margin-right: -1em;
+    }
+    .BetaSect--row {
+      align-items: right;
+      justify-content: center;
+      margin-bottom: 1em;
+    
+    }
+    .BetaSect--border {
+      border: 2.5px solid #222868;
+      width: 116%;
+    }
+    .BetaSect--downloadfor {
+      font-size: 12px;
+      line-height: 150%;
+    }
+    .BetaSect-download-instructions {
+      font-size: 12px;
+      line-height: 140%;
+      letter-spacing: -0.15px;
+      text-decoration-line: underline;
+      margin-top: 1em;
+      color: #222868;
+    }
+    .BetaSect--button-group {
+      display: block;
+      margin-left: 4em;
+    }
+    .BetaSect--reqs {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: -0.15px;
+    }
+    
+    .BetaSection--content {
+        position: relative;
+        z-index: 2;
+        width: 40em;
+        max-width: 100%;
+        margin-bottom: 2em;
+      }
+    
+    .BetaSection--column {
+      float: right;
+      width: 33%;
+    
+    }
+    
+    .BetaSect--description p:not(:last-child) {
+      margin-bottom: .5em;
+    }
+    
+    .BetaSect.BetaSect-is-centered {
+      display: block;
+      width: 36em;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .BetaSect.BetaSect-is-centered .BetaSect--title,
+    .BetaSect.BetaSect-is-centered .BetaSect--description {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .BetaSection-mobile {
+      display: none;
+    }
+    }
+    @media (max-width: 768px) {
+      .BetaSection--content {
+        display: none;
+      }
+
+      .BetaSection-mobile {
+        margin: 2em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%
+      }
+    
+      .BetaSection-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    
+      .BetaSection-mobile-title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 150%;
+        padding-bottom: 2em;
+        padding-top: 2em
+      }
+    
+      .BetaSection-mobile-content {
+        border-top: 2.5px solid #222868;
+        border-bottom: 2.5px solid #222868;
+        padding: 1.5em 0;
+        display: flex;
+        justify-content: space-between;
+        
+      }
+      .BetaSection-download-instructions {
+        font-size: 12px;
+        line-height: 140%;
+        letter-spacing: -0.15px;
+        text-decoration-line: underline;
+        margin: 2em 0;
+        color: #222868;
+      }
+    
+      .BetaSection-span {
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: -0.15px;
+        padding: 0 1em;
+      }
+    
+    }
+    @media (max-width: 768px) {
+      .BetaSect,
+      .BetaSect.BetaSect-is-centered {
+        width: 23em;
+        text-align: left;
+      }
+      .BetaSect.BetaSect-is-centered .BetaSect--title
+      .BetaSect.BetaSect-is-centered .BetaSect--description {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    
+      .BetaSect--os-title {
+        margin-top: 2em;
+        width: 100%;
+      }
+    
+      .BetaSection--column {
+        width: 100%;
+      
+      }
+    
+      .BetaSect--button-group{
+        margin-right: 3em;
+        margin-bottom: 1em;
+      }
+    
+      .BetaSect--border {
+        border: 2.5px solid #222868;
+        width: 100%;
+      }
+      .BetaSect--req {
+        margin-right: 2em;
+        display: flex;
+      }
+    
+      .BetaSect--reqs {
+        display: flex;
+      }
+
+      .BetaSect-footer {
+        margin-top: -40em;
+      }
+    
+    }
+    

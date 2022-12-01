@@ -1,0 +1,504 @@
+{
+  "title": "1.1.1.1 — 網際網路上速度最快、隱私權優先的 DNS 解析服務",
+  "description": "✌️✌️ 以更快、更私密的連線瀏覽網際網路。",
+  "hero.introducing": "隆重推出",
+  "hero.description": "只需要一個步驟，就能以更快、更私密的連線瀏覽網際網路",
+  "hero.getStarted": "安裝",
+  "hero.info": "更多資訊",
+
+  "explanation.dnsHeader": "DNS：網際網路上的通訊錄",
+  "explanation.dnsExplanation": "在網際網路上，幾乎一切活動都是從發出 DNS 要求開始。DNS 就是網際網路上的通訊錄。無論是按一下連結、開啟 App 還是傳送電子郵件，您的裝置所做的第一件事就是詢問這個通訊錄：<strong class=\"subtle\">我需要這樣東西，哪裡可以找到？</strong>",
+  "explanation.dnsSlowInsecure": "遺憾的是，一般的 DNS 是又慢又不安全。您的 ISP 還有網際網路上的任何監聽者都能看到您所瀏覽的每個網站和您所使用的每個 App，即便其內容已經過加密處理也是一樣。更可怕的是，某些 DNS 提供者會出售您的網際網路活動資料，或是使用這些資料向您發送廣告。",
+  "explanation.dnsAlternative": "我們認為這些行為相當惡劣。如果您也這麼認為，那麼現在有了另一種選擇：<strong class=\"code\">1.1.1.1</strong>",
+
+  "explanation.privacyHeader": "隱私第一：安心保證。",
+  "explanation.privacyExplanation": "我們重新思考了 1983 年代的 DNS 通訊協定。<strong class=\"code\">1.1.1.1</strong> 可支援加密的 DNS 以及 DNS over HTTPS。",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">我們絕對不會出售您的資料或是使用這些資料向您發送廣告。</span> 就這麼簡單。",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">我們絕對不會記錄您的 IP 位址</span> (其他公司都是靠這來識別您)。我們不只是說說而已。我們聘請 KPMG 每年稽核我們的系統，確定我們有明確落實承諾。",
+  "explanation.privacyConclusion": "坦白說，我們並不想知道您在網際網路上做了什麼事，這不關我們的事，而我們已採取技術措施來確保我們這邊無從得知您做的事。",
+
+  "explanation.performanceHeader": "比任何其他解決方案都要快。",
+  "explanation.fastestDNS": "我們已將 1.1.1.1 打造成網際網路上速度最快的 DNS 目錄。這絕不是空口無憑。獨立的 DNS 監測機構 <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> 將 1.1.1.1 評為全球最快的 DNS 服務。",
+  "explanation.speedContinued": "由於網際網路上的活動幾乎都是從發出 DNS 要求開始，因此讓您所有裝置都選用最快的 DNS 目錄，能讓您幾乎一切的線上活動都變快。",
+
+  "instructions": {
+    "header": "在 {{device}} 上設定",
+    "explanation": "設定 <strong>1.1.1.1</strong> 只需 2 分鐘，而且完全不需要任何技術背景或特殊軟體。即使您是電腦新手，也能選擇下方的裝置，來獲得淺顯易懂的設定指南。",
+    "debug": "想找與您的網際網路連線有關的更多資訊嗎？請查看我們的<a target=\"_blank\" href=\"./help\">偵錯頁面</a>。",
+    "questions": "還是有疑問嗎？請瀏覽我們的<a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">社群論壇</a>",
+    "mac-os": {
+      "steps": [
+        { "tag": "li", "content": "開啟 [系統偏好]。" },
+        {
+          "tag": "li",
+          "content": "搜尋 <strong>DNS 伺服器</strong>，然後在下拉式清單中加以選取。"
+        },
+        {
+          "tag": "li",
+          "content": "按一下 <strong>+</strong> 按鈕以新增一個 DNS 伺服器，然後輸入 <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "再按一下 <strong>+</strong>，然後輸入 <strong class=\"code\">1.0.0.1</strong> (這是作為備援之用。)"
+        },
+        {
+          "tag": "li",
+          "content": "再按一下 <strong>+</strong>，然後輸入 <strong class=\"code\">2606:4700:4700::1111</strong> (這是作為備援之用。)"
+        },
+        {
+          "tag": "li",
+          "content": "再按一下 <strong>+</strong>，然後輸入 <strong class=\"code\">2606:4700:4700::1001</strong> (這是作為備援之用。)"
+        },
+        {
+          "tag": "li",
+          "content": "按一下<strong>確定</strong>，然後按一下<strong>套用</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "這樣就設好囉！您的裝置現在有更快、更私密的 DNS 伺服器了 ✌️✌️"
+        }
+      ]
+    },
+    "windows": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "按一下 [開始] 選單，然後按一下<strong>控制台</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "按一下<strong>網路和網際網路</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "按一下<strong>變更介面卡設定</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "以滑鼠右鍵按一下您連線的 Wi-Fi 網路，然後按一下<strong>內容</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "選取<strong>網際網路通訊協定第 4 版</strong> (或視需要選取第 6 版)。"
+        },
+        { "tag": "li", "content": "按一下<strong>內容</strong>。" },
+        {
+          "tag": "li",
+          "content": "請記下任何現有的 DNS 伺服器項目，以備日後參考。"
+        },
+        {
+          "tag": "li",
+          "content": "按一下<strong>使用下列的 DNS 伺服器位址</strong>。"
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "將其中的位址取代為 1.1.1.1 DNS 位址："
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "IPv4：<strong class=\"code\">1.1.1.1</strong> 和 <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6：<strong class=\"code\">2606:4700:4700::1111</strong> 和 <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "按一下<strong>確定</strong>，然後按一下<strong>關閉</strong>。"
+        },
+        { "tag": "li", "content": "重新啟動您的瀏覽器。" },
+        {
+          "tag": "li",
+          "content": "這樣就設好囉！您的裝置現在有更快、更私密的 DNS 伺服器了 ✌️✌️"
+        }
+      ]
+    },
+    "linux": {
+      "notice": "雖然這些步驟適用於 Ubuntu，但大部分的 Linux 發行版本都是透過「網路管理員」來設定 DNS 設定。或者，您可以在 <code class=\"inline\">/etc/resolv.conf</code> 中指定 DNS 設定",
+      "steps": [
+        {
+          "content": "按一下左側選單列上的 [應用程式] <i class=\"fas fa-th\"></i> 圖示。",
+          "tag": "li"
+        },
+        {
+          "content": "按一下<strong>設定</strong>，然後按一下<strong>網路</strong>。",
+          "tag": "li"
+        },
+        {
+          "content": "在右側窗格中找到您的網際網路連線，然後按一下齒輪 <i class=\"fas fa-cog\"></i> 圖示。",
+          "tag": "li"
+        },
+        {
+          "content": "按一下 <strong>IPv4</strong> 或 <strong>IPv6</strong> 索引標籤以檢視您的 DNS 設定。",
+          "tag": "li"
+        },
+        {
+          "content": "將 DNS 項目上的 [自動] 切換為<strong>關閉</strong>。",
+          "tag": "li"
+        },
+        {
+          "children": [
+            {
+              "tag": "span",
+              "content": "在 [DNS 項目] 欄位中提供 1.1.1.1 DNS 位址："
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "IPv4：<strong class=\"code\">1.1.1.1</strong> 和 <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6：<strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "按一下<strong>套用</strong>，然後重新啟動您的瀏覽器。",
+          "tag": "li"
+        },
+        {
+          "content": "這樣就設好囉！您的裝置現在有更快、更私密的 DNS 伺服器了 ✌️✌️",
+          "tag": "li"
+        }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "在 iPhone 的主畫面上，開啟<strong>設定</strong> App。"
+        },
+        {
+          "tag": "li",
+          "content": "點一下 <strong>Wi-Fi</strong>，然後在清單中點一下您偏好的網路。"
+        },
+        {
+          "tag": "li",
+          "content": "點一下<strong>設定 DNS</strong>，然後點一下<strong>手動</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "如果目前已有任何項目，請點一下 <strong>-</strong> 按鈕，然後點一下每個項目旁邊的<strong>刪除</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "點一下 <strong>+ 新增伺服器</strong>按鈕，然後輸入 <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "再點一下 <strong>+ 新增伺服器</strong>按鈕，然後輸入 <strong class=\"code\">1.0.0.1</strong>。這是作為備援之用。"
+        },
+        {
+          "tag": "li",
+          "content": "再點一下 <strong>+ 新增伺服器</strong>按鈕，然後輸入 <strong class=\"code\">2606:4700:4700::1111</strong>。這是作為備援之用。"
+        },
+        {
+          "tag": "li",
+          "content": "再點一下 <strong>+ 新增伺服器</strong>按鈕，然後輸入 <strong class=\"code\">2606:4700:4700::1001</strong>。這是作為備援之用。"
+        },
+        {
+          "tag": "li",
+          "content": "點一下右上角的<strong>儲存</strong>按鈕。"
+        },
+        {
+          "tag": "li",
+          "content": "這樣就設好囉！您的裝置現在有更快、更私密的 DNS 伺服器了 ✌️✌️"
+        }
+      ]
+    },
+    "android": {
+      "message": "請注意，Android 需要有靜態 IP 才能使用自訂 DNS 伺服器。此設定需要在路由器上進行其他設定，但這樣會影響您的網路將新裝置加到網路中的策略。建議您改為設定<button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">路由器的 DNS</button>。如此一來，您網路上的所有裝置就都能享受到 1.1.1.1 DNS 全速又私密的優點。",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "在 Android 的 App 清單中，開啟<strong>設定</strong> App。"
+        },
+        {
+          "tag": "li",
+          "content": "在<strong>無線與網路</strong>區段，點一下 <strong>Wi-Fi</strong>，"
+        },
+        {
+          "tag": "li",
+          "content": "在清單中長按您偏好的網路，直到出現操作選單。"
+        },
+        {
+          "tag": "li",
+          "content": "點一下<strong>修改網路</strong>，然後點一下<strong>進階選項</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "點一下<strong>進階選項</strong>，然後點一下 <strong>IP 設定</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "將<strong>動態</strong>變更為<strong>靜態</strong>。"
+        },
+        {
+          "tag": "li",
+          "content": "使用路由器的設定，輸入裝置的 IP 位址和閘道。"
+        },
+        {
+          "tag": "li",
+          "content": "點一下 <strong>DNS</strong> 欄位，然後清除該欄位中的數字。"
+        },
+        {
+          "tag": "li",
+          "content": "在 <strong>DNS 1</strong> 欄位，輸入 <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "在 <strong>DNS 2</strong>欄位，輸入 <strong class=\"code\">1.0.0.1</strong> (這是作為備援之用。)"
+        },
+        { "tag": "li", "content": "點一下<strong>儲存</strong>。" },
+        {
+          "tag": "li",
+          "content": "這樣就設好囉！您的裝置現在有更快、更私密的 DNS 伺服器了 ✌️✌️"
+        }
+      ]
+    },
+    "router": {
+      "message": "您的路由器設定可能會有所不同。詳情請參閱手冊。",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "連線到您偏好的無線網路。"
+        },
+        {
+          "tag": "li",
+          "content": "在瀏覽器中輸入您路由器的閘道 IP 位址。"
+        },
+        {
+          "tag": "li",
+          "content": "如果出現提示，請填入您的使用者名稱和密碼。這些資訊可能會標示在路由器上。"
+        },
+        {
+          "tag": "li",
+          "content": "在路由器的設定頁面中，找到 <strong>DNS 伺服器</strong>設定。"
+        },
+        {
+          "tag": "li",
+          "content": "請記下任何現有的 DNS 伺服器項目，以備日後參考。"
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "將其中的位址取代為 1.1.1.1 DNS 位址："
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "IPv4：<strong class=\"code\">1.1.1.1</strong> 和 <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "IPv6：<strong class=\"code\">2606:4700:4700::1111</strong> 和 <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "儲存設定，然後重新啟動瀏覽器。"
+        },
+        {
+          "tag": "li",
+          "content": "這樣就設好囉！您的裝置現在有更快、更私密的 DNS 伺服器了 ✌️✌️"
+        }
+      ]
+    },
+    "downloadmobile": "下載行動裝置 App"
+  },
+
+  "share.header": "✌️✌️ 向您的朋友分享更快、隱私權優先的網際網路連線。",
+  "share.emailSubject": "✌️✌️ 以更快、更私密的連線瀏覽網際網路 — 1.1.1.1 DNS 解析服務",
+  "share.emailBody": "「1.1.1.1」能讓您以更快、更私密的方式瀏覽網際網路。請造訪 https://1.1.1.1 獲得詳情，並瞭解如何以不到兩分鐘的時間設定好您的裝置！",
+  "share.tweetBody": "✌️✌️ 想要快速、安全又私密的網際網路連線？請看過來。要設定 1.1.1.1 DNS 解析服務，只需花不到兩分鐘的時間。",
+
+  "faq.whosBehindThis": "它背後的技術是由誰提供？",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> 是 Cloudflare 與 APNIC 聯手得出的結晶。",
+  "faq.network": "Cloudflare 經營了世界上最大、最快的網路之一。APNIC 則是一家管理亞太和大洋洲地區 IP 位址分配的非營利組織。",
+  "faq.networkContinued": "網路當初是由 Cloudflare 所擁有。IP 位址 (1.1.1.1) 當初則是由 APNIC 所擁有。我們兩方的使命都是要打造更好的網際網路環境。您可以在我們各自張貼的文章中，瞭解我們的宗旨：<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 部落格</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 部落格</a>。詳情請參閱：<a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">什麼是 1.1.1.1？</a>",
+  "faq.canIintegrate": "我是否能與 1.1.1.1 整合？",
+  "faq.integrationInfo": "若您是瀏覽器、作業系統、App、路由器或 VPN 的製造商，想要打造隱私權優先、快速、現代化的 DNS 服務，那麼答案為<strong class=\"subtle\">是</strong>！",
+  "faq.integrationDocs": "使用 DNS over HTTPS (DoH)，不僅能讓您的客戶在無形中就享受到先進的安全機制，還能提升您裝置的速度。更棒的是，您無需付出任何成本 (不論是在授權費用方面或客戶的<a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">隱私權</a>方面) 就能辦到。您可以在我們的<a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">開發人員文件</a>中，深入瞭解 1.1.1.1 與我們的 DNS over HTTPS (DoH) 支援。",
+
+  "faqpage.header": "常見問題集",
+  "faqpage.general": "一般",
+  "faqpage.whatIsQ": "什麼是 1.1.1.1？",
+  "faqpage.whatIsA1": "當您要求瀏覽 cloudflare.com 之類的應用程式時，您的電腦需要知道要連線到哪一台伺服器，才能載入應用程式。電腦並不知道如何將名稱轉譯成位址，因此會請一台專門的伺服器幫忙轉譯。",
+  "faqpage.whatIsA2": "此專門的伺服器稱為 DNS 遞迴解析服務。此解析服務的職責是尋找指定名稱的實際位址 (像 cloudflare.com 就是 2400:cb00:2048:1::c629:d7a2)，然後將其傳回詢問這項資訊的電腦。",
+  "faqpage.whatIsA3": "電腦已設定成與特定 DNS 解析服務 (以 IP 位址識別) 聯繫。一般說來，如果是透過家用或無線網路連上網際網路，此設定是由 ISP (如 Comcast 或 AT&amp;T) 所管理；如果透過公司網路連上網際網路，此設定是由公司的網路系統管理員所管理。您亦可自行變更要讓電腦聯繫的 DNS 解析服務。",
+  "faqpage.whatDoDNSQ": "DNS 解析服務能做些什麼？",
+  "faqpage.whatDoDNSA1": "解析服務怎麼知道要如何找到網域名稱的位址？畢竟其是要從頂層倒推回去。",
+  "faqpage.whatDoDNSA2": "每個解析服務都知道如何找到網域名稱結尾隱藏的「.」(如 cloudflare.com.)。全球有<a href='http://www.root-servers.org/' target='_blank'>數以百計的伺服器</a>裝載了「.」檔案。拜<a href='https://blog.cloudflare.com/f-root/' target='_blank'>與 ISC 合作</a>之賜，Cloudflare 位於世界各地的伺服器全都裝載了<a href='https://www.internic.net/domain/root.zone' target='_blank'>該檔案</a>。解析服務<a href='https://www.internic.net/domain/named.root' target='_blank'>經硬式編碼，知道這些伺服器的 IP 位址</a>。",
+  "faqpage.whatDoDNSA3": "解析服務會詢問其中一台根伺服器要到哪裡找到連結鏈中的下一個連結，也就是頂層網域或網域後綴。頂層網域的範例像是 .com 或 .org。幸運的是，根伺服器會存放所有頂層網域伺服器的位置，因此可以傳回 DNS 解析服務接下來應詢問的 IP 位址。",
+  "faqpage.whatDoDNSA4": "然後，解析伺服器便會向頂層網域的伺服器詢問哪裡可以找到所要找的網域，例如，解析服務可能會向 .com 詢問哪裡可以找到 cloudflare.com。頂層網域裝載了一個檔案，當中包含所有使用該頂層網域的網域之位置。解析服務在取得最終 IP 位置後，就會將答案傳回查詢的電腦。",
+  "faqpage.whatDoDNSA5": "裝載這些資訊 (稱為權威 DNS) 及搜尋這些資訊 (DNS 解析服務) 的這整個伺服器系統稱為網域名稱系統 (DNS)。DNS 好比網際網路上的 Google 地圖，將地名轉譯為地址，讓您能夠思考該如何前往目的地。",
+  "faqpage.ipv6Q": "1.1.1.1 是否具備 IPv6 支援？",
+  "faqpage.ipv6A": "是，1.1.1.1 完全支援 IPv6。",
+  "faqpage.clearCacheQ": "如何清除 1.1.1.1 的 DNS 快取？",
+  "faqpage.clearCacheA": "您可以使用<a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>清除快取工具</a>來重新整理 1.1.1.1 的 DNS 網域名稱快取。您必須輸入網域名稱、選取 DNS 記錄類型，然後點擊 [清除快取] 按鈕。",
+  "faqpage.insideChinaQ": "1.1.1.1 在中國境內是否可使用？",
+  "faqpage.insideChinaA": "不盡然。您可以將 DNS 設為指向 1.1.1.1，但後者無法聯繫上我們在中國境內的資料中心。要求會改被路由傳送至我們在中國大陸境外的資料中心。",
+  "faqpage.devDocsQ": "哪裡可以找到 1.1.1.1 的開發人員文件？",
+  "faqpage.devDocsA": "請到這裡",
+  "faqpage.mobileApp": "行動裝置 App",
+  "faqpage.mobileAppWorkQ": "行動裝置 App 如何運作？",
+  "faqpage.mobileAppWorkA": "行動裝置 App 會在您的行動電話內執行本機解析服務，由其請所有其他 App 將 DNS 要求傳送至此解析服務的位置。待這些 DNS 要求送達本機解析服務後，本機解析服務便會先將這些內容加密，然後再傳送至 1.1.1.1。",
+  "faqpage.vpnQ": "1.1.1.1 App 是一種 VPN 嗎？",
+  "faqpage.vpnA": "不是。VPN App 通常會代理您所有的網路流量。1.1.1.1 App 只會覆寫和保護您行動電話的 DNS 流量。",
+  "faqpage.dnsLogsQ": "什麼是 DNS 記錄？",
+  "faqpage.dnsLogsA": "iOS 中的 DNS 記錄包含您手機上發出的所有 DNS 查詢。這些 DNS 查詢通常是由您的 App 和行動瀏覽器所產生。",
+  "faqpage.logsForQ": "主控台記錄是做什麼用的？",
+  "faqpage.logsForA": "主控台記錄的存在是要協助 Cloudflare 對您的連線進行偵錯。",
+  "faqpage.suggestQ": "如何提出改進建議？",
+  "faqpage.suggestA": "您所有的建議我們都會看過。您可以在此 App 中搖動手機，然後就能傳送改進建議。或者，到此 App 的選單中點一下 [說明] 後，同樣能夠傳送您的意見。",
+  "faqpage.diffDnsTlsQ": "使用 DNS over TLS 與 DNS over HTTPS 有什麼區別？",
+  "faqpage.diffDnsTlsA1": "DNS over TLS 與 DNS over HTTPS 都會將手機上發出的一般 DNS 查詢進行加密。",
+  "faqpage.diffDnsTlsA2": "DNS over HTTPS 使用連接埠 443，而 DNS over TLS 使用連接埠 853。在某些網路中，上述其中一個連接埠可能會遭封鎖。如果連接埠 443 遭封鎖，則應使用 DNS over TLS。如果連接埠 853 遭封鎖，則應使用 DNS over HTTPS。DNS over TLS 在某些情況下的速度可能會比 DNS over HTTPS 還要快，在其他情況下則可能相反。",
+  "faqpage.bugQ": "如何傳送錯誤報告？",
+  "faqpage.bugA": "您可以搖動此 App，然後就能傳送錯誤報告。當您這麼做時，此 App 會隨錯誤報告附加螢幕擷取畫面和主控台記錄。主控台記錄可協助我們偵錯您的連線，改善您的 App 整體使用體驗。",
+  "faqpage.internetStoppedQ": "網際網路連線在我使用 1.1.1.1 App 時中斷。我該怎麼辦？",
+  "faqpage.internetStoppedA": "如果發生此情況，請試試利用此 App 首頁的切換開關，將此 App 關閉再開啟。如果此問題依然存在，請停用此 App 並向我們傳送錯誤報告。",
+  "faqpage.appStuckQ": "1.1.1.1 App 在「正在連線」或「正在恢復」時卡住。我該怎麼辦？",
+  "faqpage.appStuckA1": "如果您的網路連線臨時中斷，或是您的數據連線封鎖了 1.1.1.1 連線，就可能會發生此情況。",
+  "faqpage.appStuckList": [
+    {
+      "tag": "li",
+      "content": "請使用此 App 首頁的切換開關關閉此 App。"
+    },
+    {
+      "tag": "li",
+      "content": "開啟 iOS 的 [設定] App，巡覽至 [設定] > [一般] > [重設]。"
+    },
+    {
+      "tag": "li",
+      "content": "按一下 [重設網路設定]。"
+    },
+    {
+      "tag": "li",
+      "content": "重新啟動裝置；確定 Wifi 已連線。"
+    },
+    {
+      "tag": "li",
+      "content": "重試讓此 App 連線。"
+    }
+  ],
+  "faqpage.appStuckA2": "如果連線仍未恢復，請停用 1.1.1.1 App 並向我們傳送錯誤報告。",
+  "faqpage.cannotClickQ": "VPN 安裝對話方塊中的  [確定] 按不了。我該怎麼辦？",
+  "faqpage.cannotClickA": "如果 [確定] 按鈕按不了，可能有其他應用程式蓋在對話方塊上。已知可能會造成此問題的一些 App 有 Lux Brightness、Night Mode、Twilight、FileManager 等等。若要避免此問題，請關閉或解除安裝所有可能會造成此問題的 App。",
+  "faqpage.appenabledQ": "我啟用了此 App，但它沒過一會就關閉了。發生什麼事了？",
+  "faqpage.appenabledA1": "您的手機正為了管理電池耗電量，而嘗試停用此 App。例如，大部份華為裝置均以其激進的記憶體與電源管理功能而著稱。",
+  "faqpage.appenabledA2": "您可以透過以下步驟來修復此問題：",
+  "faqpage.appenabledList": [
+    {
+      "tag": "li",
+      "content": "前往手機的 [設定]。"
+    },
+    {
+      "tag": "li",
+      "content": "選取 [進階]"
+    },
+    {
+      "tag": "li",
+      "content": "進入 [電池管理系統]"
+    },
+    {
+      "tag": "li",
+      "content": "開啟 [受保護 App]"
+    },
+    {
+      "tag": "li",
+      "content": "您可以對 1.1.1.1 App 選取 [螢幕關閉後，允許 App 繼續運作]。"
+    }
+  ],
+  "faqpage.persistentnotificationQ": "為什麼 1.1.1.1 App 有則通知一直不消失？",
+  "faqpage.persistentnotificationA1": "如果您使用的是 Android 8 或更高版本，您將看到有則表示「您的 DNS 查詢是私密的且更快」的 1.1.1.1 App 通知一直不消失。",
+  "faqpage.persistentnotificationA2": "對於所有在背景有活動的 App，Android OS (8.0+) 都要求這樣做。",
+  "faqpage.persistentnotificationA3": "我們將該則通知的優先順序設定為 [低]，以免干擾您注意手機上的其他重要通知。",
+  "faqpage.persistentnotificationA4": "您可以執行以下步驟來隱藏通知。請注意，您將因此無法接收 1.1.1.1 App 的其他通知。步驟如下：",
+  "faqpage.persistentnotificationList": [
+    {
+      "tag": "li",
+      "content": "前往手機上的 [設定]。"
+    },
+    {
+      "tag": "li",
+      "content": "[應用程式與通知]。"
+    },
+    {
+      "tag": "li",
+      "content": "從 App 清單中開啟 1.1.1.1 App 設定。"
+    },
+    {
+      "tag": "li",
+      "content": "點一下 [通知] 然後將其停用。"
+    }
+  ],
+  "faqpage.disablednotificationQ": "我停用了 1.1.1.1 App 的通知，但現在我看到另一則通知，表示「1.1.1.1 正在耗用電池」。我應該擔心嗎？如何將此通知移除？",
+  "faqpage.disablednotificationA1": "您無需擔心。由於您已停用此 App 的通知，Android 作業系統現在會傳送另一則通知，警告您電量電池正在耗用中，但這並不代表此 App 耗用了大量電池電量，而是代表此 App 正在背景執行（也就是說，它正在保護您所有的 DNS 查詢！）。",
+  "faqpage.disablednotificationA2": "以下是移除此通知的方法：",
+  "faqpage.disablednotificationList": [
+    {
+      "tag": "li",
+      "content": "長按通知直到通知發生變化並顯示切換開關。"
+    },
+    {
+      "tag": "li",
+      "content": "點一下切換開關，確定其呈現灰色停用的狀態。"
+    },
+    {
+      "tag": "li",
+      "content": "選取 [完成] 以停用通知。"
+    }
+  ],
+  "faqpage.vpnprofileQ": "我新增不了 VPN 設定檔。該如何解決？",
+  "faqpage.vpnprofileA1": "您可能正在使用另一個啟用了 [始終開啟] 設定的 VPN。請先停用該 VPN，然後再啟用 1.1.1.1。",
+  "faqpage.vpnprofileA2": "您可以依照以下步驟前往該頁面：",
+  "faqpage.vpnprofileList": [
+    {
+      "tag": "li",
+      "content": "設定"
+    },
+    {
+      "tag": "li",
+      "content": "網路和網際網路"
+    },
+    {
+      "tag": "li",
+      "content": "進階"
+    },
+    {
+      "tag": "li",
+      "content": "VPN"
+    },
+    {
+      "tag": "li",
+      "content": "1.1.1.1 的齒輪按鈕"
+    },
+    {
+      "tag": "li",
+      "content": "對 1.1.1.1 啟用 [始終開啟]"
+    }
+  ]
+}

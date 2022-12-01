@@ -1,0 +1,597 @@
+{
+  "title": "1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver",
+  "description": "✌️✌️ Browse a faster, more private internet.",
+  "warp.nav.name": "1.1.1.1",
+  "warp.title": "1.1.1.1 — The free app that makes your Internet faster.",
+  "warp.description": "Install the free app that makes your phone’s Internet more fast, private, and reliable.",
+  "hero.description": "You are one step away from browsing a faster, more private Internet",
+  "hero.getStarted": "Install",
+  "hero.info": "More Info",
+
+  "explanation.dnsHeader": "DNS: Internet’s Directory",
+  "explanation.dnsExplanation": "Nearly everything on the Internet starts with a DNS request. DNS is the Internet’s directory. Click on a link, open an app, send an email and the first thing your device does is ask the directory: <strong class=\"subtle\">Where can I find this?</strong>",
+  "explanation.dnsSlowInsecure": "Unfortunately, by default, DNS is usually slow and insecure. Your ISP, and anyone else listening in on the Internet, can see every site you visit and every app you use — even if their content is encrypted. Creepily, some DNS providers sell data about your Internet activity or use it to target you with ads.",
+  "explanation.dnsAlternative": "We think that’s gross. If you do too, now there’s an alternative: <strong class=\"code\">1.1.1.1</strong>",
+
+  "explanation.privacyHeader": "Privacy First: Guaranteed.",
+  "explanation.privacyExplanation": "We’re rethinking the 1983-era DNS protocol. <strong class=\"code\">1.1.1.1</strong> supports encrypted DNS as well as DNS over HTTPS.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">We will never sell your data or use it to target ads.</span> Period.",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">We will never log your IP address</span> (the way other companies identify you). And we’re not just saying that. We’ve retained a big 4 accounting firm to audit our assertions about our systems annually to ensure that we're doing what we say.",
+  "explanation.privacyConclusion": "Frankly, we don’t want to know what you do on the Internet—it’s none of our business—and we’ve taken the technical steps to ensure we can’t.",
+
+  "explanation.performanceHeader": "Faster than anything else.",
+  "explanation.fastestDNS": "We’ve built 1.1.1.1 to be the Internet’s fastest DNS directory. Don’t take our word for it. The independent DNS monitor <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> ranks 1.1.1.1 the fastest DNS service in the world.",
+  "explanation.speedContinued": "Since nearly everything you do on the Internet starts with a DNS request, choosing the fastest DNS directory across all your devices will accelerate almost everything you do online.",
+  "explanation.timeStamp": "* March, 2020",
+
+  "instructions": {
+    "header": "Setup on {{device}}",
+    "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
+    "debug": "Looking for more info about your internet connection? Check out our <a target=\"_blank\" href=\"./help\">debug page</a>.",
+    "questions": "Still have questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
+    "mac-os": {
+      "steps": [
+        { "tag": "li", "content": "Open System Preferences." },
+        {
+          "tag": "li",
+          "content": "Search for <strong>DNS Servers</strong> and select it from the dropdown."
+        },
+        {
+          "tag": "li",
+          "content": "Click the <strong>+</strong> button to add a DNS Server and enter <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "Click <strong>+</strong> again and enter <strong class=\"code\">1.0.0.1</strong> (This is for redundancy.)"
+        },
+        {
+          "tag": "li",
+          "content": "Click <strong>+</strong> again and enter <strong class=\"code\">2606:4700:4700::1111</strong> (This is for redundancy.)"
+        },
+        {
+          "tag": "li",
+          "content": "Click <strong>+</strong> again and enter <strong class=\"code\">2606:4700:4700::1001</strong> (This is for redundancy.)"
+        },
+        {
+          "tag": "li",
+          "content": "Click <strong>Ok</strong>, then click <strong>Apply</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"
+        }
+      ]
+    },
+    "windows": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Click on the Start menu, then click on <strong>Control Panel</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Click on <strong>Network and Internet</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Click on <strong>Change Adapter Settings</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Right click on the Wi-Fi network you are connected to, then click <strong>Properties</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Select <strong>Internet Protocol Version 4</strong> (or Version 6 if desired)."
+        },
+        { "tag": "li", "content": "Click <strong>Properties</strong>." },
+        {
+          "tag": "li",
+          "content": "Write down any existing DNS server entries for future reference."
+        },
+        {
+          "tag": "li",
+          "content": "Click <strong>Use The Following DNS Server Addresses</strong>."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "For IPv4: <strong class=\"code\">1.1.1.1</strong> and <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "For IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "Click <strong>OK</strong>, then <strong>Close</strong>."
+        },
+        { "tag": "li", "content": "Restart your browser." },
+        {
+          "tag": "li",
+          "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"
+        }
+      ]
+    },
+    "linux": {
+      "notice": "While these steps are for Ubuntu, most Linux distributions configure DNS settings through the Network Manager. Alternatively, your DNS settings can be specified in <code class=\"inline\">/etc/resolv.conf</code>",
+      "steps": [
+        {
+          "content": "Click the Applications <i class=\"fas fa-th\"></i> icon on the left menu bar.",
+          "tag": "li"
+        },
+        {
+          "content": "Click <strong>Settings</strong>, then <strong>Network</strong>.",
+          "tag": "li"
+        },
+        {
+          "content": "Find your internet connection on the right pane, then click the gear <i class=\"fas fa-cog\"></i> icon.",
+          "tag": "li"
+        },
+        {
+          "content": "Click the <strong>IPv4</strong> or <strong>IPv6</strong> tab to view your DNS settings.",
+          "tag": "li"
+        },
+        {
+          "content": "Set the “Automatic” toggle on the DNS entry to <strong>Off</strong>.",
+          "tag": "li"
+        },
+        {
+          "children": [
+            {
+              "tag": "span",
+              "content": "Provide the 1.1.1.1 DNS addresses in the DNS entries field:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "For IPv4: <strong class=\"code\">1.1.1.1</strong> and <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "For IPv6: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "Click <strong>Apply</strong>, then restart your browser.",
+          "tag": "li"
+        },
+        {
+          "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️",
+          "tag": "li"
+        }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {
+          "tag": "li",
+          "content": "From your iPhone’s home screen, open the <strong>Settings</strong> app."
+        },
+        {
+          "tag": "li",
+          "content": "Tap <strong>Wi-Fi</strong>, then tap your preferred network in the list."
+        },
+        {
+          "tag": "li",
+          "content": "Tap <strong>Configure DNS</strong>, then tap <strong>Manual</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "If there are any existing entries, tap the <strong>-</strong> button, and <strong>Delete</strong> next to each one."
+        },
+        {
+          "tag": "li",
+          "content": "Tap the <strong>+ Add Server</strong> button, then type <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "Tap the <strong>+ Add Server</strong> button again, then type <strong class=\"code\">1.0.0.1</strong>. This is for redundancy."
+        },
+        {
+          "tag": "li",
+          "content": "Tap the <strong>+ Add Server</strong> button again, then type <strong class=\"code\">2606:4700:4700::1111</strong>. This is for redundancy."
+        },
+        {
+          "tag": "li",
+          "content": "Tap the <strong>+ Add Server</strong> button again, then type <strong class=\"code\">2606:4700:4700::1001</strong>. This is for redundancy."
+        },
+        {
+          "tag": "li",
+          "content": "Tap the <strong>Save</strong> button on the top right."
+        },
+        {
+          "tag": "li",
+          "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"
+        }
+      ]
+    },
+    "android": {
+      "message": "Note that Android requires a static IP to use custom DNS servers. This setup requires additional setup on your router, affecting your network’s strategy for adding new devices to the network. We recommend configuring your <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">router’s DNS</button> instead. This will give all devices on your network the full speed and privacy benefits of 1.1.1.1 DNS.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "From your Android’s app list, open the <strong>Settings</strong> app."
+        },
+        {
+          "tag": "li",
+          "content": "Under the <strong>Wireless & networks</strong> section, tap <strong>Wi-Fi</strong>,"
+        },
+        {
+          "tag": "li",
+          "content": "Long press your preferred network in the list until a context menu appears."
+        },
+        {
+          "tag": "li",
+          "content": "Tap the <strong>Modify network</strong>, then tap <strong>Advanced options</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Tap <strong>Advanced options</strong>, then tap <strong>IP Settings</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Change <strong>Dynamic</strong> to <strong>Static</strong>."
+        },
+        {
+          "tag": "li",
+          "content": "Using your router’s configuration, enter your device’s IP address and gateway."
+        },
+        {
+          "tag": "li",
+          "content": "Tap the <strong>DNS</strong> field, then erase the number in the field."
+        },
+        {
+          "tag": "li",
+          "content": "In the <strong>DNS 1</strong> field, enter <strong class=\"code\">1.1.1.1</strong>"
+        },
+        {
+          "tag": "li",
+          "content": "In the <strong>DNS 2</strong> field, enter <strong class=\"code\">1.0.0.1</strong> (This is for redundancy.)"
+        },
+        { "tag": "li", "content": "Tap <strong>Save</strong>." },
+        {
+          "tag": "li",
+          "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"
+        }
+      ]
+    },
+    "router": {
+      "message": "Your router’s configuration may vary. Consult your manual for more information.",
+      "steps": [
+        {
+          "tag": "li",
+          "content": "Connect to your preferred wireless network."
+        },
+        {
+          "tag": "li",
+          "content": "Enter your router’s gateway IP address in your browser."
+        },
+        {
+          "tag": "li",
+          "content": "If prompted, fill in your username and password. This information may be labeled on the router."
+        },
+        {
+          "tag": "li",
+          "content": "In your router’s configuration page, locate the <strong>DNS server</strong> settings."
+        },
+        {
+          "tag": "li",
+          "content": "Write down any existing DNS server entries for future reference."
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "span",
+              "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "content": "For IPv4: <strong class=\"code\">1.1.1.1</strong> and <strong class=\"code\">1.0.0.1</strong>"
+                },
+                {
+                  "tag": "li",
+                  "content": "For IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "content": "Save your settings, then restart your browser."
+        },
+        {
+          "tag": "li",
+          "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"
+        }
+      ]
+    },
+    "downloadmobile": "Download the mobile app"
+  },
+
+  "share.header": "✌️✌️ Share a faster, privacy-first Internet with your friends.",
+  "share.emailSubject": "✌️✌️ Browse a faster, more private internet — 1.1.1.1 DNS Resolver",
+  "share.emailBody": "“1.1.1.1” makes internet browsing faster and more private. Check out https://1.1.1.1 for more info and how to setup your device in less than two minutes!",
+  "share.tweetBody": "✌️✌️ Fast, safe, and private internet is here. Setup the 1.1.1.1 DNS Resolver in less than two minutes.",
+
+  "faq.whosBehindThis": "Who’s behind this?",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> is a partnership between Cloudflare and APNIC.",
+  "faq.network": "Cloudflare runs one of the world’s largest, fastest networks. APNIC is a non-profit organization managing IP address allocation for the Asia Pacific and Oceania regions.",
+  "faq.networkContinued": "Cloudflare had the network. APNIC had the IP address (1.1.1.1). Both of us were motivated by a mission to help build a better Internet. You can read more about each organization’s motivations on our respective posts: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare Blog</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC Blog</a>. For more information see: <a href=\"https://cloudflare.com/learning/dns/what-is-1.1.1.1/\" target=\"_blank\">What is 1.1.1.1?</a>",
+  "faq.canIintegrate": "Can I integrate with 1.1.1.1?",
+  "faq.integrationInfo": "If you are a browser, operating system, app, router, or VPN manufacturer who wants to build in a privacy-first, fast, modern DNS service, <strong class=\"subtle\">yes!</strong>",
+  "faq.integrationDocs": "By using DNS over HTTPS (DoH) you can transparently offer enhanced security to your customers while improving the speed of your devices. Even better, you can do it at no cost, both in terms of licensing and customer’s <a href=\"https://developers.cloudflare.com/1.1.1.1/privacy/\" target=\"_blank\">privacy</a>. Learn more about 1.1.1.1 and our DNS over HTTPS (DoH) support in our <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>.",
+  "faq.warpVsDNS": "Is Warp replacing the 1.1.1.1 DNS service?",
+  "faq.warpVsDNSAnswer": "No, Cloudflare deeply believes in the value of free, fast, and private DNS and intends to provide the 1.1.1.1 DNS service for the forseeable future. Warp is an additional feature which augments our mobile apps but will always remain optional.",
+
+  "faqpage.header": "Frequently Asked Questions",
+  "faqpage.general": "General",
+  "faqpage.whatIsQ": "What is 1.1.1.1?",
+  "faqpage.whatIsA1": "When you request to visit an application like cloudflare.com, your computer needs to know which server to connect you to so that it can load the application. Computers don’t know how to do this name to address translation, so they ask a specialized server to do it for them.",
+  "faqpage.whatIsA2": "This specialized server is called a DNS recursive resolver. The resolver’s job is to find the address for a given name, like 2400:cb00:2048:1::c629:d7a2 for cloudflare.com, and return it to the computer that asked for it.",
+  "faqpage.whatIsA3": "Computers are configured to talk to specific DNS resolvers, identified by IP address. Usually, the configuration is managed by your ISP (like Comcast or AT&T) if you’re on your home or wireless internet, and by your network administrator if you’re connected to the office internet. You can also change the configured DNS resolver your computer talks to yourself.",
+  "faqpage.whatDoDNSQ": "What do DNS resolvers do?",
+  "faqpage.whatDoDNSA1": "How do resolvers know how to find the address of a domain name? They work backwards from the top.",
+  "faqpage.whatDoDNSA2": "Every resolver knows how to find the invisible ‘.’ at the end of domain names (e.g. cloudflare.com.). There are <a href='http://www.root-servers.org/' target='_blank'>hundreds of servers</a> all over the world that host the ‘.’ file. Cloudflare itself hosts <a href='https://www.internic.net/domain/root.zone' target='_blank'>that file</a> on all of its servers around the world through a <a href='https://blog.cloudflare.com/f-root/' target='_blank'>partnership with ISC</a>. Resolvers are <a href='https://www.internic.net/domain/named.root' target='_blank'>hard coded to know the IP addresses of those servers</a>.",
+  "faqpage.whatDoDNSA3": "The resolver asks one of the root servers where to find the next link in the chain, the TLD or domain ending. An example of a TLD is .com or .org. Luckily the root servers store the locations of all the TLD servers, so they can return which IP address the DNS resolver should go ask next.",
+  "faqpage.whatDoDNSA4": "The resolver then asks the TLD’s servers where it can find the domain it is looking for, for example, a resolver might ask .com where to find cloudflare.com. TLD’s host a file containing the location of every domain using the TLD. Once the resolver has the final IP address, it returns the answer to the computer that asked.",
+  "faqpage.whatDoDNSA5": "This whole system - with the servers that host the information (they are called authoritative DNS) and the servers that seek the information (the DNS resolvers) is called the Domain Name System (DNS). DNS is like Google Maps for the internet. It translates the name of places to addresses so that you can figure out how to get there.",
+  "faqpage.ipv6Q": "Does 1.1.1.1 have IPv6 support?",
+  "faqpage.ipv6A": "Yes, 1.1.1.1 has full IPv6 support.",
+  "faqpage.clearCacheQ": "How can I clear 1.1.1.1’s DNS cache?",
+  "faqpage.clearCacheA": "You can refresh 1.1.1.1’s DNS cache for domain names by using the <a href='https://cloudflare-dns.com/purge-cache/' target='_blank'>purge cache tool</a>. You have to enter the domain name, pick the DNS record type (or types) and hit the ‘Purge Cache’ button.",
+  "faqpage.insideChinaQ": "Does 1.1.1.1 work inside China?",
+  "faqpage.insideChinaA": "Not really. You can configure your DNS to point towards 1.1.1.1 but it will not reach one of our data centers inside China. Instead, the request will route to one of our data centers outside of Mainland China.",
+  "faqpage.devDocsQ": "Where can I find 1.1.1.1’s developer docs?",
+  "faqpage.devDocsA": "Here",
+  "faqpage.mobileApp": "Mobile App",
+  "faqpage.mobileAppWorkQ": "How does the mobile app work?",
+  "faqpage.mobileAppWorkA": "The app runs a local resolver inside your mobile phone that asks all the other apps to send their DNS requests to the address of this resolver. Once these DNS requests reach the local resolver, it encrypts them and sends them to 1.1.1.1.",
+  "faqpage.vpnQ": "Is the 1.1.1.1 app a VPN?",
+  "faqpage.vpnA": "No. A VPN app typically proxies all of your network traffic. The 1.1.1.1 app only overrides and secures your mobile phone’s DNS traffic.",
+  "faqpage.dnsLogsQ": "What are DNS logs?",
+  "faqpage.dnsLogsA": "The DNS logs on iOS contain all the DNS queries that your phone makes. Your apps and mobile browser usually generate these DNS queries.",
+  "faqpage.logsForQ": "What are the console logs for?",
+  "faqpage.logsForA": "The console logs are there to help Cloudflare debug your connection.",
+  "faqpage.suggestQ": "How can I suggest an improvement?",
+  "faqpage.suggestA": "We read all of your suggestions. You can shake the phone while in the app and send your suggestions for improvements. Alternatively, you can go to the app menu and tap on ‘Help’ to send your feedback.",
+  "faqpage.diffDnsTlsQ": "What is the difference between using DNS over TLS and DNS over HTTPS?",
+  "faqpage.diffDnsTlsA1": "Both DNS over TLS and DNS over HTTPS encrypt plain DNS queries from the phone.",
+  "faqpage.diffDnsTlsA2": "DNS over HTTPS uses port 443 and DNS over TLS uses port 853. In some networks, one of these ports might be blocked. If port 443 is blocked you should use DNS over TLS. If port 853 is blocked, you should use DNS over HTTPS. In some cases, DNS over TLS may be faster than DNS over HTTPS or the other way around.",
+  "faqpage.bugQ": "How can I send a bug report?",
+  "faqpage.bugA": "You can shake the app and send a bug report. When you do that, the app attaches a screenshot and the console logs along with the bug report. The console log helps us debug your connection and improve your overall app experience.",
+  "faqpage.internetStoppedQ": "My internet stopped working when I was using the 1.1.1.1 app. What should I do?",
+  "faqpage.internetStoppedA": "If this happens, try turning the app off and on again by using the toggle from the app home page. If the issue persists, please disable the app and send us a bug report.",
+  "faqpage.appStuckQ": "The 1.1.1.1 app is stuck in ‘CONNECTING’ or ‘REASSERTING’. What should I do?",
+  "faqpage.appStuckA1": "This may happen if your network connection is temporarily disrupted or if your data connection is blocking 1.1.1.1 connections:",
+  "faqpage.appStuckList": [
+    {
+      "tag": "li",
+      "content": "Disable the app using the toggle on the app home page."
+    },
+    {
+      "tag": "li",
+      "content": "Open the iOS Settings app and navigate to Settings > General > Reset."
+    },
+    {
+      "tag": "li",
+      "content": "Tap on Reset Network Settings."
+    },
+    {
+      "tag": "li",
+      "content": "Reboot your device; make sure your Wifi is connected."
+    },
+    {
+      "tag": "li",
+      "content": "Try connecting the app again."
+    }
+  ],
+  "faqpage.appStuckA2": "If this does not allow the connection, disable the 1.1.1.1 app and send us a bug report.",
+  "faqpage.cannotClickQ": "I cannot click OK on the VPN installation dialog. What should I do?",
+  "faqpage.cannotClickA": "If you cannot click on the OK button, there might be another application on top of the dialog. Some known apps that can cause this problem are Lux Brightness, Night Mode, Twilight, FileManager etc. To avoid this problem, close or uninstall all apps that might cause this problem.",
+  "faqpage.appenabledQ": "I kept the app enabled but I noticed it turned off after a while. What happened?",
+  "faqpage.appenabledA1": "Your phone is trying to manage the battery by disabling the app. For example, most Huawei devices are known for their aggressive memory and power management.",
+  "faqpage.appenabledA2": "You can fix this by following the steps below:",
+  "faqpage.appenabledList": [
+    {
+      "tag": "li",
+      "content": "Go to the ‘Settings’ on your phone."
+    },
+    {
+      "tag": "li",
+      "content": "Select ‘Advanced’"
+    },
+    {
+      "tag": "li",
+      "content": "Visit ‘Battery Manager’"
+    },
+    {
+      "tag": "li",
+      "content": "Open ‘Protected Apps’"
+    },
+    {
+      "tag": "li",
+      "content": "You can select “Allow apps to keep running after the screen is turned off” for the 1.1.1.1 app."
+    }
+  ],
+  "faqpage.persistentnotificationQ": "Why is there a persistent notification for the 1.1.1.1 app?",
+  "faqpage.persistentnotificationA1": "If you are using Android 8 or above, you will see a persistent notification from the 1.1.1.1 app saying “Your DNS queries are private and faster”.",
+  "faqpage.persistentnotificationA2": "This is required by the Android OS (8.0+) for all apps with background activity.",
+  "faqpage.persistentnotificationA3": "We set the priority of the notification to be “Low” so that it does not interfere with other important notifications on your phone.",
+  "faqpage.persistentnotificationA4": "Here is one thing you can do to hide the notification. Note that this will stop you from receiving other notifications from the 1.1.1.1 app. But here you go:",
+  "faqpage.persistentnotificationList": [
+    {
+      "tag": "li",
+      "content": "Go to your Settings."
+    },
+    {
+      "tag": "li",
+      "content": "Apps & Notifications."
+    },
+    {
+      "tag": "li",
+      "content": "Open the 1.1.1.1 app setting from the list of apps."
+    },
+    {
+      "tag": "li",
+      "content": "Tap on “Notifications” and disable it."
+    }
+  ],
+  "faqpage.disablednotificationQ": "I disabled notification for the 1.1.1.1 app but now I am seeing another notification saying “1.1.1.1 is using battery”. Should I be worried? How can I remove it?",
+  "faqpage.disablednotificationA1": "You should not be worried. Because you disabled notification for the app the Android OS now sends another notification warning you about battery usage not because it is consuming a lot of battery but because it is running in the background (in this case, securing all of your DNS queries!).",
+  "faqpage.disablednotificationA2": "Here is how you can remove it:",
+  "faqpage.disablednotificationList": [
+    {
+      "tag": "li",
+      "content": "Long press on the notification until it changes and shows a toggle."
+    },
+    {
+      "tag": "li",
+      "content": "Tap on the toggle, making sure its greyed out."
+    },
+    {
+      "tag": "li",
+      "content": "Select “Done” to disable the notification."
+    }
+  ],
+  "faqpage.vpnprofileQ": "I cannot add the VPN profile. How can I fix it?",
+  "faqpage.vpnprofileA1": "You are probably using another VPN that has the “Always On” settings enabled. Please disable that and enable 1.1.1.1.",
+  "faqpage.vpnprofileA2": "You can go to that page by using the following steps:",
+  "faqpage.vpnprofileList": [
+    {
+      "tag": "li",
+      "content": "Settings"
+    },
+    {
+      "tag": "li",
+      "content": "Network and Internet"
+    },
+    {
+      "tag": "li",
+      "content": "Advanced"
+    },
+    {
+      "tag": "li",
+      "content": "VPN"
+    },
+    {
+      "tag": "li",
+      "content": "Gear button for 1.1.1.1"
+    },
+    {
+      "tag": "li",
+      "content": "Enable “Always On” for 1.1.1.1"
+    }
+  ],
+  "subscribe": "Subscribe",
+  "appstore": "App Store",
+  "googleplay": "Google Play",
+  "windows": "Windows (beta)",
+  "macos": "macOS (beta)",
+  "windows.comingsoon": "Windows <br> (Coming soon)",
+  "macos.comingsoon": "macOS <br> (Coming soon)",
+  "downloadfor.windows": "Windows",
+  "downloadfor.macos": "<span style='font-size: 14px'> Download for </span> <br> macOS",
+  "windows.installationinstructions": "Windows Installation Instructions",
+  "macos.installationinstructions": "macOS Installation Instructions",
+  "linux.installationinstructions": "Linux Installation Instructions",
+  "home.herotitle": "The free app that makes your Internet&nbsp;safer.",
+  "home.herosubtitle": "Now available for even more devices.",
+  "home.overviewtitle": "You’re one tap away from a safer Internet.",
+  "home.overviewdesc1": "When the Internet was built, computers weren’t mobile. They sat in offices next to data centers. The Internet has changed but the assumptions made 30 years ago are making your experience slower and less secure.",
+  "home.overviewdesc2": "1.1.1.1 with WARP replaces the connection between your device and the Internet with a modern, optimized, protocol.",
+  "learnmore": "Learn more",
+  "downloadnow": "Download now",
+  "home.desktop.title": "Now available for macOS and Windows",
+  "home.desktop.description": "<p>Millions of people secure their phone Internet connections with the WARP app today.</p><p>We’ve extended the same protection to macOS and Windows.</p>",
+  "home.performancetitle": "Built on a massive network.",
+  "home.performancedesc1": "WARP is built on the same network that has made 1.1.1.1 the <a class='CopyLink' href='https://www.dnsperf.com/#!dns-resolvers' target='_blank' rel='noreferrer'>fastest DNS resolver</a> on Earth.",
+  "home.performancedesc2": "Your connection to WARP is fast and reliable wherever you live and wherever you go.",
+  "home.performancedate": "October, 2020",
+  "home.privacytitle": "Fast. Free. Private.",
+  "home.privacydesc1": "Your Internet service provider can see every site and app you use—even if they’re encrypted. Some providers even sell this data, or use it to target you with ads.",
+  "home.privacydesc2": "1.1.1.1 with WARP prevents anyone from snooping on you by encrypting more of the traffic leaving your device.",
+  "home.privacydesc3": "We believe privacy is a right. We won't sell your data, ever.",
+  "sharewithtwitter": "Share with Twitter",
+  "home.warptitle": "Use the Internet fast-lane",
+  "home.warpdesc": "In addition to the full WARP service, WARP+ subscribers get access to a larger network. More cities to connect to means you’re likely to be closer to a Cloudflare data center – which can reduce the latency between your device and Cloudflare and improve your browsing speed.",
+  "home.warpdesc2": "Existing WARP+ subscribers can add additional devices to their plan at a discount.",
+  "home.sharewarp": "Share WARP",
+  "home.footertitle": "Brought to you by Cloudflare.",
+  "home.footerdesc1": "<a class='CopyLink' href='https://cloudflare.com' target='_blank'>Cloudflare</a> provides security and performance to over 25 million Internet properties—and now this technology is available to the rest of us.",
+  "home.footerdesc2mobile": "Get the 1.1.1.1 app to claim your spot on the waitlist.",
+  "home.footerdesc2desktop": "Search for “1.1.1.1” on your phone’s app store to claim your spot on the waitlist.",
+  "home.subscribe.title": "Sign up for early access",
+  "home.subscribe.description": "Subscribe to be notified when the macOS and Windows clients are available.",
+  "dns": "DNS",
+  "family.name": "Families",
+  "family.for": "for Families",
+  "family.herotitle": "Free protection for your home Internet.",
+  "family.section.performance.description": "<p>1.1.1.1 with Families uses the fastest public DNS resolver on Earth to make your internet connection faster.</p><p>Don’t take our word for it. The independent DNS monitor DNSPerf ranks 1.1.1.1 the fastest DNS service in the world. Since nearly everything you do on the Internet starts with a DNS request, choosing the fastest DNS directory across all your devices will accelerate almost everything you do online.</p>",
+  "family.section.protection.title": "Protecting home Internet connections from malware",
+  "family.section.protection.description": "<p>With home Internet usage on the rise, it’s never been more important to protect your family from dangerous and malicious sites.</p><p>1.1.1.1 for Families is built on top of the same site categorization and filtering technology that powers Cloudflare’s enterprise products. It uses Cloudflare’s Internet intelligence to filter content on your home Internet network.</p>",
+  "family.section.adultcontent.title": "Adult content filtering",
+  "family.section.adultcontent.description": "<p>Keep adult content away from kids on your network with always-on content controls.</p>",
+  "family.section.malware.title": "Automatic malware protection",
+  "family.section.malware.description": "<p>Attackers often hide harmful code in sites and emails that seem normal. These attacks can put your family’s private information in the wrong hands.</p><p>1.1.1.1 for Families adds a layer of malware protection to your home Wi-Fi, automatically blocking access to known malicious sites.</p>",
+  "family.section.privacy.title": "Safe. Private. Free.",
+  "family.section.privacy.description": "<p>Every device that connects to the Internet needs a DNS resolver, but they’re often slow and do not respect your privacy.</p><p>1.1.1.1 for Families is a privacy-first DNS resolver that’s free for anyone to use. Cloudflare never sells or shares your family’s browsing data.</p>",
+  "family.section.privacy.link": "Learn More",
+  "family.section.setup.title": "Get Started Now",
+  "family.section.setup.description": "1.1.1.1 for Families has two options: one that blocks only malware and another that blocks both malware and adult content. You can install it by changing the IP address settings on your home Internet router.",
+  "family.section.setup.malware.title": "Malware Blocking Only",
+  "family.section.setup.malware.description": "<p>Change your router DNS to:</p><ul><li>1.1.1.2</li><li>1.0.0.2</li></ul><p class='install-instructions'>Ready to set it up? You’ll find an easy guide for every device in the <a href='https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/' class='CopyLink' target='_blank'>setup instructions</a> page.</p>",
+  "family.section.setup.all.title": "Malware and Adult Content Blocking Together",
+  "family.section.setup.all.description": "<p>Change your router DNS to:</p><ul><li>1.1.1.3</li><li>1.0.0.3</li></ul><p class='install-instructions'>Ready to set it up? You’ll find an easy guide for every device in the <a href='https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/' class='CopyLink' target='_blank'>setup instructions</a> page.</p>",
+  "family.cloudflare.tagline": "Bringing speed, reliability, and performance to every Internet user",
+  "family.share.tweet.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://one.one.one.one/family",
+  "family.share.facebook.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://one.one.one.one/family",
+  "family.share.email.subject": "1.1.1.1 for Families",
+  "family.share.email.body": "I'm using 1.1.1.1 for Families to protect our home Internet connection from malware. You can get it setup in less than 2 minutes. https://one.one.one.one/family",
+  "home.privacyimportant": "Your <a href='https://www.cloudflare.com/privacypolicy/' class='CopyLink'>privacy</a> is important to us.",
+  "beta.name": "Beta",
+  "beta.title": "Download the 1.1.1.1 Beta for macOS and Windows",
+  "beta.section.title": "Thank you for helping us make a safer and faster internet for the desktop",
+  "beta.section.description": "Select the appropriate link to download the desktop app for your system. This is a Beta release, so remember to provide feedback and learn about known issues using the link below.",
+  "beta.section.feedback.text": "Provide feedback",
+  "beta.section.feedback.link": "/",
+  "beta.section.learn.more": "Learn more about known issues",
+  "beta.tag": "Beta desktop release",
+  "beta.mac": "macOS",
+  "beta.button.text": "Download For",
+  "beta.windows": "Windows",
+  "beta.linux": "Linux",
+  "beta.category1": "macOS Catalina",
+  "beta.category2": "Windows 10",
+  "beta.category3": " ",
+  "beta.min.req": "Minimum system <br> requirements",
+  "beta.version.category1": "10.15 or higher <br> 64 bit only",
+  "beta.version.category2": "1909 or higher <br> 64 bit only",
+  "beta.mac.instructions": "macOS installation Instructions",
+  "beta.windows.instructions": "Windows Installation instructions",
+  "teams.devices.title": "New: use WARP with your team",
+  "teams.devices.description": "Bring the power of WARP to your business by integrating WARP with Gateway. Enroll user devices in your organization and protect your remote workforce from threats online."
+}

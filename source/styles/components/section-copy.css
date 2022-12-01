@@ -1,0 +1,55 @@
+.SectionCopy {
+  display: flex;
+  width: 18em;
+  max-width: 100%;
+  text-align: left;
+}
+
+.SectionCopy.SectionCopy-is-right {
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .SectionCopy.SectionCopy-is-right {
+    justify-content: flex-start;
+  }
+}
+
+.SectionCopy--title {
+  font-size: 1.75em;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+.SectionCopy--description p:not(:last-child) {
+  margin-bottom: .5em;
+}
+
+.SectionCopy.SectionCopy-is-centered {
+  display: block;
+  width: 26em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SectionCopy.SectionCopy-is-centered .SectionCopy--title,
+.SectionCopy.SectionCopy-is-centered .SectionCopy--description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .SectionCopy,
+  .SectionCopy.SectionCopy-is-centered {
+    width: 23em;
+    text-align: left;
+  }
+
+  .SectionCopy.SectionCopy-is-centered .SectionCopy--title,
+  .SectionCopy.SectionCopy-is-centered .SectionCopy--description {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}

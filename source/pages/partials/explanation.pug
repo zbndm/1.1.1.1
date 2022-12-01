@@ -1,0 +1,73 @@
+section#explanation(data-section="explanation")
+  .content(data-subsection="dns")
+    h1.mobile-only.collapsed-top-margin!=htmlWebpackPlugin.options.t('explanation.dnsHeader')
+
+    .secondary
+      include ../../media/dns-book-closed.svg
+
+    .primary
+      h1.desktop-only.collapsed-top-margin!=htmlWebpackPlugin.options.t('explanation.dnsHeader')
+
+      p!=htmlWebpackPlugin.options.t('explanation.dnsExplanation')
+
+  .content.with-gutter(data-subsection="security")
+    .primary
+      .secondary.mobile-only
+        include ../../media/dns-explanation.svg
+
+      p!=htmlWebpackPlugin.options.t('explanation.dnsSlowInsecure')
+      p!=htmlWebpackPlugin.options.t('explanation.dnsAlternative')
+
+section(data-section="explanation-privacy")
+  .content
+    header
+      h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('explanation.privacyHeader')
+      h2!=htmlWebpackPlugin.options.t('explanation.privacyGuaranteeData')
+
+  .content(data-subsection="privacy")
+    .secondary.desktop-only
+      include ../../media/shopping-cart.svg
+
+    .primary
+      p
+        span!=htmlWebpackPlugin.options.t('explanation.privacyGuaranteeLogs')
+
+      p!=htmlWebpackPlugin.options.t('explanation.privacyConclusion')
+
+section(data-section="explanation-stats")
+  .content
+    header
+      h1!=htmlWebpackPlugin.options.t('explanation.performanceHeader')
+
+  .content
+    .primary
+      p!=htmlWebpackPlugin.options.t('explanation.fastestDNS')
+      p!=htmlWebpackPlugin.options.t('explanation.speedContinued')
+      p(style="font-size:12px")
+        !=htmlWebpackPlugin.options.t('explanation.timeStamp')
+
+    .chart(data-ref="statsChart" style="opacity: 0")
+      .bar-chart.first(animated data-total="14.96")
+        .bar-chart-primary
+          span.bar-chart-fill
+          span.bar-chart-label 14.96ms
+        span.bar-chart--text
+          strong 1.1.1.1
+
+      .bar-chart.second(animated data-total="20.17")
+        .bar-chart-primary
+          span.bar-chart-fill
+          span.bar-chart-label 20.17ms
+        span.bar-chart--text Cisco OpenDNS
+
+      .bar-chart.third(animated data-total="35.29")
+        .bar-chart-primary
+          span.bar-chart-fill
+          span.bar-chart-label 35.29ms
+        span.bar-chart--text Google Public DNS
+
+      .bar-chart.fourth(animated data-total="59.46")
+        .bar-chart-primary
+          span.bar-chart-fill
+          span.bar-chart-label 59.46ms
+        span.bar-chart--text Verisign
